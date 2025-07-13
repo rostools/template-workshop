@@ -1,0 +1,23 @@
+_subdirectory: template
+
+# Questions
+
+workshop_type:
+  type: str
+  help: "What type of workshop is this?"
+  choices:
+    - R
+    - General
+
+workshop_github:
+  type: str
+  help: "What is the GitHub repository name? Needs the user/organization name as well, in the form 'user/repo'."
+
+workshop_url:
+  type: str
+  help: "What is the URL of the workshop website? Needs to be in the form 'https://domain.extension'."
+
+github_board_number:
+  type: int
+  help: "What is the GitHub project board number to add issues and PRs to?"
+  default: 12

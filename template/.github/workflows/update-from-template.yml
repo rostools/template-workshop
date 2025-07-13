@@ -1,0 +1,14 @@
+name: Update from template
+
+on:
+  push:
+    branches:
+      - main
+    schedule:
+      - 0 0 0 0
+
+# Limit token permissions for security
+permissions: read-all
+
+jobs:
+  update-from-template:

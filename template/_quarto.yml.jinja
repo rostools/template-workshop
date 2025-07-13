@@ -1,0 +1,56 @@
+project:
+  type: rostools-theme
+  # TODO: Uncomment if you want to use slides.
+  # pre-render: quarto render slides/*.qmd
+  # resources:
+  #   - slides/*.html
+
+book:
+  title: {{workshop_title}}
+  # TODO: Add more 
+  author:
+    - Luke W. Johnston
+    - Signe Kirk Brødbæk
+  date: last-modified
+  repo-url: https://github.com/rostools/REPO
+  site-url: https://REPO.rostools.org/
+  body-header: "{{< text_snippet wip >}}"
+  chapters:
+    - index.qmd
+    - part: "Overview"
+      chapters:
+        - preamble/syllabus.qmd
+        - preamble/schedule.qmd
+        - preamble/pre-workshop.qmd
+    - part: "Pre-workshop"
+      chapters:
+        - preamble/overview.qmd
+        - preamble/code-of-conduct.qmd
+    - part: "Sessions"
+      chapters:
+        - sessions/introduction.qmd
+        - sessions/session.qmd
+        - sessions/conclusion.qmd
+  appendices:
+    - appendix/for-teachers.qmd
+    - appendix/references.qmd
+  page-footer:
+    center:
+      - text: "License: CC BY 4.0 {{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}}"
+        href:
+      - text: "Code of Conduct"
+        href: "https://guides.rostools.org/conduct.html"
+
+format:
+  rostools-theme-html: default
+
+editor:
+  markdown:
+    wrap: 72
+    canonical: true
+
+surveys:
+  pre-workshop: GOOGLE-FORM-URL
+  feedback: GOOGLE-FORM-URL
+
+workshop-id: ID

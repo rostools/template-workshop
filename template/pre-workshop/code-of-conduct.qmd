@@ -1,0 +1,3 @@
+# Code of conduct {#sec-code-of-conduct}
+
+{{< include /includes/code-of-conduct.qmd >}}
