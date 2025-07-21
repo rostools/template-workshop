@@ -15,7 +15,7 @@ Zenodo DOI
 - Includes a [justfile](https://just.systems/man/en/) for managing common tasks
   like building the workshop and running checks.
 - Uses [typos](https://github.com/crate-ci/typos) to check for common
-  spelling mistakes. 
+  spelling mistakes.
 - For R projects, uses [Air](https://posit-dev.github.io/air/) to format and check
   R code.
 - Uses [Commitizen](https://commitizen-tools.github.io/commitizen/) to check
@@ -34,9 +34,9 @@ Zenodo DOI
   which is automatically built and deployed with Quarto's GitHub Action workflow.
 - Includes an [EditorConfig](https://editorconfig.org/) file to ensure consistent
   formatting across different editors.
-- Sets some common VS Code settings for the project, including suggesting 
-  extensions 
-  
+- Sets some common VS Code settings for the project, including suggesting
+  extensions
+
 
 ## Using
 
