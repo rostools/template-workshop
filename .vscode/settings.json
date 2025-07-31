@@ -30,7 +30,11 @@
   "[r]": {
     "editor.formatOnSave": true
   },
-  "[quarto]": {
+  "[quarto][jinja]": {
     "editor.formatOnSave": true
+  },
+  "files.associations": {
+    "*.yml.jinja": "jinja-yaml",
+    "*.cff.jinja": "jinja-yaml"
   },
 }

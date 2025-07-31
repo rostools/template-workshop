@@ -1,17 +1,19 @@
 {
   "recommendations": [
     "eamodio.gitlens",
+    "GitHub.vscode-github-actions",
+    "redhat.vscode-yaml",
     "donjayamanne.githistory",
     "felipecaputo.git-project-manager",
-    "github.vscode-github-actions",
+    "Posit.air-vscode",
     "GitHub.vscode-pull-request-github",
-    "EditorConfig.EditorConfig",
+    "quarto.quarto",
     "vivaxy.vscode-conventional-commits",
     "pshaddel.conventional-branch",
-    "redhat.vscode-yaml",
     "tekumara.typos-vscode",
-    "Posit.air-vscode",
-    "quarto.quarto"
+    "EditorConfig.EditorConfig",
+    "samuelcolvin.jinjahtml"
   ],
+  // List of extensions recommended by VS Code that should not be recommended for users of this workspace.
   "unwantedRecommendations": []
 }
