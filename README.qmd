@@ -1,0 +1,63 @@
+---
+format: gfm
+execute:
+  echo: false
+jupyter: python3
+metadata-files:
+  - _quarto.yml
+---
+
+# Template Workshop: An opinionated setup for making workshops as open educational resources
+
+{{< include /docs/includes/_badges.qmd >}}
+
+This repository contains a template for setting up a new workshop
+repository that will contain files to create a website for a workshop
+and that might also be used as an open educational resource (OER).
+Use this template to quickly get started with a new workshop with all
+the necessary files and configurations in place for a smoother
+"developer experience" and to have [continuous
+delivery/deployment](https://en.wikipedia.org/wiki/Continuous_delivery)
+of the workshop website and archival to Zenodo.
+
+Check out our
+[website](https://{{< meta gh.repo >}}.{{< meta gh.org >}}.org/) for more
+information, such as the features it provides, a
+[guide](https://{{< meta gh.repo >}}.{{< meta gh.org >}}.org/docs/guide/)
+for using the template. For a list of changes, see our
+[changelog](https://{{< meta gh.repo >}}.{{< meta gh.org >}}.org/docs/releases/)
+page.
+
+## Contributing
+
+Check out our [contributing
+page](https://{{< meta gh.repo >}}.{{< meta gh.org >}}.org/contributing/)
+for information on how to contribute to the project, including how to
+set up your development environment.
+
+Please note that this project is released with a [Contributor Code of
+Conduct](https://github.com/{{< meta gh.org >}}/{{< meta gh.repo >}}/blob/main/CODE_OF_CONDUCT.md).
+By participating in this project you agree to abide by its terms.
+
+## Licensing
+
+This project is licensed under the [MIT
+License](https://github.com/{{< meta gh.org >}}/{{< meta gh.repo >}}/blob/main/LICENSE.md).
+
+## Citing
+
+This project is part of rostools, which is an organisation that hosts
+and runs workshops (also as open educational resources) that are related
+in some way to doing reproducible and open science. If you use this
+project in your work, please cite it as follows:
+
+```{python}
+#| output: asis
+!uvx --quiet cffconvert --format apalike
+```
+
+Or as a BibTeX entry:
+
+```{python}
+!uvx --quiet cffconvert --format bibtex
+```
