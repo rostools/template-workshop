@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: "5996f1fc-2795-4d47-b495-4981f41f60b4"
+      url: "https://rostools-template-workshop.netlify.app"
