@@ -1,0 +1,67 @@
+# Welcome!
+
+{{< include /docs/includes/_badges.qmd >}}
+
+This is a template for creating a new workshop with the intent of making
+it an open educational resource (OER). Use this template to quickly get
+started with a new workshop with all the necessary files and
+configurations in place, including for developing the workshop.
+
+## Features
+
+-   Uses [Quarto](https://quarto.org/) for the workshop content,
+    allowing for easy integration of code, text, and figures.
+-   Includes a [justfile](https://just.systems/man/en/) for managing
+    common tasks like building the workshop and running checks.
+-   Uses [typos](https://github.com/crate-ci/typos) to check for common
+    spelling mistakes.
+-   For R projects, uses [Air](https://posit-dev.github.io/air/) to
+    format and check R code.
+-   Uses
+    [Commitizen](https://decisions.seedcase-project.org/why-changelog-with-commitizen)
+    to
+    [check](https://decisions.seedcase-project.org/why-lint-with-commitizen/)
+    commit messages and automatically create the changelog.
+-   Automated Git tagging and GitHub releases with
+    [commitizen](https://decisions.seedcase-project.org/why-semantic-release-with-commitizen/)
+    that are based on messages following [Conventional
+    Commits](https://decisions.seedcase-project.org/why-conventional-commits).
+-   Uses a [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)
+    license for the workshop content.
+-   Run checks with with [pre-commit](https://pre-commit.com/) hooks to
+    ensure consistent formatting and style across the project. It
+    includes checks for credentials, typos, and file formatting.
+-   Uses the
+    [`rostools-theme`](https://github.com/rostools/rostools-theme)
+    Quarto extension for a standard appearance across workshops.
+-   Includes [GitHub Actions](https://docs.github.com/en/actions) for
+    continuous integration, testing, and delivery for running checks,
+    formatting, releasing, and building the website.
+-   Uses [Netlify](https://www.netlify.com/) for hosting the workshop
+    website.
+-   Includes an [EditorConfig](https://editorconfig.org/) file to ensure
+    consistent formatting across different editors.
+-   High level, system and program management with
+    [uv](https://decisions.seedcase-project.org/why-uv/).
+-   GitHub workflows for automatically adding Pull Requests and Issues
+    to a project board.
+-   Pull Request template for easy creation of new Pull Requests.
+-   [VS Code](https://code.visualstudio.com/) settings commonly used by
+    contributors working in VS Code.
+-   [`.zenodo.json`](https://help.zenodo.org/docs/github/describe-software/zenodo-json/)
+    file for citation information, that provides Zenodo with the
+    necessary metadata to create a DOI for the workshop.
+
+## Want to contribute?
+
+We would love your feedback or contributions! Head over to our [GitHub
+repository](https://github.com/{{< meta gh.org >}}/{{< meta gh.repo >}})
+or our [contributing guide](/CONTRIBUTING.md) to share your ideas or
+contribute code. Your input makes us better!
+
+## Contributors
+
+These are the people who have contributed to Sprout by submitting
+changes through pull requests :tada:
+
+{{< include /_contributors.qmd.tmp >}}
