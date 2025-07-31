@@ -1,0 +1,37 @@
+project:
+  type: book
+  pre-render:
+    - sh ./tools/get-contributors.sh rostools/template-workshop
+
+book:
+  title: "Template Workshop"
+  subtitle: "An opinionated template for making workshops as open educational resources"
+  site-url: "https://template-workshop.rostools.org"
+  repo-url: "https://github.com/rostools/template-workshop"
+  chapters:
+    - index.qmd
+    - CONTRIBUTING.md
+  tools:
+    - icon: github
+      href: "https://github.com/rostools/template-workshop"
+      aria-label: "GitHub icon: Source code"
+
+format:
+  rostools-theme-html:
+    theme:
+      - brand
+    include-before-body:
+    - "docs/includes/site-counter.html"
+
+editor:
+  markdown:
+    wrap: 72
+    canonical: true
+
+execute:
+  echo: false
+
+# Variables to use throughout template.
+gh:
+  org: "rostools"
+  repo: "template-workshop"
