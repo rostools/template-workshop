@@ -10,7 +10,7 @@ with relevant files for a rostools-structured workshop. We use
 that first. After that, creating a new workshop project folder can be done with:
 
 ```bash
-uvx copier copy gh:rostools/template-workshop WORKSHOP-NAME
+uvx copier copy gh:{{< meta gh.org >}}/{{< meta gh.repo >}} WORKSHOP-NAME
 ```
 
 Where `WORKSHOP-NAME` is the name of the folder you want to create. This will
@@ -58,13 +58,13 @@ you want to create the new workshop repository. Then run the following command:
 
 ``` bash
 # Copy into the current directory, which is the "."
-uvx copier copy --trust gh:{{< meta gh.org >}}/{{< gh.repo >}} .
+uvx copier copy --trust gh:{{< meta gh.org >}}/{{< meta gh.repo >}} .
 ```
 
 ::: callout-caution
 This template runs some post-copy commands using your terminal. In order
 to run them, you need to use the `--trust` option. Review the
-[`copier.yml`](https://github.com/{{< meta gh.org >}}/{{< gh.repo >}}/blob/main/copier.yaml)
+[`copier.yml`](https://github.com/{{< meta gh.org >}}/{{< meta gh.repo >}}/blob/main/copier.yaml)
 file, under the `_tasks` key to see what commands will be run after
 copying the template, so you can know and trust what the commands are
 doing. Unfortunately, this template can't be used without the `--trust`
@@ -79,7 +79,7 @@ to the existing workshop repository. This will add all the template's files and
 configurations to the existing workshop repository.
 
 ``` bash
-uvx copier copy --trust gh:{{< meta gh.org >}}/{{< gh.repo >}} .
+uvx copier copy --trust gh:{{< meta gh.org >}}/{{< meta gh.repo >}} .
 ```
 
 It will go through a series of prompts, as in the case of creating a new
@@ -142,7 +142,7 @@ just install-precommit
 
 This sets up the pre-commit hooks to run standard checks on your
 repository whenever you commit files to the history.
-Next, install [`spaid`](https://github.com/{{< meta gh.org >}}/spaid) and
+Next, install [`spaid`](https://github.com/seedcase-project/spaid) and
 use the following commands to run the next setup steps:
 
 ``` bash
