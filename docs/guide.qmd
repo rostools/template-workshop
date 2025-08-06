@@ -172,3 +172,8 @@ additional setup are:
     [add-to-board-token](https://github.com/apps/add-to-board-token)
     GitHub App, along with the `ADD_TO_BOARD_TOKEN` secret and the
     `ADD_TO_BOARD_APP_ID` variable of the GitHub Apps' ID.
+
+Since the workshop websites are hosted on [Netlify](https://www.netlify.com/),
+you will also need to connect the GitHub repository to Netlify as well as adding
+a `NETLIFY_AUTH_TOKEN` secret to the GitHub repository (or ideally at the
+organization level).
