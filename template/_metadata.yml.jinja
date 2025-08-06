@@ -1,0 +1,22 @@
+gh:
+  org: "{{ github_org }}"
+  repo: "{{ github_repo }}"
+
+# TODO: Fill in and/or confirm these titles
+titles:
+  full: ""
+  abbrev: "{{ workshop_abbrev }}"
+
+# TODO: Confirm these URLs
+urls:
+  home: "{{ workshop_url }}"
+
+{% if workshop_type == 'r' -%}
+# TODO: Needs to set to either "introduction", "intermediate", or "advanced"
+workshop_level: ""
+{%- endif %}
+
+# TODO: Add the URLs to the surveys.
+surveys:
+  pre-workshop: "TODO"
+  feedback: "TODO"
