@@ -3,8 +3,6 @@ format: gfm
 execute:
   echo: false
 jupyter: python3
-metadata-files:
-  - _quarto.yml
 ---
 
 # Template Workshop: An opinionated setup for making workshops as open educational resources

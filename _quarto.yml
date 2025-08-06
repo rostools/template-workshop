@@ -31,7 +31,3 @@ editor:
 execute:
   echo: false
 
-# Variables to use throughout template.
-gh:
-  org: "rostools"
-  repo: "template-workshop"
