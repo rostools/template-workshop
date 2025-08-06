@@ -1,0 +1,73 @@
+@_default:
+  just --list --unsorted
+
+@_checks: check-spelling check-commits
+@_builds: build-contributor build-website
+@_updates: update-from-template update-quarto-theme
+
+# Run all recipes
+{$ if workshop_type == 'r' -% }
+run-all: install-dependencies _updates _checks style _builds
+{%- else %}
+run-all: _updates _checks _builds
+{%- endif %}
+
+# List all TODOs in the repository.
+list-todos:
+  # Ignore vscode?
+  grep -R TODO . --exclude-dir=.vscode
+
+# Install or update the pre-commit hooks
+install-precommit:
+  # Install pre-commit hooks
+  uvx pre-commit install
+  # Run pre-commit hooks on all files
+  uvx pre-commit run --all-files
+  # Update versions of pre-commit hooks
+  uvx pre-commit autoupdate
+
+{% if workshop_type == "r" -%}
+# Install package dependencies
+install-dependencies:
+  #!/usr/bin/Rscript
+  pak::pak(ask = FALSE)
+{%- endif %}
+
+# Update the Quarto rostools-theme extension
+update-quarto-theme:
+  quarto add rostools/rostools-theme --no-prompt
+
+# Check spelling
+check-spelling:
+  uvx typos
+
+# Run checks on commits with non-main branches
+check-commits:
+  #!/bin/zsh
+  branch_name=$(git rev-parse --abbrev-ref HEAD)
+  number_of_commits=$(git rev-list --count HEAD ^main)
+  if [[ ${branch_name} != "main" && ${number_of_commits} -gt 0 ]]
+  then
+    uv run cz check --rev-range main..HEAD
+  else
+    echo "Can't either be on ${branch_name} or have more than ${number_of_commits}."
+  fi
+
+# Build Quarto website
+build-website:
+  quarto render
+
+{% if workshop_type == "r" -%}
+# Style all R code
+style:
+  # Need to install air first
+  air format .
+{%- endif %}
+
+# Check for and apply updates from the template
+update-from-template:
+  uvx copier update --trust --defaults
+
+# Reset repo changes to match the template
+reset-from-template:
+  uvx copier recopy --trust --defaults
