@@ -10,6 +10,7 @@ book:
   repo-url: "https://github.com/rostools/template-workshop"
   chapters:
     - index.qmd
+    - guide.qmd
     - releases.qmd
     - CONTRIBUTING.md
   tools:
@@ -28,7 +29,4 @@ editor:
   markdown:
     wrap: 72
     canonical: true
-
-execute:
-  echo: false
 
