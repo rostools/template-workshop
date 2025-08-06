@@ -28,7 +28,6 @@ update-template:
   mkdir -p template/tools
   cp tools/get-contributors.sh template/tools/
   cp .github/dependabot.yml .github/pull_request_template.md template/.github/
-  cp .github/workflows/build-website.yml template/.github/workflows/
   cp _extensions/ template/_extensions/
 
 # Check the commit messages on the current branch that are not on the main branch
