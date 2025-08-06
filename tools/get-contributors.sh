@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Get a list of contributors to this repository and save it to
-# _contributors.qmd.tmp file. It also:
+# _contributors.qmd file (will overwrite if it exists). It also:
 #
 # - Formats users into Markdown links to their GitHub profiles.
 # - Removes any usernames with the word "bot" in them.
