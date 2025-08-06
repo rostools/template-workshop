@@ -110,10 +110,6 @@ build-website:
 build-readme:
   uvx --from quarto quarto render README.qmd --to gfm
 
-# Generate a Quarto include file with the contributors
-build-contributors:
-  sh ./tools/get-contributors.sh rostools/template-workshop
-
 # Clean up any leftover and temporary build files
 cleanup:
   rm -rf _temp
