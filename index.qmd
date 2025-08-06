@@ -61,7 +61,4 @@ contribute code. Your input makes us better!
 
 ## Contributors
 
-These are the people who have contributed to Sprout by submitting
-changes through pull requests :tada:
-
-{{< include /_contributors.qmd.tmp >}}
+{{< include /_contributors.qmd >}}
