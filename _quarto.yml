@@ -10,6 +10,7 @@ book:
   repo-url: "https://github.com/rostools/template-workshop"
   chapters:
     - index.qmd
+    - releases.qmd
     - CONTRIBUTING.md
   tools:
     - icon: github
