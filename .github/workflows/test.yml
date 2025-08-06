@@ -1,4 +1,4 @@
-name: Test template creation
+name: Test template
 
 on:
   push:
@@ -23,19 +23,16 @@ jobs:
 
       - name: Set up uv
         uses: astral-sh/setup-uv@bd01e18f51369d5a26f1651c3cb451d3417e3bba
-        with:
-          enable-cache: true
-          cache-dependency-glob: "**/uv.lock"
 
       - name: Install justfile
         run: sudo apt-get install -y just
 
-      - name: Generate a data package
-        # TODO: Add other pre/post setup steps here.
-        run: |
-          just test General
-          just test R
-
       - name: Checks
         run: |
-          uvx typos
+          just check-spelling
+
+      - name: Test the template
+        # TODO: Add other pre/post setup steps here.
+        run: |
+          just _tests
+
