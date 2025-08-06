@@ -2,6 +2,10 @@ project:
   type: book
   pre-render:
     - sh ./tools/get-contributors.sh rostools/template-workshop
+  render:
+    - "!template/"
+    - "*.qmd"
+    - "*.md"
 
 book:
   title: "Template Workshop"
@@ -10,8 +14,8 @@ book:
   repo-url: "https://github.com/rostools/template-workshop"
   chapters:
     - index.qmd
-    - guide.qmd
-    - releases.qmd
+    - docs/guide.qmd
+    - docs/releases.qmd
     - CONTRIBUTING.md
   tools:
     - icon: github
