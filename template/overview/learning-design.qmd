@@ -1,3 +1,7 @@
+<!-- NOTE: This file was generated from the `template-workshop` template. -->
+
+# Learning design {#sec-learning-design}
+
 This workshop is designed using the science of learning. Learning is
 when new content gets incorporated into long-term storage in the brain
 and in a way that it can be later retrieved from storage to be used
