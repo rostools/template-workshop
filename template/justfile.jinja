@@ -7,9 +7,9 @@
 
 # Run all recipes
 {% if workshop_type == 'r' -%}
-run-all: install-dependencies _updates _checks style _builds
+run-all: install-dependencies _checks style _builds
 {%- else -%}
-run-all: _updates _checks _builds
+run-all: _checks _builds
 {%- endif %}
 
 # List all TODOs in the repository.
