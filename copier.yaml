@@ -1,6 +1,55 @@
 _subdirectory: template
 
-# Questions
+# Post-copy commands:
+_tasks:
+  # Only run these commands when copying the template
+  - command: "git init -b main"
+    when: "{{ _copier_operation == 'copy' }}"
+
+# Message to show after generating or regenerating the project successfully
+_message_after_copy: |
+
+  Your project "{{ github_repo }}" has been created successfully!
+
+  Next steps, that are also listed in the
+  [guide](https://template-workshop.rostools.org/docs/guide/):
+
+  1. Change directory to the project root:
+
+    ``` bash
+    cd {{ _copier_conf.dst_path | realpath }}
+    ```
+
+  2. Install the pre-commit hooks:
+
+    ``` bash
+    just install-precommit update-quarto-theme build-readme
+    ```
+
+  3. Install [`spaid`](https://github.com/seedcase-project/spaid) and
+     run these setup steps:
+
+    ``` bash
+    spaid_gh_create_repo_from_local -h
+    spaid_gh_set_repo_settings -h
+    spaid_gh_ruleset_basic_protect_main -h
+    ```
+
+  4. Configure the GitHub repository:
+
+    - Install the [auto-release-token](https://github.com/apps/auto-release-token)
+      and the [add-to-board-token](https://github.com/apps/add-to-board-token)
+      GitHub Apps
+    - Create an `UPDATE_VERSION_TOKEN`, `ADD_TO_BOARD_TOKEN`, and
+      `NETLIFY_AUTH_TOKEN` secrets
+    - Create an `UPDATE_VERSION_APP_ID` and `ADD_TO_BOARD_APP_ID`
+      variables of the GitHub Apps' IDs.
+
+  5. List and complete all TODO items in the repository:
+
+    ``` bash
+    just list-todos
+    ```
 
 workshop_type:
   type: str
