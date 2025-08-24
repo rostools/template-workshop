@@ -26,6 +26,11 @@ jobs:
         run: |
           just check-spelling
 
+      - name: Set Git user
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@example.com"
+
       - name: Test the template
         # TODO: Add other pre/post setup steps here.
         run: |
