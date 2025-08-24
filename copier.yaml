@@ -59,7 +59,10 @@ workshop_type:
     - r
     - general
 
-workshop_github:
+github_user:
+  type: str
+  help: "What is the name of the GitHub user or organization where the website repository will be or is stored?"
+
   type: str
   help: "What is the GitHub repository name? Needs the user/organization name as well, in the form 'user/repo'."
 
@@ -71,3 +74,15 @@ github_board_number:
   type: int
   help: "What is the GitHub project board number to add issues and PRs to?"
   default: 12
+
+# Default settings added ---------
+github_repo:
+  type: str
+  default: "{{ _copier_conf.dst_path | realpath | basename }}"
+  when: false
+
+github_repo_spec:
+  type: str
+  default: "{{ github_user }}/{{ github_repo }}"
+  when: false
+
