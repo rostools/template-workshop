@@ -87,3 +87,7 @@ github_repo_spec:
   default: "{{ github_user }}/{{ github_repo }}"
   when: false
 
+workshop_url:
+  type: str
+  default: "https://{{ github_repo }}.{{ github_user }}.org/"
+  when: false
