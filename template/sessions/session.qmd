@@ -4,11 +4,9 @@
 
 ## Learning objectives
 
-The overall learning outcome for this session is to:
+The learning objectives for this session are:
 
-1.
-
-Specific learning objectives are:
+{{< include /includes/objectives/_session.qmd >}}
 
 ## TODO: Section
 
@@ -18,15 +16,27 @@ Specific learning objectives are:
 TODO: Reading text
 :::
 
-## Exercise: TODO: Add title
+## :technologist: Exercise: Title
 
-> Time: \## minutes.
+**Time: ~NUM minutes.**
 
-```{r solution-LABEL}
-#| eval: false
-#| code-fold: true
-#| code-summary: "**Click for the solution**. Only click if you are struggling or are out of time."
-```
+Text
+
+{{< text_snippet sticky_up >}}
+
+## :speech_balloon: Discussion activity: Title
+
+**Time: ~Num minutes.**
+
+Text
+
+## :book: Reading task: Title
+
+**Time: ~Num minutes.**
+
+Text
+
+{{< text_snippet sticky_up >}}
 
 ## Summary
 
