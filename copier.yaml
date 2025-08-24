@@ -63,12 +63,13 @@ github_user:
   type: str
   help: "What is the name of the GitHub user or organization where the website repository will be or is stored?"
 
+author_given_name:
   type: str
-  help: "What is the GitHub repository name? Needs the user/organization name as well, in the form 'user/repo'."
+  help: "What is your first/given name?"
 
-workshop_url:
+author_family_name:
   type: str
-  help: "What is the URL of the workshop website? Needs to be in the form 'https://domain.extension'."
+  help: "What is your last/family name?"
 
 github_board_number:
   type: int

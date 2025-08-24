@@ -64,7 +64,6 @@ test type:
     --data github_user="first-last" \
     --data author_given_name="First" \
     --data author_family_name="Last" \
-    --data author_email="first.last@example.com" \
     --data github_board_number=22
   # Run checks in the generated test data package
   cd $test_dir
@@ -97,7 +96,6 @@ test type:
     --data github_user="first-last" \
     --data author_given_name="First" \
     --data author_family_name="Last" \
-    --data author_email="first.last@example.com" \
     --data github_board_number=22
 
 # Build the website using Quarto
