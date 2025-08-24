@@ -47,56 +47,9 @@ check-commits:
 check-spelling:
   uvx typos
 
-# Test and check that a workshop can be created from the template
-test type:
-  #!/usr/bin/env bash
-  test_name="test-workshop-{{type}}"
-  test_dir="$(pwd)/_temp/$test_name"
-  template_dir="$(pwd)"
-  commit=$(git rev-parse HEAD)
-  rm -rf $test_dir
-  # vcs-ref means the current commit/head, not a tag.
-  uvx copier copy $template_dir $test_dir \
-    --vcs-ref=$commit \
-    --defaults \
-    --trust \
-    --data workshop_type="{{type}}" \
-    --data github_user="first-last" \
-    --data author_given_name="First" \
-    --data author_family_name="Last" \
-    --data github_board_number=22
-  # Run checks in the generated test data package
-  cd $test_dir
-  git add .
-  git commit -m "test: initial copy"
-  just check-spelling
-  # TODO: Find some way to test the `update` command
-  # Check that recopy works
-  echo "Testing recopy command -----------"
-  rm .cz.toml
-  git add .
-  git commit -m "test: preparing to recopy from the template"
-  uvx copier recopy \
-    --vcs-ref=$commit \
-    --defaults \
-    --overwrite \
-    --trust
-  # Check that copying onto an existing data package works
-  echo "Using the template in an existing package command -----------"
-  rm .cz.toml .copier-answers.yml LICENSE.md
-  git add .
-  git commit -m "test: preparing to copy onto an existing package"
-  uvx copier copy \
-    $template_dir $test_dir \
-    --vcs-ref=$commit \
-    --defaults \
-    --trust \
-    --overwrite \
-    --data workshop_type="{{type}}" \
-    --data github_user="first-last" \
-    --data author_given_name="First" \
-    --data author_family_name="Last" \
-    --data github_board_number=22
+# Test that a workshop can be created from the template, with parameters for: `type` (r or general)
+test type="r":
+  sh ./test-template.sh {{ type }}
 
 # Build the website using Quarto
 build-website:
