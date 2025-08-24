@@ -1,24 +1,28 @@
 # Syllabus {#sec-syllabus}
 
-Objectives:
+TODO: Include description and overall introduction of workshop
 
--   Item 1
+This workshop lasts TODO: Time and is split into the following sessions,
+listed in the [schedule](/overview/schedule.qmd), which will be covered
+in order:
 
-## Is this workshop for you? {#sec-is-it-for-you}
+-   [Introduction to the workshop](/sessions/introduction.qmd)
+-   [TODO: Session title](/sessions/session.qmd)
+-   [Concluding remarks](/sessions/conclusion.qmd)
 
-To help manage expectations and develop the material for this workshop, we
-make a few assumptions about *who you are* as a participant in the
-workshop:
+## Learning outcome and objectives
 
--   Assumptions
+The overall aim of this workshop is to enable you to:
 
-While we have these assumptions to help focus the content of the workshop,
-if you have an interest in learning R but don't fit any of the above
-assumptions, *you are still welcome to attend the workshop*! We welcome
-everyone, that is until the workshop capacity is reached.
+1.
 
-In addition to the assumptions, we also have a fairly focused scope for
-teaching and expectations for learning. So this may also help you decide
-if this workshop is for you.
+Broken down into specific objectives for each session, we've designed
+the workshop to enable you to do the following:
 
--   List of what we will teach and won't teach
+[**TODO: Session title**](/sessions/session.qmd)
+
+{{< include /includes/objectives/_session.qmd >}}
+
+Tangibly, during the workshop you will:
+
+-   TODO: List concrete tasks and steps
