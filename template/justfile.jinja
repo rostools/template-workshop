@@ -6,7 +6,7 @@
 @_updates: update-from-template update-quarto-theme
 
 # Run all recipes
-{$ if workshop_type == 'r' -% }
+{%- if workshop_type == 'r' -%}
 run-all: install-dependencies _updates _checks style _builds
 {%- else %}
 run-all: _updates _checks _builds
