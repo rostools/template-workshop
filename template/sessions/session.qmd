@@ -31,3 +31,7 @@ TODO: Reading text
 ## Summary
 
 -   TODO: List of summary items
+
+## Survey
+
+{{< include includes/_survey.qmd >}}
