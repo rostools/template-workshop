@@ -31,10 +31,10 @@ book:
     - part: "Pre-workshop"
       chapters:
         - pre-workshop/overview.qmd
-        {%- if workshop_type == "r" -%}
+        {% if workshop_type == "r" -%}
         - pre-workshop/installing-programs-r.qmd
         - pre-workshop/installing-r-packages.qmd
-        {%- endif -%}
+        {%- endif %}
         - pre-workshop/code-of-conduct.qmd
         - pre-workshop/survey.qmd
     - part: "Sessions"
