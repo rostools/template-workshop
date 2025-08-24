@@ -20,3 +20,13 @@ workshop_level: ""
 surveys:
   pre-workshop: "TODO"
   feedback: "TODO"
+
+{% if workshop_type == "r" -%}
+# TODO: Update these versions
+# Use `samwise::get_allowed_r_versions()` and `samwise::get_allowed_rstudio_versions()`
+# to get a list of the allowed R and RStudio versions.
+versions:
+  r: ""
+  rstudio: ""
+{%- endif %}
+
