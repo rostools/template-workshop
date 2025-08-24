@@ -12,14 +12,9 @@ permissions: read-all
 jobs:
   test-copier:
     runs-on: ubuntu-latest
-    env:
-      TEMPLATE_NAME: template-workshop
     steps:
       - name: Checkout
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
-        with:
-          # Clone template to a subdirectory
-          path: ${{ env.TEMPLATE_NAME }}
 
       - name: Set up uv
         uses: astral-sh/setup-uv@e92bafb6253dcd438e0484186d7669ea7a8ca1cc
