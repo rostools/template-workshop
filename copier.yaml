@@ -72,9 +72,13 @@ author_family_name:
   help: "What is your last/family name?"
 
 github_board_number:
-  type: int
+  type: str
   help: "What is the GitHub project board number to add issues and PRs to?"
   default: 12
+  validator: |
+    {% if github_board_number and not github_board_number.isdigit() %}
+    The board number must be an integer.
+    {% endif %}
 
 # Default settings added ---------
 github_repo:
