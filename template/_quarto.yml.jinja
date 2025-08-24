@@ -24,13 +24,19 @@ book:
     - index.qmd
     - part: "Overview"
       chapters:
-        - preamble/syllabus.qmd
-        - preamble/schedule.qmd
-        - preamble/pre-workshop.qmd
+        - overview/syllabus.qmd
+        - overview/is-this-for-you.qmd
+        - overview/schedule.qmd
+        - overview/learning-design.qmd
     - part: "Pre-workshop"
       chapters:
-        - preamble/overview.qmd
-        - preamble/code-of-conduct.qmd
+        - pre-workshop/overview.qmd
+        {%- if workshop_type == "r" -%}
+        - pre-workshop/installing-programs-r.qmd
+        - pre-workshop/installing-r-packages.qmd
+        {%- endif -%}
+        - pre-workshop/code-of-conduct.qmd
+        - pre-workshop/survey.qmd
     - part: "Sessions"
       chapters:
         - sessions/introduction.qmd
@@ -39,13 +45,14 @@ book:
   appendices:
     - appendix/for-teachers.qmd
     - appendix/references.qmd
+    - CONTRIBUTING.md
     - LICENSE.md
   page-footer:
     center:
       - text: "License: CC BY 4.0 {{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}}"
-        href: LICENSE.html
+        href: LICENSE.md
       - text: "Code of Conduct"
-        href: "https://guides.rostools.org/conduct.html"
+        href: "pre-workshop/code-of-conduct.qmd"
 
 format:
   rostools-theme-html: default
