@@ -61,8 +61,7 @@ test type:
     --defaults \
     --trust \
     --data workshop_type="{{type}}" \
-    --data workshop_abbrev=$test_name \
-    --data workshop_github_repo="first-last/${test_name}" \
+    --data github_user="first-last" \
     --data author_given_name="First" \
     --data author_family_name="Last" \
     --data author_email="first.last@example.com" \
@@ -85,7 +84,7 @@ test type:
     --trust
   # Check that copying onto an existing data package works
   echo "Using the template in an existing package command -----------"
-  rm .cz.toml .copier-answers.yml LICENSE-MIT.md
+  rm .cz.toml .copier-answers.yml LICENSE.md
   git add .
   git commit -m "test: preparing to copy onto an existing package"
   uvx copier copy \
@@ -94,12 +93,11 @@ test type:
     --defaults \
     --trust \
     --overwrite \
-    --data package_abbrev=$test_name \
-    --data package_github_repo="first-last/${test_name}" \
+    --data workshop_type="{{type}}" \
+    --data github_user="first-last" \
     --data author_given_name="First" \
     --data author_family_name="Last" \
     --data author_email="first.last@example.com" \
-    --data review_team="@first-last/developers" \
     --data github_board_number=22
 
 # Build the website using Quarto
