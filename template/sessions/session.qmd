@@ -1,9 +1,5 @@
 # TODO: Lesson title here
 
-```{r setup}
-#| include: false
-```
-
 <!-- TODO: Add an introduction here -->
 
 ## Learning objectives
