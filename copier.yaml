@@ -51,12 +51,13 @@ _message_after_copy: |
     just list-todos
     ```
 
+# Questions ---------
 workshop_type:
   type: str
   help: "What type of workshop is this?"
   choices:
-    - R
-    - General
+    - r
+    - general
 
 workshop_github:
   type: str
