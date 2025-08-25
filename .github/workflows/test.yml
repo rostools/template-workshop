@@ -38,4 +38,3 @@ jobs:
         # TODO: Add other pre/post setup steps here.
         run: |
           just _tests
-
