@@ -62,4 +62,3 @@ build-readme:
 # Clean up any leftover and temporary build files
 cleanup:
   rm -rf _temp
-

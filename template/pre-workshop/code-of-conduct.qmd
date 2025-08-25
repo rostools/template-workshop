@@ -95,4 +95,3 @@ Carpentry](https://docs.carpentries.org/topic_folders/policies/code-of-conduct.h
 and
 [UofTCoders](https://github.com/UofTCoders/studyGroup/blob/gh-pages/codeOfConduct.md).
 :::
-
