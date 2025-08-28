@@ -1,7 +1,5 @@
 project:
   type: book
-  pre-render:
-    - sh ./tools/get-contributors.sh rostools/template-workshop
   render:
     - "!template/"
     - "*.qmd"

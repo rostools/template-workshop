@@ -3,7 +3,7 @@
 
 @_checks: check-spelling check-commits
 @_tests: (test "general") (test "r")
-@_builds: build-website build-readme
+@_builds: build-contributors build-readme build-website
 @_updates: update-quarto-theme update-template
 
 # Run all build-related recipes in the justfile
@@ -58,6 +58,10 @@ build-website:
 # Re-build the README file from the Quarto version
 build-readme:
   uvx --from quarto quarto render README.qmd --to gfm
+
+# Generate a Quarto include file with the contributors
+build-contributors:
+  sh ./tools/get-contributors.sh rostools/template-website
 
 # Clean up any leftover and temporary build files
 cleanup:
