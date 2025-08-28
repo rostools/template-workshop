@@ -51,6 +51,12 @@ check-spelling:
 test type="r":
   sh ./test-template.sh {{ type }}
 
+# Test the template through the manual, question-based approach
+test-manual:
+  mkdir -p _temp/manual/
+  rm -rf _temp/manual/test-template
+  uvx copier copy --trust -r HEAD . _temp/manual/test-template
+
 # Build the website using Quarto
 build-website:
   uvx --from quarto quarto render
