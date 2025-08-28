@@ -2,7 +2,7 @@
   just --list --unsorted
 
 @_checks: check-spelling check-commits
-@_builds: build-readme build-website
+@_builds: build-contributors build-readme build-website
 @_updates: update-from-template update-quarto-theme
 
 # Run all recipes
@@ -61,6 +61,10 @@ build-website:
 # Re-build the README file from the Quarto version
 build-readme:
   uvx --from quarto quarto render README.qmd --to gfm
+
+# Generate a Quarto include file with the contributors
+build-contributors:
+  sh ./tools/get-contributors.sh rostools/template-website
 
 {% if workshop_type == "r" -%}
 # Style all R code
