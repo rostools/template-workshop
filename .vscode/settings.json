@@ -19,6 +19,7 @@
     "test",
     "chore",
     "perf",
+    "revert"
   ],
   "conventional-branch.format": "{Type}/{Branch}",
   "files.insertFinalNewline": true,
@@ -29,7 +30,9 @@
     "editor.formatOnSave": true
   },
   "files.associations": {
+    "justfile.jinja": "plaintext",
     "*.yml.jinja": "jinja-yaml",
-    "*.cff.jinja": "jinja-yaml"
+    "*.cff.jinja": "jinja-yaml",
+    "*.qmd.jinja": "jinja-md"
   },
 }
