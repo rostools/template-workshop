@@ -93,8 +93,7 @@ this project, you agree to abide by its terms.
 
 ## Licensing
 
-This project is licensed under the [CC-BY-4.0
-License](https://github.com/{{< meta gh.org >}}/{{< meta gh.repo >}}/blob/main/LICENSE.md).
+This project is licensed under the [CC-BY-4.0 License](LICENSE.md).
 
 ## Re-use
 
