@@ -15,7 +15,7 @@ book:
   chapters:
     - index.qmd
     - docs/guide.qmd
-    - docs/releases.qmd
+    - CHANGELOG.md
     - CONTRIBUTING.md
   tools:
     - icon: github
