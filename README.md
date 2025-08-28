@@ -2,8 +2,7 @@
 
 # Template Workshop: An opinionated setup for making workshops as open educational resources
 
-<!-- TODO: DOI here -->
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16979956.svg)](https://doi.org/10.5281/zenodo.16979956)
 [![Copier](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-grayscale-inverted-border-teal.json?raw=true.svg)](https://github.com/copier-org/copier)
 [![GitHub
 License](https://img.shields.io/github/license/rostools/template-workshop.svg)](https://github.com/rostools/template-workshop/blob/main/LICENSE.md)
@@ -55,14 +54,17 @@ and runs workshops (also as open educational resources) that are related
 in some way to doing reproducible and open science. If you use this
 project in your work, please cite it as follows:
 
-Johnston L.W., Brødbæk S.K. Template Workshop: An opinionated setup for
-making workshops as open educational resources URL:
-https://template-workshop.rostools.org
+Johnston L.W., Brødbæk S.K. (2025). Template Workshop: An opinionated
+setup for making workshops as open educational resources DOI:
+10.5281/zenodo.16979956 URL: https://template-workshop.rostools.org
 
 Or as a BibTeX entry:
 
     @misc{YourReferenceHere,
     author = {Johnston, Luke William and Brødbæk, Signe Kirk},
+    doi = {10.5281/zenodo.16979956},
+    month = {8},
     title = {Template Workshop: An opinionated setup for making workshops as open educational resources},
-    url = {https://template-workshop.rostools.org}
+    url = {https://template-workshop.rostools.org},
+    year = {2025}
     }
