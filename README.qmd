@@ -28,19 +28,16 @@ page.
 
 ## Contributing
 
-Check out our [contributing
-page](https://{{< meta gh.repo >}}.{{< meta gh.org >}}.org/contributing/)
+Check out our [contributing document](CONTRIBUTING.md)
 for information on how to contribute to the project, including how to
 set up your development environment.
 
-Please note that this project is released with a [Contributor Code of
-Conduct](https://github.com/{{< meta gh.org >}}/{{< meta gh.repo >}}/blob/main/CODE_OF_CONDUCT.md).
+Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md).
 By participating in this project you agree to abide by its terms.
 
 ## Licensing
 
-This project is licensed under the [MIT
-License](https://github.com/{{< meta gh.org >}}/{{< meta gh.repo >}}/blob/main/LICENSE.md).
+This project is licensed under the [MIT License](LICENSE.md).
 
 ## Citing
 
