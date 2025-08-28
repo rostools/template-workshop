@@ -4,7 +4,7 @@
 
 <!-- TODO: DOI here -->
 
-[![Copier](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-grayscale-inverted-border-teal.json?raw=true)](https://github.com/copier-org/copier)
+[![Copier](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-grayscale-inverted-border-teal.json?raw=true.svg)](https://github.com/copier-org/copier)
 [![GitHub
 License](https://img.shields.io/github/license/rostools/template-workshop.svg)](https://github.com/rostools/template-workshop/blob/main/LICENSE.md)
 [![GitHub
@@ -36,19 +36,17 @@ the template. For a list of changes, see our
 
 ## Contributing
 
-Check out our [contributing
-page](https://template-workshop.rostools.org/contributing/) for
-information on how to contribute to the project, including how to set up
-your development environment.
+Check out our [contributing document](CONTRIBUTING.md) for information
+on how to contribute to the project, including how to set up your
+development environment.
 
 Please note that this project is released with a [Contributor Code of
-Conduct](https://github.com/rostools/template-workshop/blob/main/CODE_OF_CONDUCT.md).
-By participating in this project you agree to abide by its terms.
+Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree
+to abide by its terms.
 
 ## Licensing
 
-This project is licensed under the [MIT
-License](https://github.com/rostools/template-workshop/blob/main/LICENSE.md).
+This project is licensed under the [MIT License](LICENSE.md).
 
 ## Citing
 
