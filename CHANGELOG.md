@@ -10,6 +10,25 @@ a day. It also means any individual release will not have many changes
 within it. Below is a list of releases along with what was changed
 within it.
 
+## 0.3.0 (2025-08-28)
+
+### Feat
+
+- :wrench: include changelog in website, plus add more text in it
+
+### Fix
+
+- :hammer: point contributor script to generated template repo
+- :bug: need to store `github_repo` in answers file
+
+### Refactor
+
+- :recycle: add TODO item in slides
+- :pencil2: use shorter link to LICENSE in README
+- :hammer: build contributor list in justfile, not Quarto config
+- :lipstick: use `svg` for copier badge
+- :fire: keep assignee empty in Dependabot PRs
+
 ## 0.2.0 (2025-08-24)
 
 ### Feat
