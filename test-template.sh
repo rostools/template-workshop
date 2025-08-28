@@ -17,18 +17,15 @@ fi
 test_name="test-workshop"
 test_dir="$(pwd)/_temp/$type/$test_name"
 template_dir="$(pwd)"
-# Use the latest commit for the template
-commit=$(git rev-parse HEAD)
 
 # Needs three arguments:
 #
 # 1. Template directory
 # 2. Destination directory
-# 3. VCS ref (commit, branch, tag, etc.)
 copy () {
-  # vcs-ref means the current commit/head, not a tag.
+  # vcs-ref means the current commit/head. This includes uncommitted changes.
   uvx copier copy $1 $2 \
-    --vcs-ref=$3 \
+    -r HEAD \
     --defaults \
     --data workshop_type="$type" \
     --data github_user="first-last" \
@@ -51,7 +48,7 @@ mkdir -p $test_dir
 echo "Testing copy for new projects when: 'type'='$type' -----------"
 (
   cd $test_dir &&
-    copy $template_dir $test_dir $commit &&
+    copy $template_dir $test_dir &&
     git init -b main &&
     git add . &&
     git commit --quiet -m "test: initial copy" &&
@@ -61,7 +58,7 @@ echo "Testing copy for new projects when: 'type'='$type' -----------"
     git add . &&
     git commit --quiet -m "test: preparing to recopy from the template" &&
     uvx copier recopy \
-      --vcs-ref=$commit \
+      -r HEAD \
       --defaults \
       --overwrite \
       --skip-tasks \
@@ -71,5 +68,5 @@ echo "Testing copy for new projects when: 'type'='$type' -----------"
     rm .cz.toml .copier-answers.yml &&
     git add . &&
     git commit --quiet -m "test: preparing to copy onto an existing website" &&
-    copy $template_dir $test_dir $commit
+    copy $template_dir $test_dir
 )
