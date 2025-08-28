@@ -75,7 +75,7 @@ github_board_number:
   type: str
   help: "What is the GitHub project board number to add issues and PRs to?"
   default: 12
-  validator: |
+  validator: >-
     {% if github_board_number and not github_board_number.isdigit() %}
     The board number must be an integer.
     {% endif %}
