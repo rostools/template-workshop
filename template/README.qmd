@@ -15,9 +15,11 @@ for the workshop, including the website source files and other
 associated workshop administration files. For more detail on the workshop, check
 out the [welcome page]({{< meta urls.home >}}).
 
+::: callout-tip
 This workshop repository was generated from the
 [`template-workshop`](https://github.com/rostools/template-workshop)
 rostools template.
+:::
 
 ## Instructional Design
 
