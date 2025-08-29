@@ -10,6 +10,12 @@ a day. It also means any individual release will not have many changes
 within it. Below is a list of releases along with what was changed
 within it.
 
+## 0.3.2 (2025-08-29)
+
+### Refactor
+
+- :lipstick: wrap text in README in a callout block for separation
+
 ## 0.3.1 (2025-08-28)
 
 ### Fix
