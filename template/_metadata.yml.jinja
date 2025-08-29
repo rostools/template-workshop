@@ -10,7 +10,7 @@ titles:
 urls:
   home: "{{ workshop_url }}"
 
-{% if workshop_type == 'r' -%}
+{%- if workshop_type == 'r' %}
 # TODO: Needs to set to either "introduction", "intermediate", or "advanced"
 workshop_level: ""
 {%- endif %}
@@ -20,7 +20,7 @@ surveys:
   pre-workshop: "TODO"
   feedback: "TODO"
 
-{% if workshop_type == "r" -%}
+{%- if workshop_type == "r" %}
 # TODO: Update these versions
 # Use `samwise::get_allowed_r_versions()` and `samwise::get_allowed_rstudio_versions()`
 # to get a list of the allowed R and RStudio versions.
