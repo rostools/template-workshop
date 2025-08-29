@@ -10,6 +10,18 @@ a day. It also means any individual release will not have many changes
 within it. Below is a list of releases along with what was changed
 within it.
 
+## 0.3.1 (2025-08-28)
+
+### Fix
+
+- :pencil2: forgot to include commas in `.zenodo.json` fields
+- :pencil2: should be `>-` for validating
+- :pencil2: should be `knitr` in the `Rproj` file, not `Sweave`
+
+### Refactor
+
+- :fire: abbrev `meta` isn't used anywhere
+
 ## 0.3.0 (2025-08-28)
 
 ### Feat
