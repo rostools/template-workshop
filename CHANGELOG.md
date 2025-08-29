@@ -10,6 +10,17 @@ a day. It also means any individual release will not have many changes
 within it. Below is a list of releases along with what was changed
 within it.
 
+## 0.4.0 (2025-08-29)
+
+### Feat
+
+- :sparkles: add GoatCounter HTML script
+
+### Refactor
+
+- :lipstick: strip empty Jinja lines
+- :truck: `Rproj` file should only be added for R workshops
+
 ## 0.3.2 (2025-08-29)
 
 ### Refactor
