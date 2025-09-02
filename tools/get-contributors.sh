@@ -15,4 +15,4 @@ gh api \
   --template '{{range .}} [\@{{.login}}]({{.html_url}}){{"\n"}}{{end}}' | \
   grep -v "\[bot\]" | \
   tr '\n' ', ' | \
-  sed -e 's/,$//' >> _contributors.qmd
+  sed -e 's/,$/\n/' >> _contributors.qmd
