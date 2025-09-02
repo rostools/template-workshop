@@ -20,7 +20,8 @@ install-precommit:
 
 # Update the Quarto rostools-theme extension
 update-quarto-theme:
-  quarto add rostools/rostools-theme --no-prompt
+  # Will also add if it isn't already installed.
+  quarto update rostools/rostools-theme --no-prompt
 
 # Update files in the template from the copier parent folder
 update-template:
