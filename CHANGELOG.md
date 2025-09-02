@@ -10,6 +10,12 @@ a day. It also means any individual release will not have many changes
 within it. Below is a list of releases along with what was changed
 within it.
 
+## 0.4.4 (2025-09-02)
+
+### Fix
+
+- :pencil2: this badge is default `svg`, don't end with it
+
 ## 0.4.3 (2025-09-02)
 
 ### Refactor
