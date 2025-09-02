@@ -10,6 +10,19 @@ a day. It also means any individual release will not have many changes
 within it. Below is a list of releases along with what was changed
 within it.
 
+## 0.4.1 (2025-08-29)
+
+### Fix
+
+- :pencil2: should say "teach", not "instruct"
+- :fire: removed left over note in `justfile`
+- :pencil2: CONTRIBUTING in template shouldn't refer to "template"
+
+### Refactor
+
+- :lipstick: use less emojis and a specific star in `star-us` includes
+- :recycle: mention that some files are for development too
+
 ## 0.4.0 (2025-08-29)
 
 ### Feat
