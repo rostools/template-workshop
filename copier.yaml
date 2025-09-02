@@ -93,5 +93,5 @@ github_repo_spec:
 
 workshop_url:
   type: str
-  default: "https://{{ github_repo }}.{{ github_user }}.org/"
+  default: "https://{{ github_repo }}.{{ github_user }}.org"
   when: false
