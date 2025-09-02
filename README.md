@@ -5,7 +5,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16979956.svg)](https://doi.org/10.5281/zenodo.16979956)
 [![Copier](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-grayscale-inverted-border-teal.json?raw=true.svg)](https://github.com/copier-org/copier)
 [![GitHub
-License](https://img.shields.io/github/license/rostools/template-workshop.svg)](https://github.com/rostools/template-workshop/blob/main/LICENSE.md)
+License](https://img.shields.io/github/license/rostools/template-workshop)](https://github.com/rostools/template-workshop/blob/main/LICENSE.md)
 [![GitHub
 Release](https://img.shields.io/github/v/release/rostools/template-workshop.svg)](https://github.com/rostools/template-workshop/releases/latest)
 [![Test](https://github.com/rostools/template-workshop/actions/workflows/test.yml/badge.svg)](https://github.com/rostools/template-workshop/actions/workflows/test.yml)
