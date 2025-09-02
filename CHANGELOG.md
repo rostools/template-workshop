@@ -14,7 +14,7 @@ within it.
 
 ### Fix
 
-- :pencil2: no spaces aroun em-dashes
+- :pencil2: no spaces around em-dashes
 
 ### Refactor
 
