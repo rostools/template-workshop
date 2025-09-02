@@ -10,6 +10,14 @@ a day. It also means any individual release will not have many changes
 within it. Below is a list of releases along with what was changed
 within it.
 
+## 0.4.3 (2025-09-02)
+
+### Refactor
+
+- :wrench: include `revert` as a branch tag
+- :hammer: ignore irrelevant dirs when listing TODOs
+- :pencil2: remove trailing `/` from URL
+
 ## 0.4.2 (2025-09-02)
 
 ### Fix
