@@ -10,6 +10,20 @@ a day. It also means any individual release will not have many changes
 within it. Below is a list of releases along with what was changed
 within it.
 
+## 0.4.2 (2025-09-02)
+
+### Fix
+
+- :pencil2: no spaces aroun em-dashes
+
+### Refactor
+
+- :memo: simplify some text of the README
+- :recycle: replace ending of `_contributors.yml` with newline for pre-commit styling
+- :hammer: exclude justfile when listing TODOs
+- :hammer: use `quarto update` to match recipe name
+- :arrow_up: update pre-commit hook versions
+
 ## 0.4.1 (2025-08-29)
 
 ### Fix
