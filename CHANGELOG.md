@@ -10,6 +10,12 @@ a day. It also means any individual release will not have many changes
 within it. Below is a list of releases along with what was changed
 within it.
 
+## 0.4.11 (2025-09-03)
+
+### Fix
+
+- :bug: `dst_path` isn't good to use when running updates
+
 ## 0.4.10 (2025-09-03)
 
 ### Refactor
