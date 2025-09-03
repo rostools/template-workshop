@@ -63,6 +63,11 @@ github_user:
   type: str
   help: "What is the name of the GitHub user or organization where the website repository will be or is stored?"
 
+github_repo:
+  type: str
+  help: "What is the name of the GitHub repository where the website will be hosted? We strongly encourage using the default below."
+  default: "{{ _folder_name }}"
+
 author_given_name:
   type: str
   help: "What is your first/given name?"
@@ -81,11 +86,6 @@ github_board_number:
     {% endif %}
 
 # Default settings added ---------
-github_repo:
-  type: str
-  default: "{{ github_repo | default(_folder_name) }}"
-  when: false
-
 github_repo_spec:
   type: str
   default: "{{ github_user }}/{{ github_repo }}"
