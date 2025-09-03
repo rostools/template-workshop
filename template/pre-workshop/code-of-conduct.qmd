@@ -17,7 +17,7 @@ communication will be treated as confidential.
 
 The code of conduct applies to all spaces associated with this workshop
 including, but not limited to, group work, emails, and any online forums
-such as GitHub and Twitter. By participating, learners indicate their
+like GitHub. By participating, learners indicate their
 acceptance of the procedures by which the teachers and organizers
 resolves any code of conduct incidents.
 
