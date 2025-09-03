@@ -43,6 +43,14 @@ Please note that this project is released with a [Contributor Code of
 Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree
 to abide by its terms.
 
+### Contributors
+
+These are the people who have contributed by submitting changes through
+pull requests :tada:
+
+[@lwjohnst86](https://github.com/lwjohnst86),
+[@signekb](https://github.com/signekb)
+
 ## Licensing
 
 This project is licensed under the [MIT License](LICENSE.md).
