@@ -10,6 +10,16 @@ a day. It also means any individual release will not have many changes
 within it. Below is a list of releases along with what was changed
 within it.
 
+## 0.4.8 (2025-09-03)
+
+### Fix
+
+- :bug: correctly strip empty jinja lines
+
+### Refactor
+
+- :pencil2: should be `isIdenticalTo` and `lesson` in `.zenodo.json`
+
 ## 0.4.7 (2025-09-03)
 
 ### Refactor
