@@ -8,7 +8,7 @@
 # Run all recipes
 {%- if workshop_type == 'r' %}
 run-all: install-dependencies _checks style _builds
-{%- else -%}
+{%- else %}
 run-all: _checks _builds
 {%- endif %}
 
