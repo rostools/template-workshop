@@ -83,7 +83,7 @@ github_board_number:
 # Default settings added ---------
 github_repo:
   type: str
-  default: "{{ github_repo | default(_copier_conf.dst_path | realpath | basename) }}"
+  default: "{{ github_repo | default(_folder_name) }}"
   when: false
 
 github_repo_spec:
