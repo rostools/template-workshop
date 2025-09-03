@@ -68,7 +68,7 @@ build-readme:
 
 # Generate a Quarto include file with the contributors
 build-contributors:
-  sh ./tools/get-contributors.sh rostools/template-workshop
+  sh ./tools/get-contributors.sh rostools/template-workshop > docs/includes/_contributors.qmd
 
 # Clean up any leftover and temporary build files
 cleanup:
