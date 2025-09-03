@@ -62,6 +62,6 @@ repository](https://github.com/{{< meta gh.org >}}/{{< meta gh.repo >}})
 or our [contributing guide](/CONTRIBUTING.md) to share your ideas or
 contribute code. Your input makes us better!
 
-## Contributors
+### Contributors
 
 {{< include /docs/includes/_contributors.qmd >}}
