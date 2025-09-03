@@ -10,6 +10,12 @@ a day. It also means any individual release will not have many changes
 within it. Below is a list of releases along with what was changed
 within it.
 
+## 0.4.12 (2025-09-03)
+
+### Refactor
+
+- :recycle: minor text edits to pre-workshop code of conduct (#26)
+
 ## 0.4.11 (2025-09-03)
 
 ### Fix
