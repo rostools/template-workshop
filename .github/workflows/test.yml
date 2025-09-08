@@ -35,6 +35,5 @@ jobs:
           git config --global user.email "github-actions@example.com"
 
       - name: Test the template
-        # TODO: Add other pre/post setup steps here.
         run: |
           just _tests
