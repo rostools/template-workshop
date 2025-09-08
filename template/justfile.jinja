@@ -29,7 +29,7 @@ install-precommit:
   # Update versions of pre-commit hooks
   uvx pre-commit autoupdate
 
-{%- if workshop_type == "r" %}
+{% if workshop_type == "r" -%}
 # Install package dependencies
 install-dependencies:
   #!/usr/bin/Rscript
