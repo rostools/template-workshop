@@ -10,6 +10,18 @@ a day. It also means any individual release will not have many changes
 within it. Below is a list of releases along with what was changed
 within it.
 
+## 0.4.14 (2025-09-08)
+
+### Fix
+
+- :pencil2: can use `svg` in License badge
+- :wrench: need to include `theme: brand` in `_quarto.yml`
+- :pencil2: remove duplicate sentence in pre-workshop overview
+
+### Refactor
+
+- :art: strip empty Jinja lines correctly
+
 ## 0.4.13 (2025-09-03)
 
 ### Fix
