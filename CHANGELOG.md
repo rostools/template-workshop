@@ -10,6 +10,12 @@ a day. It also means any individual release will not have many changes
 within it. Below is a list of releases along with what was changed
 within it.
 
+## 0.4.15 (2025-09-17)
+
+### Refactor
+
+- :memo: explain how releases work in CHANGELOG (#27)
+
 ## 0.4.14 (2025-09-08)
 
 ### Fix
