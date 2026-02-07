@@ -4,30 +4,31 @@ title: "Guide"
 
 ## Using
 
-This template uses [Copier](https://copier.readthedocs.io/) to create a folder
-with relevant files for a rostools-structured workshop. We use
-[uv](https://docs.astral.sh/uv) to run the commands, so you'll need to install
-that first. After that, creating a new workshop project folder can be done with:
+This template uses [Copier](https://copier.readthedocs.io/) to create a
+folder with relevant files for a rostools-structured workshop. We use
+[uv](https://docs.astral.sh/uv) to run the commands, so you'll need to
+install that first. After that, creating a new workshop project folder
+can be done with:
 
-```bash
+``` bash
 uvx copier copy gh:{{< meta gh.org >}}/{{< meta gh.repo >}} WORKSHOP-NAME
 ```
 
-Where `WORKSHOP-NAME` is the name of the folder you want to create. This will
-copy the template files into that folder, and you can then edit them as needed.
-When you use it, it will ask you a series of questions to correctly set up the
-workshop folder.
+Where `WORKSHOP-NAME` is the name of the folder you want to create. This
+will copy the template files into that folder, and you can then edit
+them as needed. When you use it, it will ask you a series of questions
+to correctly set up the workshop folder.
 
 This guide provides an overview of how to use this template for creating
-a new workshop repository. It includes instructions for using the template and
-post-creation tasks.
+a new workshop repository. It includes instructions for using the
+template and post-creation tasks.
 
 ## Installing
 
 In order to use this template, you need to install a few programs:
 
--   [Python](https://www.python.org/): Required by the template tool itself
-    (copier).
+-   [Python](https://www.python.org/): Required by the template tool
+    itself (copier).
 -   [Git](https://git-scm.com/): For version control and setting up Git
     to track the newly created data package.
 -   [copier](https://copier.readthedocs.io/en/stable/#quick-start): The
@@ -50,11 +51,12 @@ pipx install copier uv rust-just
 
 ## Creating a new workshop repository
 
-You can use this template to create a new workshop repository with a standard
-set of files and folders, as well as all the features and configurations
-to make it easier to build and develop your workshop more smoothly and
-effectively. First, open a Terminal and move into the directory where
-you want to create the new workshop repository. Then run the following command:
+You can use this template to create a new workshop repository with a
+standard set of files and folders, as well as all the features and
+configurations to make it easier to build and develop your workshop more
+smoothly and effectively. First, open a Terminal and move into the
+directory where you want to create the new workshop repository. Then run
+the following command:
 
 ``` bash
 # Copy into the current directory, which is the "."
@@ -73,42 +75,43 @@ option.
 
 ## Applying the template to an existing workshop repository
 
-If you want to use this template on an existing workshop repository, you can
-use the `copy` command of `copier` just like above to apply the template
-to the existing workshop repository. This will add all the template's files and
-configurations to the existing workshop repository.
+If you want to use this template on an existing workshop repository, you
+can use the `copy` command of `copier` just like above to apply the
+template to the existing workshop repository. This will add all the
+template's files and configurations to the existing workshop repository.
 
 ``` bash
 uvx copier copy --trust gh:{{< meta gh.org >}}/{{< meta gh.repo >}} .
 ```
 
 It will go through a series of prompts, as in the case of creating a new
-workshop repository, including asking if you want to overwrite existing files.
+workshop repository, including asking if you want to overwrite existing
+files.
 
 ::: callout-note
-To use the `copy` command, the workshop repository needs to be tracked by Git
-and in a clean state (no changes).
+To use the `copy` command, the workshop repository needs to be tracked
+by Git and in a clean state (no changes).
 :::
 
 ## Applying the latest template changes
 
-There are two ways to update an existing workshop repository with the latest
-changes from the template: `update` and `recopy`.
+There are two ways to update an existing workshop repository with the
+latest changes from the template: `update` and `recopy`.
 
 Use `update` to apply template updates to your project without
 overwriting local changes. `update` will compare the version of the
 template you used when you first copied the template with the current
 version of the template, and then apply the changes that are different.
 This also means it won't overwrite any changes you made to files in your
-current workshop repository, for example, if you deleted a file that was in the
-template, it won't be copied back.
+current workshop repository, for example, if you deleted a file that was
+in the template, it won't be copied back.
 
 Use `recopy` if you want to reapply the template from scratch, which
 will overwrite any changes you made to the files that were copied from
-the template. This is useful if you want to reset the workshop repository to
-the state of the template. For example, if you deleted a file but want
-it back from the template or are simply curious to see if there are any
-new changes that you might want to use.
+the template. This is useful if you want to reset the workshop
+repository to the state of the template. For example, if you deleted a
+file but want it back from the template or are simply curious to see if
+there are any new changes that you might want to use.
 
 In both cases, the commands are very similar and also use many of the
 same options as the `copy` command. If you want to use the same answers
@@ -122,16 +125,23 @@ uvx copier update --trust --defaults
 uvx copier recopy --trust --defaults
 ```
 
-As with the `copy` command, the workshop repository needs to be tracked by Git
-and must be in a clean state (no changes) for the `update` and `recopy`
-commands to work.
+As with the `copy` command, the workshop repository needs to be tracked
+by Git and must be in a clean state (no changes) for the `update` and
+`recopy` commands to work.
 
 ## Post-creation setup
 
-These steps are mainly for us in rostools to set up the
-repository with the settings we use, but you can follow them if you want
-to set up your workshop in a similar way. They are also included in
-a message after you've copied the template.
+::: callout-important
+These setup steps are for rostools workshops and are included here so
+that we don't forget what to do when making a workshop from this
+template. They don't really make sense for others to follow and are
+maybe a bit vague in how to do them. Try at your own risk! :zany:
+:::
+
+These steps are mainly for us in rostools to set up the repository with
+the settings we use, but you can follow them if you want to set up your
+workshop in a similar way. They are also included in a message after
+you've copied the template.
 
 After copying the template, while in the directory of the new workshop
 repository, run the following:
@@ -141,9 +151,9 @@ just install-precommit
 ```
 
 This sets up the pre-commit hooks to run standard checks on your
-repository whenever you commit files to the history.
-Next, install [`spaid`](https://github.com/seedcase-project/spaid) and
-use the following commands to run the next setup steps:
+repository whenever you commit files to the history. Next, install
+[`spaid`](https://github.com/seedcase-project/spaid) and use the
+following commands to run the next setup steps:
 
 ``` bash
 spaid_gh_create_repo_from_local -h
@@ -157,7 +167,8 @@ GitHub workflows require installing GitHub Apps, for greater security
 purposes and easier administration when managing multiple repositories.
 The [security
 section](https://guidebook.seedcase-project.org/operations/security#using-github-apps-to-generate-tokens)
-in the Seedcase Project's [Guidebook](https://guidebook.seedcase-project.org/) provides
+in the Seedcase Project's
+[Guidebook](https://guidebook.seedcase-project.org/) provides
 instructions on how to set up GitHub Apps, secrets, and variables.
 Ideally the secrets and variables should be set up in the organization
 settings. The specific workflows in this template that require this
@@ -173,7 +184,7 @@ additional setup are:
     GitHub App, along with the `ADD_TO_BOARD_TOKEN` secret and the
     `ADD_TO_BOARD_APP_ID` variable of the GitHub Apps' ID.
 
-Since the workshop websites are hosted on [Netlify](https://www.netlify.com/),
-you will also need to connect the GitHub repository to Netlify as well as adding
-a `NETLIFY_AUTH_TOKEN` secret to the GitHub repository (or ideally at the
-organization level).
+Since the workshop websites are hosted on
+[Netlify](https://www.netlify.com/), you will also need to connect the
+GitHub repository to Netlify as well as adding a `NETLIFY_AUTH_TOKEN`
+secret to the GitHub repository (or ideally at the organization level).
