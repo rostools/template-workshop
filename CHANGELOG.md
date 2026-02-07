@@ -21,6 +21,17 @@ If you attended a workshop or used the workshop material as some point
 in time, you can always refer to this changelog page to find out what
 has been changed since you last used it.
 
+## 0.5.0 (2026-02-07)
+
+### Feat
+
+- :sparkles: add lychee URL checking to justfile
+- :sparkles: exclude latex output files from typos
+
+### Refactor
+
+- :recycle: simplify code of conduct text
+
 ## 0.4.15 (2025-09-17)
 
 ### Refactor
