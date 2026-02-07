@@ -54,6 +54,8 @@ configurations in place, including for developing the workshop.
 -   Includes a [GoatCounter](https://www.goatcounter.com/) file for website visitor
     tracking, which is privacy-friendly and does not use cookies. That means
     it doesn't need a GDPR notice as no personal data is collected.
+-   Checks URLs with [Lychee](https://lychee.cli.rs) to ensure that URLs are not
+    broken.
 
 ## Want to contribute?
 
