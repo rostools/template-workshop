@@ -58,6 +58,13 @@ check-commits:
     echo "On 'main' or current branch doesn't have any commits."
   fi
 
+# Install lychee from https://lychee.cli.rs/guides/getting-started/
+# Check that URLs work
+check-urls:
+  lychee . \
+    --extensions md,qmd \
+    --exclude-path "_badges.qmd"
+
 # Build Quarto website
 build-website:
   quarto render

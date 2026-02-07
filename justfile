@@ -48,6 +48,13 @@ check-commits:
 check-spelling:
   uvx typos
 
+# Install lychee from https://lychee.cli.rs/guides/getting-started/
+# Check that URLs work
+check-urls:
+  lychee . \
+    --extensions md,qmd,jinja \
+    --exclude-path "_badges.qmd"
+
 # Test that a workshop can be created from the template, with parameters for: `type` (r or general)
 test type="r":
   sh ./test-template.sh {{ type }}
