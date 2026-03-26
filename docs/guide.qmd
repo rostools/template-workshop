@@ -65,7 +65,8 @@ uvx copier copy --trust gh:{{< meta gh.org >}}/{{< meta gh.repo >}} .
 
 ::: callout-caution
 This template runs some post-copy commands using your terminal. In order
-to run them, you need to use the `--trust` option. Review the
+to run them, you need to use the `--trust` option. The use of `--trust`
+means that there are post-copy commands that will run. Review the
 [`copier.yml`]({{< meta links.github >}}/blob/main/copier.yaml) file,
 under the `_tasks` key to see what commands will be run after copying
 the template, so you can know and trust what the commands are doing.
