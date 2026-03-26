@@ -39,7 +39,7 @@ The teaching material is found mainly in these locations:
 
 - `index.Rmd`: Contains the overview of the workshop.
 - `overview/` folder: Contains the files that give an overview to the
-  course, such as the syllabus and schedule.
+  workshop, such as the syllabus and schedule.
 - `pre-workshop/`: Contains the files needed before the workshop, like
   the pre-workshop tasks.
 - `sessions/`: Contains the files used during the workshop (e.g.
