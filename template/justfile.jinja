@@ -7,7 +7,7 @@
 
 # Run all recipes
 {%- if workshop_type == 'r' %}
-run-all: install-dependencies _checks style _builds
+run-all: install-dependencies _checks style format-md _builds
 {%- else %}
 run-all: _checks _builds
 {%- endif %}
@@ -64,6 +64,10 @@ check-urls:
   lychee . \
     --extensions md,qmd \
     --exclude-path "_badges.qmd"
+
+# Format Markdown files
+format-md:
+  uvx rumdl fmt --silent
 
 # Build Quarto website
 build-website:

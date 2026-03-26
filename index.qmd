@@ -1,4 +1,4 @@
-# Welcome!
+# Welcome
 
 {{< include /docs/includes/_badges.qmd >}}
 
@@ -24,7 +24,8 @@ configurations in place, including for developing the workshop.
     commit messages and automatically create the changelog.
 -   Automated Git tagging and GitHub releases with
     [commitizen](https://decisions.seedcase-project.org/why-semantic-release-with-commitizen/)
-    that are based on messages following [Conventional
+    that are based on messages following
+    [Conventional
     Commits](https://decisions.seedcase-project.org/why-conventional-commits).
 -   Uses a [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)
     license for the workshop content.
@@ -51,16 +52,18 @@ configurations in place, including for developing the workshop.
 -   [`.zenodo.json`](https://help.zenodo.org/docs/github/describe-software/zenodo-json/)
     file for citation information, that provides Zenodo with the
     necessary metadata to create a DOI for the workshop.
--   Includes a [GoatCounter](https://www.goatcounter.com/) file for website visitor
-    tracking, which is privacy-friendly and does not use cookies. That means
-    it doesn't need a GDPR notice as no personal data is collected.
--   Checks URLs with [Lychee](https://lychee.cli.rs) to ensure that URLs are not
-    broken.
+-   Includes a [GoatCounter](https://www.goatcounter.com/) file for
+    website visitor tracking, which is privacy-friendly and does not use
+    cookies. That means it doesn't need a GDPR notice as no personal
+    data is collected.
+-   Checks URLs with [Lychee](https://lychee.cli.rs) to ensure that URLs
+    are not broken.
+-   Uses [rumdl](https://rumdl.dev/) to format Markdown files in a consistent way.
 
 ## Want to contribute?
 
-We would love your feedback or contributions! Head over to our [GitHub
-repository](https://github.com/{{< meta gh.org >}}/{{< meta gh.repo >}})
+We would love your feedback or contributions! Head over to our
+[GitHub repository](https://github.com/{{< meta gh.org >}}/{{< meta gh.repo >}})
 or our [contributing guide](/CONTRIBUTING.md) to share your ideas or
 contribute code. Your input makes us better!
 

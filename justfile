@@ -7,7 +7,7 @@
 @_updates: update-quarto-theme update-template
 
 # Run all build-related recipes in the justfile
-run-all: _updates _checks _tests _builds
+run-all: _updates _checks format-md _tests _builds
 
 # Install and update the pre-commit hooks
 install-precommit:
@@ -25,7 +25,7 @@ update-quarto-theme:
 
 # Update files in the template from the copier parent folder
 update-template:
-  cp .pre-commit-config.yaml .gitignore .typos.toml .editorconfig CODE_OF_CONDUCT.md template/
+  cp .pre-commit-config.yaml .gitignore .typos.toml .editorconfig CODE_OF_CONDUCT.md .rumdl.toml template/
   mkdir -p template/tools
   cp tools/get-contributors.sh template/tools/
   cp .github/dependabot.yml .github/pull_request_template.md template/.github/
@@ -54,6 +54,10 @@ check-urls:
   lychee . \
     --extensions md,qmd,jinja \
     --exclude-path "_badges.qmd"
+
+# Format Markdown files
+format-md:
+  uvx rumdl fmt --silent
 
 # Test that a workshop can be created from the template, with parameters for: `type` (r or general)
 test type="r":
