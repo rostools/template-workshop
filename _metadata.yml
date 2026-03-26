@@ -1,3 +1,7 @@
 gh:
   org: "rostools"
   repo: "template-workshop"
+
+links:
+  github: "https://github.com/rostools/template-workshop"
+  home: "https://template-workshop.rostools.org"

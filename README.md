@@ -27,11 +27,11 @@ experience” and to have [continuous
 delivery/deployment](https://en.wikipedia.org/wiki/Continuous_delivery)
 of the workshop website and archival to Zenodo.
 
-Check out our [website](https://template-workshop.rostools.org/) for
-more information, such as the features it provides, a
-[guide](https://template-workshop.rostools.org/docs/guide/) for using
-the template. For a list of changes, see our
-[changelog](https://template-workshop.rostools.org/docs/releases/) page.
+Check out our [website](https://template-workshop.rostools.org) for more
+information, such as the features it provides, a
+[guide](https://template-workshop.rostools.org.org/docs/guide/) for
+using the template. For a list of changes, see our
+[changelog](CHANGELOG.md) page.
 
 ## Contributing
 

@@ -40,7 +40,7 @@ Text
 
 ## Summary
 
--   TODO: List of summary items
+- TODO: List of summary items
 
 ## Survey
 

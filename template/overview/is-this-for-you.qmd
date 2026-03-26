@@ -6,7 +6,7 @@ workshop.
 
 We assume you can relate to one or more of the following:
 
--   TODO: List assumptions
+- TODO: List assumptions
 
 While we have these assumptions to help focus the content of the
 workshop, if you have an interest in the workshop but don't fit any of
@@ -17,4 +17,4 @@ In addition to the assumptions above, the workshop also has a fairly
 focused scope, which may also help you decide if this workshop is for
 you:
 
--   TODO: List of concrete tasks we will do and not do.
+- TODO: List of concrete tasks we will do and not do.

@@ -27,18 +27,18 @@ template and post-creation tasks.
 
 In order to use this template, you need to install a few programs:
 
--   [Python](https://www.python.org/): Required by the template tool
-    itself (copier).
--   [Git](https://git-scm.com/): For version control and setting up Git
-    to track the newly created data package.
--   [copier](https://copier.readthedocs.io/en/stable/#quick-start): The
-    template tool for making new projects in a standardised and
-    structured way.
--   [uv](https://docs.astral.sh/uv/): A tool for managing Python
-    environments and running commands. Some post-copy steps of this
-    template use uv.
--   [just](https://just.systems/man/en/): A build management tool that
-    helps with running common build and check tasks.
+- [Python](https://www.python.org/): Required by the template tool
+  itself (copier).
+- [Git](https://git-scm.com/): For version control and setting up Git to
+  track the newly created data package.
+- [copier](https://copier.readthedocs.io/en/stable/#quick-start): The
+  template tool for making new projects in a standardised and structured
+  way.
+- [uv](https://docs.astral.sh/uv/): A tool for managing Python
+  environments and running commands. Some post-copy steps of this
+  template use uv.
+- [just](https://just.systems/man/en/): A build management tool that
+  helps with running common build and check tasks.
 
 You will need to install Python and Git yourself, but the other tools
 can be installed using
@@ -66,11 +66,10 @@ uvx copier copy --trust gh:{{< meta gh.org >}}/{{< meta gh.repo >}} .
 ::: callout-caution
 This template runs some post-copy commands using your terminal. In order
 to run them, you need to use the `--trust` option. Review the
-[`copier.yml`](https://github.com/{{< meta gh.org >}}/{{< meta gh.repo >}}/blob/main/copier.yaml)
-file, under the `_tasks` key to see what commands will be run after
-copying the template, so you can know and trust what the commands are
-doing. Unfortunately, this template can't be used without the `--trust`
-option.
+[`copier.yml`]({{< meta links.github >}}/blob/main/copier.yaml) file,
+under the `_tasks` key to see what commands will be run after copying
+the template, so you can know and trust what the commands are doing.
+Unfortunately, this template can't be used without the `--trust` option.
 :::
 
 ## Applying the template to an existing workshop repository
@@ -159,14 +158,15 @@ following commands to run the next setup steps:
 spaid_gh_create_repo_from_local -h
 spaid_gh_set_repo_settings -h
 spaid_gh_ruleset_basic_protect_main -h
+spaid_gh_ruleset_require_pr -h
 ```
 
 Some configuration is needed after copying this template to a new
 repository, including configuration external to the repository. Some
 GitHub workflows require installing GitHub Apps, for greater security
 purposes and easier administration when managing multiple repositories.
-The [security
-section](https://guidebook.seedcase-project.org/operations/security#using-github-apps-to-generate-tokens)
+The
+[security section](https://guidebook.seedcase-project.org/operations/security#using-github-apps-to-generate-tokens)
 in the Seedcase Project's
 [Guidebook](https://guidebook.seedcase-project.org/) provides
 instructions on how to set up GitHub Apps, secrets, and variables.
@@ -174,15 +174,15 @@ Ideally the secrets and variables should be set up in the organization
 settings. The specific workflows in this template that require this
 additional setup are:
 
--   The workflow `.github/workflows/release-project.yml` requires the
-    [auto-release-token](https://github.com/apps/auto-release-token)
-    GitHub App as well as a creating a GitHub secret called
-    `UPDATE_VERSION_TOKEN` and a variable called `UPDATE_VERSION_APP_ID`
-    that has the App ID.
--   The workflow `.github/workflows/add-to-project.yml` requires the
-    [add-to-board-token](https://github.com/apps/add-to-board-token)
-    GitHub App, along with the `ADD_TO_BOARD_TOKEN` secret and the
-    `ADD_TO_BOARD_APP_ID` variable of the GitHub Apps' ID.
+- The workflow `.github/workflows/release-project.yml` requires the
+  [auto-release-token](https://github.com/apps/auto-release-token)
+  GitHub App as well as a creating a GitHub secret called
+  `UPDATE_VERSION_TOKEN` and a variable called `UPDATE_VERSION_APP_ID`
+  that has the App ID.
+- The workflow `.github/workflows/add-to-project.yml` requires the
+  [add-to-board-token](https://github.com/apps/add-to-board-token)
+  GitHub App, along with the `ADD_TO_BOARD_TOKEN` secret and the
+  `ADD_TO_BOARD_APP_ID` variable of the GitHub Apps' ID.
 
 Since the workshop websites are hosted on
 [Netlify](https://www.netlify.com/), you will also need to connect the

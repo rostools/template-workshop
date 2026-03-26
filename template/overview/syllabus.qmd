@@ -6,9 +6,9 @@ This workshop lasts TODO: Time and is split into the following sessions,
 listed in the [schedule](/overview/schedule.qmd), which will be covered
 in order:
 
--   [Introduction to the workshop](/sessions/introduction.qmd)
--   [TODO: Session title](/sessions/session.qmd)
--   [Concluding remarks](/sessions/conclusion.qmd)
+- [Introduction to the workshop](/sessions/introduction.qmd)
+- [TODO: Session title](/sessions/session.qmd)
+- [Concluding remarks](/sessions/conclusion.qmd)
 
 ## Learning outcome and objectives
 
@@ -25,4 +25,4 @@ the workshop to enable you to do the following:
 
 Tangibly, during the workshop you will:
 
--   TODO: List concrete tasks and steps
+- TODO: List concrete tasks and steps
