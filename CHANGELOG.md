@@ -21,6 +21,25 @@ If you attended a workshop or used the workshop material as some point
 in time, you can always refer to this changelog page to find out what
 has been changed since you last used it.
 
+## 0.6.0 (2026-03-26)
+
+### Feat
+
+- :sparkles: add rumdl Markdown formatter
+
+### Fix
+
+- :pencil2: replace 'course' with 'workshop'
+- :pencil2: clarify that RTools needs to match R
+
+### Refactor
+
+- :memo: clarify that instructors are learning (in intro)
+- :see_no_evil: ignore auto-generated Quarto ipynb files
+- :recycle: revise contributor list tool to match Markdown formatter
+- :recycle: ensure URLs are checked in `just run-all`
+- :fire: don't need to explicitly use `theme` in `_quarto.yml`
+
 ## 0.5.0 (2026-02-07)
 
 ### Feat
