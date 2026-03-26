@@ -1,7 +1,7 @@
 @_default:
     just --list --unsorted
 
-@_checks: check-spelling check-commits
+@_checks: check-spelling check-urls check-commits
 @_tests: (test "general") (test "r")
 @_builds: build-contributors build-readme build-website
 @_updates: update-quarto-theme update-template
@@ -52,6 +52,7 @@ check-spelling:
 # Check that URLs work
 check-urls:
   lychee . \
+    --verbose \
     --extensions md,qmd,jinja \
     --exclude-path "_badges.qmd"
 
