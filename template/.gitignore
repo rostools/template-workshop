@@ -24,6 +24,7 @@ _temp/
 /.quarto/
 /docs/.quarto/
 **/*.quarto_ipynb
+.vdoc*.r
 
 # Website generation
 _site
