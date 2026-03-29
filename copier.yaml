@@ -12,7 +12,7 @@ _message_after_copy: |
   Your project "{{ github_repo }}" has been created successfully!
 
   Next steps, that are also listed in the
-  [guide](https://template-workshop.rostools.org/docs/guide/):
+  [guide](https://template-workshop.rostools.org/docs/guide):
 
   1. Change directory to the project root:
 
