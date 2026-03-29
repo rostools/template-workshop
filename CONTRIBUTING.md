@@ -21,12 +21,11 @@ justfile to manage our project, such as to run checks and test the
 template. Both the uv and justfile websites have a more detailed guide
 on using uv, but below are some simple instructions to get you started.
 
-It's easiest to install uv and justfile using
-[pipx](https://pypa.github.io/pipx/), so you should install that first.
-Then, to install uv and justfile, run:
+It's easiest to [install uv](https://docs.astral.sh/uv/) first and then
+install justfile using uv. Then, to install justfile, run:
 
 ``` bash
-pipx install uv rust-just
+uv tool install rust-just
 ```
 
 We keep all our development workflows in the `justfile`, so you can
