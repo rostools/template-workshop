@@ -1,13 +1,13 @@
 # Changelog
 
 Since we follow
-[Conventional Commits](https://decisions.seedcase-project.org/why-conventional-commits)
+[Conventional Commits](https://decisions.seedcase-project.org/why-conventional-commits/)
 we're able to automatically create formal "releases" of the workshop
 based on our commit messages. Releases in the context of workshops are
 simply snapshots in time of the workshop content. The releases are
 published to Zenodo for easier discovery, archival, and citation
 purposes. We use
-[Commitizen](https://decisions.seedcase-project.org/why-semantic-release-with-commitizen)
+[Commitizen](https://decisions.seedcase-project.org/why-semantic-release-with-commitizen/)
 to automatically create these releases using
 [SemVer](https://semverdoc.org) as the version numbering scheme.
 

@@ -4,11 +4,11 @@ title: "Guide"
 
 ## Using
 
-This template uses [Copier](https://copier.readthedocs.io/) to create a
-folder with relevant files for a rostools-structured workshop. We use
-[uv](https://docs.astral.sh/uv) to run the commands, so you'll need to
-install that first. After that, creating a new workshop project folder
-can be done with:
+This template uses [Copier](https://copier.readthedocs.io/en/stable/) to
+create a folder with relevant files for a rostools-structured workshop.
+We use [uv](https://docs.astral.sh/uv/) to run the commands, so you'll
+need to install that first. After that, creating a new workshop project
+folder can be done with:
 
 ``` bash
 uvx copier copy gh:{{< meta gh.org >}}/{{< meta gh.repo >}} WORKSHOP-NAME

@@ -50,10 +50,10 @@ test it, it won't be able to test those changes. You have to commit the
 changes first in order for copier to use them.
 
 When committing changes, please try to follow
-[Conventional Commits](https://decisions.seedcase-project.org/why-conventional-commits)
+[Conventional Commits](https://decisions.seedcase-project.org/why-conventional-commits/)
 as Git messages. Using this convention allows us to be able to
 automatically create a release based on the commit message by using
-[Commitizen](https://decisions.seedcase-project.org/why-semantic-release-with-commitizen).
+[Commitizen](https://decisions.seedcase-project.org/why-semantic-release-with-commitizen/).
 If you don't use Conventional Commits when making a commit, we will
 revise the pull request title to follow that format, as we use squash
 merges when merging pull requests, so all other commits in the pull

@@ -18,14 +18,14 @@ configurations in place, including for developing the workshop.
 - For R projects, uses [Air](https://posit-dev.github.io/air/) to format
   and check R code.
 - Uses
-  [Commitizen](https://decisions.seedcase-project.org/why-changelog-with-commitizen)
+  [Commitizen](https://decisions.seedcase-project.org/why-changelog-with-commitizen/)
   to
   [check](https://decisions.seedcase-project.org/why-lint-with-commitizen/)
   commit messages and automatically create the changelog.
 - Automated Git tagging and GitHub releases with
   [commitizen](https://decisions.seedcase-project.org/why-semantic-release-with-commitizen/)
   that are based on messages following
-  [Conventional Commits](https://decisions.seedcase-project.org/why-conventional-commits).
+  [Conventional Commits](https://decisions.seedcase-project.org/why-conventional-commits/).
 - Uses a [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)
   license for the workshop content.
 - Run checks with with [pre-commit](https://pre-commit.com/) hooks to

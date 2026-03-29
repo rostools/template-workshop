@@ -77,7 +77,7 @@ follows the file and folder structure conventions from that package.
 - `CONTRIBUTING.md`: Guidelines for contributing to the project.
 - `.github/`: Contains GitHub-specific files, such as issue and pull
   request templates, workflows,
-  [dependabot](https://docs.github.com/en/code-security/getting-started/dependabot-quickstart-guide)
+  [dependabot](https://docs.github.com/en/code-security/tutorials/secure-your-dependencies/dependabot-quickstart-guide)
   configuration, pull request templates, and a
   [CODEOWNERS](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners)
   file.
@@ -89,7 +89,7 @@ follows the file and folder structure conventions from that package.
 If you are interested in contributing to the workshop material, please
 refer to the [contributing guidelines](CONTRIBUTING.md). For guidelines
 on how to be a helper or teacher, check out the
-[For teachers](https://r-cubed.rostools.org/for-teachers.html) page.
+[For teachers](https://guides.rostools.org/instructors) page.
 
 Please note that the project is released with a
 [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to or

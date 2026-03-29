@@ -8,8 +8,10 @@ exclude = [
   ".github",
   # This is auto-generated from the qmd version
   "README.md",
+  "template/README.md",
   # This has it's own structure
   "LICENSE.md",
+  "template/LICENSE.md",
 ]
 
 # List style: `-`

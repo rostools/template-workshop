@@ -20,8 +20,8 @@ of the workshop website and archival to Zenodo.
 
 Check out our [website]({{< meta links.home >}}) for more information,
 such as the features it provides, a
-[guide]({{< meta links.home >}}.org/docs/guide/) for using the template.
-For a list of changes, see our [changelog](CHANGELOG.md) page.
+[guide]({{< meta links.home >}}/docs/guide) for using the template. For
+a list of changes, see our [changelog](CHANGELOG.md) page.
 
 ## Contributing
 
