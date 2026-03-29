@@ -1,3 +1,9 @@
+---
+format:
+  rostools-theme-html:
+    tbl-colwidths: [30, 70]
+---
+
 # Schedule {#sec-schedule}
 
 The workshop is structured as a series of participatory live-coding
