@@ -59,6 +59,9 @@ configurations in place, including for developing the workshop.
   are not broken.
 - Uses [rumdl](https://rumdl.dev/) to format Markdown files in a
   consistent way.
+- Includes
+  [Dependabot](https://docs.github.com/en/code-security/tutorials/secure-your-dependencies/dependabot-quickstart-guide)
+  configuration for automatically keeping dependencies up to date.
 
 ## Want to contribute?
 
