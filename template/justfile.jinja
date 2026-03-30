@@ -1,15 +1,16 @@
 @_default:
   just --list --unsorted
 
+@_formats: format-md {{ 'format-r' if workshop_type == 'r' }}
 @_checks: check-spelling check-urls check-commits
 @_builds: build-contributors build-readme build-website
 @_updates: update-from-template update-quarto-theme
 
 # Run all recipes
 {%- if workshop_type == 'r' %}
-run-all: install-dependencies _checks style format-md _builds
+run-all: install-dependencies _formats _checks _builds
 {%- else %}
-run-all: _checks _builds
+run-all: _formats _checks _builds
 {%- endif %}
 
 # List all TODOs in the repository.
@@ -66,6 +67,13 @@ check-urls:
     --extensions md,qmd \
     --exclude-path "_badges.qmd"
 
+{%- if workshop_type == "r" %}
+# Format all R code
+format-r:
+  # Need to install air first
+  air format .
+{%- endif %}
+
 # Format Markdown files
 format-md:
   uvx rumdl fmt --silent
@@ -81,13 +89,6 @@ build-readme:
 # Generate a Quarto include file with the contributors
 build-contributors:
   sh ./tools/get-contributors.sh {{ github_repo_spec }} > includes/_contributors.qmd
-
-{%- if workshop_type == "r" %}
-# Style all R code
-style:
-  # Need to install air first
-  air format .
-{%- endif %}
 
 # Check for and apply updates from the template
 update-from-template:
