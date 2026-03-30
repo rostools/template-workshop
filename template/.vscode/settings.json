@@ -31,6 +31,6 @@
     "editor.formatOnSave": true
   },
   "[quarto]": {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": false
   },
 }
