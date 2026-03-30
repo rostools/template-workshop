@@ -21,6 +21,34 @@ If you attended a workshop or used the workshop material as some point
 in time, you can always refer to this changelog page to find out what
 has been changed since you last used it.
 
+## 0.7.0 (2026-03-30)
+
+### Feat
+
+- :sparkles: add badges to landing page
+- :sparkles: standardize table widths of schedule
+- :see_no_evil: some `.vdoc.*` type files are created by Quarto, ignore them
+- :sparkles: include hidden contributor list sections in README and index
+
+### Fix
+
+- :pencil2: match `#sec-` with filename
+- :bug: don't format on save for `qmd`, creates `.vdoc` files everywhere
+- :art: resolve Markdown formatting issues
+- :pencil2: correct URL in `copier.yaml`
+- :pencil2: correct URLs from lychee check
+
+### Refactor
+
+- :hammer: rename `style` to `format-r` in justfile
+- :pencil2: use quotes around values in `_quarto.yml`
+- :recycle: include `@sec-` links to chapters along with a link
+- :technologist: simplify pull request template after Markdown formatter added
+- :wrench: indent by 2 in Markdown files in `.editorconfig`
+- :recycle: install uv directly, rather than first pipx
+- :arrow_up: update pre-commit hook versions
+- :arrow_up: update `rostools-theme` Quarto extension
+
 ## 0.6.0 (2026-03-26)
 
 ### Feat
