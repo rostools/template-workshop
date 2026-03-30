@@ -25,7 +25,7 @@ update-quarto-theme:
 
 # Update files in the template from the copier parent folder
 update-template:
-  cp .pre-commit-config.yaml .gitignore .typos.toml .editorconfig CODE_OF_CONDUCT.md .rumdl.toml template/
+  cp .pre-commit-config.yaml .gitignore .typos.toml .editorconfig CODE_OF_CONDUCT.md template/
   mkdir -p template/tools
   cp tools/get-contributors.sh template/tools/
   cp .github/dependabot.yml .github/pull_request_template.md template/.github/
