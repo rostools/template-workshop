@@ -27,8 +27,10 @@ has been changed since you last used it.
 
 - :sparkles: add badges to landing page
 - :sparkles: standardize table widths of schedule
-- :see_no_evil: some `.vdoc.*` type files are created by Quarto, ignore them
-- :sparkles: include hidden contributor list sections in README and index
+- :see_no_evil: some `.vdoc.*` type files are created by Quarto, ignore
+  them
+- :sparkles: include hidden contributor list sections in README and
+  index
 
 ### Fix
 
@@ -43,7 +45,8 @@ has been changed since you last used it.
 - :hammer: rename `style` to `format-r` in justfile
 - :pencil2: use quotes around values in `_quarto.yml`
 - :recycle: include `@sec-` links to chapters along with a link
-- :technologist: simplify pull request template after Markdown formatter added
+- :technologist: simplify pull request template after Markdown formatter
+  added
 - :wrench: indent by 2 in Markdown files in `.editorconfig`
 - :recycle: install uv directly, rather than first pipx
 - :arrow_up: update pre-commit hook versions
