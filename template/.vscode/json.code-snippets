@@ -66,5 +66,23 @@
       ":::",
     ],
     "description": "Insert teacher note that is a Quarto callout note block."
+  },
+  "Insert solution chunk": {
+    "scope": "quarto,markdown",
+    "prefix": "solution_chunk",
+    "body": [
+      "```{r solution-{0:chunk-name}",
+      "#| output: false",
+      "#| code-fold: true",
+      "#| code-summary: \"**Click for the solution**. Only click if you are struggling or are out of time.\"",
+      "${1:Text body}",
+      "",
+      "```",
+      "::: {.callout-note collapse=\"true\"}",
+      "## :teacher: Teacher note",
+      "",
+      ":::",
+    ],
+    "description": "Insert a code chunk for exercise solutions."
   }
 }
