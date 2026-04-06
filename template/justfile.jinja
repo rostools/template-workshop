@@ -7,9 +7,9 @@
 @_updates: update-from-template update-quarto-theme
 
 # Run all recipes
-{%- if workshop_type == 'r' %}
+{% if workshop_type == 'r' -%}
 run-all: install-dependencies _formats _checks _builds
-{%- else %}
+{%- else -%}
 run-all: _formats _checks _builds
 {%- endif %}
 
@@ -42,7 +42,7 @@ update-quarto-theme:
   # Will also add if it isn't already installed.
   quarto update rostools/rostools-theme --no-prompt
 
-# Check spelling
+# Check spelling with typos
 check-spelling:
   uvx typos
 
@@ -60,14 +60,14 @@ check-commits:
   fi
 
 # Install lychee from https://lychee.cli.rs/guides/getting-started/
-# Check that URLs work
+# Check that URLs work with lychee
 check-urls:
   lychee . \
     --verbose \
     --extensions md,qmd \
     --exclude-path "_badges.qmd"
 
-{%- if workshop_type == "r" %}
+{% if workshop_type == "r" -%}
 # Format all R code
 format-r:
   # Need to install air first
