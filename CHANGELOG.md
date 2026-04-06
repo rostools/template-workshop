@@ -21,6 +21,26 @@ If you attended a workshop or used the workshop material as some point
 in time, you can always refer to this changelog page to find out what
 has been changed since you last used it.
 
+## 0.8.0 (2026-04-06)
+
+### Feat
+
+- :sparkles: link to r-universe, don't need RTools/pak
+- :wrench: include "solution chunk" snippet into VS Code settings
+
+### Fix
+
+- :pencil2: forgot to include a `#sec-` tag in `for-teachers.qmd`
+- :pencil2: workflow job should be called `release-project`
+
+### Refactor
+
+- :recycle: simplify learning design and use headers rather than list
+- :fire: no longer need the `workshop_level` metadata item
+- :wrench: explicitly use Posit Air for R formatting in VS Code settings
+- small edits to justfile recipe docs
+- :arrow_up: update `rostools-theme` extension
+
 ## 0.7.0 (2026-03-30)
 
 ### Feat
