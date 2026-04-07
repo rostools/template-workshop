@@ -21,6 +21,13 @@ If you attended a workshop or used the workshop material as some point
 in time, you can always refer to this changelog page to find out what
 has been changed since you last used it.
 
+## 0.8.2 (2026-04-07)
+
+### Fix
+
+- :pencil2: small corrections to installing R packages doc
+- :bug: need to use two `##`, not three for panel-tabset
+
 ## 0.8.1 (2026-04-06)
 
 ### Fix
