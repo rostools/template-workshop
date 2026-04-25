@@ -1,5 +1,9 @@
 project:
+  {% if for_rostools -%}
   type: rostools-theme
+  {%- else -%}
+  type: book
+  {%- endif %}
   # TODO: Uncomment if you want to use slides.
   # pre-render:
     # - quarto render slides/*.qmd
@@ -45,7 +49,9 @@ book:
   appendices:
     - appendix/for-teachers.qmd
     - appendix/references.qmd
+    {% if for_rostools -%}
     - CHANGELOG.md
+    {% endif %}
     - CONTRIBUTING.md
     - LICENSE.md
   page-footer:
@@ -56,9 +62,13 @@ book:
         href: "pre-workshop/code-of-conduct.qmd"
 
 format:
+  {% if for_rostools -%}
   rostools-theme-html:
     include-before-body:
       - "includes/site-counter.html"
+  {%- else -%}
+  html
+  {% endif %}
 
 metadata-files:
   - _metadata.yml
