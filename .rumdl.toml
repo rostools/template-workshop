@@ -4,14 +4,11 @@ line_length = 72
 flavor = "quarto"
 exclude = [
   # Common directories to exclude
-  ".git",
   ".github",
   # This is auto-generated from the qmd version
-  "README.md",
-  "template/README.md",
+  "**/README.md",
   # This has it's own structure
-  "LICENSE.md",
-  "template/LICENSE.md",
+  "**/LICENSE.md",
 ]
 
 # List style: `-`
