@@ -1,57 +1,19 @@
-_subdirectory: template
-
-# Post-copy commands:
-_tasks:
-  # Only run these commands when copying the template
-  - command: "git init -b main"
-    when: "{{ _copier_operation == 'copy' }}"
+_subdirectory: "template"
 
 # Message to show after generating or regenerating the project successfully
 _message_after_copy: |
 
-  Your project "{{ github_repo }}" has been created successfully!
+  Your project "{{ github_repo }}" has been created successfully!  See the
+  [template's guide](https://template-workshop.rostools.org/docs/guide) as well
+  as the "TODO.md" file in the newly created project for more details on the
+  next steps.
 
-  Next steps, that are also listed in the
-  [guide](https://template-workshop.rostools.org/docs/guide):
+# Questions
+for_rostools:
+  type: bool
+  help: "Is this repository part of rostools?"
+  default: false
 
-  1. Change directory to the project root:
-
-    ``` bash
-    cd {{ _copier_conf.dst_path | realpath }}
-    ```
-
-  2. Install the pre-commit hooks:
-
-    ``` bash
-    just install-precommit update-quarto-theme build-readme
-    ```
-
-  3. Install [`spaid`](https://github.com/seedcase-project/spaid) and
-     run these setup steps:
-
-    ``` bash
-    spaid_gh_create_repo_from_local -h
-    spaid_gh_set_repo_settings -h
-    spaid_gh_ruleset_basic_protect_main -h
-    ```
-
-  4. Configure the GitHub repository:
-
-    - Install the [auto-release-token](https://github.com/apps/auto-release-token)
-      and the [add-to-board-token](https://github.com/apps/add-to-board-token)
-      GitHub Apps
-    - Create an `UPDATE_VERSION_TOKEN`, `ADD_TO_BOARD_TOKEN`, and
-      `NETLIFY_AUTH_TOKEN` secrets
-    - Create an `UPDATE_VERSION_APP_ID` and `ADD_TO_BOARD_APP_ID`
-      variables of the GitHub Apps' IDs.
-
-  5. List and complete all TODO items in the repository:
-
-    ``` bash
-    just list-todos
-    ```
-
-# Questions ---------
 workshop_type:
   type: str
   help: "What type of workshop is this?"
@@ -61,37 +23,21 @@ workshop_type:
 
 github_user:
   type: str
-  help: "What is the name of the GitHub user or organization where the website repository will be or is stored?"
+  help: |
+    What is the name of the GitHub user or organization where the
+    template repository will be or is stored?
+  default: >-
+    {{ "rostools" if for_rostools else "" }}
 
 github_repo:
   type: str
-  help: "What is the name of the GitHub repository where the website will be hosted? We strongly encourage using the default below."
+  help: |
+    What is the name of the GitHub repository where the template will be or
+    is stored? We strongly recommend using the default given.
   default: "{{ _folder_name }}"
 
-author_given_name:
-  type: str
-  help: "What is your first/given name?"
-
-author_family_name:
-  type: str
-  help: "What is your last/family name?"
-
-github_board_number:
-  type: str
-  help: "What is the GitHub project board number to add issues and PRs to?"
-  default: 12
-  validator: >-
-    {% if github_board_number and not github_board_number.isdigit() %}
-    The board number must be an integer.
-    {% endif %}
-
-# Default settings added ---------
+# Configurations not asked
 github_repo_spec:
   type: str
   default: "{{ github_user }}/{{ github_repo }}"
-  when: false
-
-workshop_url:
-  type: str
-  default: "https://{{ github_repo }}.{{ github_user }}.org"
   when: false
