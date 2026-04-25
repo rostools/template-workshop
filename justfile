@@ -8,7 +8,9 @@ run-all: update-quarto-theme sync-template-files check-all format-md test-all bu
 list-todos:
   grep -R -n \
   --exclude-dir=.quarto \
-  --exclude-dir=template/ \
+  --exclude-dir=template \
+  --exclude-dir=_temp \
+  --exclude-dir=_book \
   --exclude=justfile \
   --exclude=copier.yaml \
   --exclude=_site \
