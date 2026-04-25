@@ -12,9 +12,15 @@ book:
   repo-url: "https://github.com/rostools/template-workshop"
   chapters:
     - index.qmd
-    - docs/guide.qmd
-    - CHANGELOG.md
+    - part: "Guide"
+      chapters:
+        - docs/guide/installing.qmd
+        - docs/guide/using.qmd
+        - docs/guide/updating.qmd
+        - docs/guide/next-steps.qmd
+  appendices:
     - CONTRIBUTING.md
+    - CHANGELOG.md
   tools:
     - icon: github
       href: "https://github.com/rostools/template-workshop"

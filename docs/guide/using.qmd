@@ -1,0 +1,53 @@
+---
+title: "Using the template"
+description: |
+  A walk-through on how to use this template for creating a new workshop or
+  applying it to an existing workshop.
+order: 2
+---
+
+<!-- TODO: Fill in this guide to match the template, especially PROJECT tags -->
+
+This guide walks through how to use this template to create a new
+workshop or apply it to an existing workshop.
+
+## Creating a new workshop
+
+You can use this template to create a new workshop with a standard set of
+files and folders, as well as all the features and configurations to
+make it easier to build your workshop smoothly and effectively. First,
+open a terminal and run the following command:
+
+```{.bash filename="Terminal"}
+uvx copier copy gh:rostools/template-workshop path/to/WORKSHOP-NAME
+```
+
+The `copy` command uses the template on GitHub (`gh:`) at the
+`rostools/template-workshop` location. The `path/to/` is the location
+where you'd like the new workshop to be created and `WORKSHOP-NAME` is the
+name you want to give for the new workshop's directory and (ideally) the
+GitHub repository for the workshop. The name should be something short
+and meaningful, ideally lowercase, with `-` instead of spaces, and no
+special characters.
+
+## Applying to an existing workshop
+
+If you want to use this template on an existing workshop, you can use the
+`copy` command of `copier` just like above to apply the template to the
+existing workshop. This will add all the template's files and
+configurations to the existing workshop.
+
+```{.bash filename="Terminal"}
+uvx copier copy gh:rostools/template-workshop path/to/EXISTING-WORKSHOP
+```
+
+See the comment above in the "Creating a new workshop" section about the
+naming of the existing workshop directory. It will go through a series of
+prompts, as in the case of creating a new workshop, including asking if
+you want to overwrite existing files.
+
+::: callout-note
+To use the `copy` command, the existing workshop needs to be tracked by
+Git and in a clean state (no changes have been made in the working
+directory).
+:::
