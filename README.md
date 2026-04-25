@@ -19,8 +19,6 @@ status](https://results.pre-commit.ci/badge/github/rostools/template-workshop/ma
 state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
-<!-- TODO: Add description of project, especially the PROJECT tags -->
-
 This repository contains a
 [Copier](https://copier.readthedocs.io/en/stable/) template for setting
 up a new repository for a workshop. We made template-workshop because we
