@@ -20,9 +20,9 @@ install-precommit:
   uvx pre-commit run --all-files
   uvx pre-commit autoupdate
 
-# Update (or add if not present) the Quarto seedcase-theme extension
+# Update (or add if not present) the Quarto rostools-theme extension
 update-quarto-theme:
-  quarto update seedcase-project/seedcase-theme --no-prompt
+  quarto update rostools/rostools-theme --no-prompt
 
 # Update files in the template from the Copier parent folder
 sync-template-files:
