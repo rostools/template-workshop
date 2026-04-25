@@ -15,8 +15,8 @@
     "perf"
   ],
   "conventional-branch.format": "{Type}/{Branch}",
-  "[quarto][qmd][jinja]": {
-    "editor.formatOnSave": false
+  "[quarto][qmd][md][jinja]": {
+    "editor.defaultFormatter": "rvben.rumdl"
   },
   "files.associations": {
     "justfile.jinja": "plaintext",
