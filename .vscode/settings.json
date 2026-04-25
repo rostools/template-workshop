@@ -1,10 +1,5 @@
 {
-  "files.autoSave": "onFocusChange",
-  "editor.tabSize": 2,
-  "editor.wordWrap": "off",
   "editor.formatOnSave": true,
-  "git.autofetch": false,
-  "editor.tabCompletion": "on",
   "editor.snippetSuggestions": "inline",
   "conventional-branch.type": [
     "build",
@@ -16,21 +11,21 @@
     "style",
     "test",
     "chore",
-    "perf",
-    "revert"
+    "revert",
+    "perf"
   ],
   "conventional-branch.format": "{Type}/{Branch}",
-  "files.insertFinalNewline": true,
-  "[r]": {
-    "editor.formatOnSave": true
-  },
-  "[quarto][jinja]": {
-    "editor.formatOnSave": true
+  "[quarto][qmd][jinja]": {
+    "editor.formatOnSave": false
   },
   "files.associations": {
     "justfile.jinja": "plaintext",
     "*.yml.jinja": "jinja-yaml",
     "*.cff.jinja": "jinja-yaml",
+    "*.toml.jinja": "jinja-toml",
     "*.qmd.jinja": "jinja-md"
   },
+  "files.insertFinalNewline": true,
+  "conventionalCommits.emojiFormat": "emoji",
+  "conventionalCommits.promptScopes": false
 }
