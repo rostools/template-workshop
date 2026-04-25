@@ -30,7 +30,7 @@ sync-template-files:
   mkdir -p template/tools
   cp tools/get-contributors.sh template/tools/
   cp .github/dependabot.yml .github/pull_request_template.md template/.github/
-  cp -r _extensions/ template/
+  cp -r _extensions/* "template/{% if for_rostools %}_extensions{% endif %}"
   cp .vscode/json.code-snippets .vscode/extensions.json template/.vscode/
 
 # Check for spelling errors in files
