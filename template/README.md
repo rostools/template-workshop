@@ -1,1 +1,1 @@
-NOTE: This will be auto-generated and overwritten from `README.qmd`
+<!-- Will be generated from README.qmd -->

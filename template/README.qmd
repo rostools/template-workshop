@@ -2,7 +2,7 @@
 format: gfm
 ---
 
-# {{< meta titles.full >}}
+# {{< meta tagline >}}
 
 {{< include /includes/_badges.qmd >}}
 
@@ -14,7 +14,7 @@ This repository contains the lesson, lecture, and assignment material
 for the workshop, including the website source files and other
 associated workshop administration and development files. For more
 detail on the workshop, check out the
-[welcome page]({{< meta links.home >}}).
+[welcome page]({{< meta links.site >}}).
 
 ::: callout-tip
 This workshop repository was generated from the
