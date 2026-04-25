@@ -15,13 +15,11 @@
     "revert"
   ],
   "conventional-branch.format": "{Type}/{Branch}",
-  {% if workshop_type == "r" -%
-  }
+  {% if workshop_type == "r" -%}
   "[r]": {
     "editor.defaultFormatter": "Posit.air-vscode"
   },
-  {%- endif %
-  }
+  {%- endif %}
   "[quarto]": {
     "editor.defaultFormatter": "rvben.rumdl"
   },
