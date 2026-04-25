@@ -6,34 +6,34 @@ on:
       - main
   pull_request:
 
-# Least privilege permissions
 permissions: read-all
 
 jobs:
-  test-copier:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+      # This is a useful security step to check for unexpected outbound calls from the runner,
+      # which could indicate a compromised token or runner.
+      - name: Harden the runner (Audit all outbound calls)
+        uses: step-security/harden-runner@20cf305ff2072d973412fa9b1e3a4f227bda3c76 # v2.14.0
+        with:
+          egress-policy: audit
+
+      - name: Checkout repository
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
 
       - name: Set up uv
-        uses: astral-sh/setup-uv@cec208311dfd045dd5311c1add060b2062131d57
-
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@8a96df13519ee81fd526f2dfca5962811136661b # v2.2.0
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
+        with:
+          enable-cache: true
 
       - name: Install justfile
-        run: sudo apt-get install -y just
-
-      - name: Checks
-        run: |
-          just check-spelling
+        run: uv tool install rust-just
 
       - name: Set Git user
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@example.com"
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "fake@example.com"
 
-      - name: Test the template
-        run: |
-          just _tests
+      - name: Test and check template creation
+        run: just test-all
