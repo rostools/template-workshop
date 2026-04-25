@@ -21,6 +21,41 @@ If you attended a workshop or used the workshop material as some point
 in time, you can always refer to this changelog page to find out what
 has been changed since you last used it.
 
+## 0.9.0 (2026-04-25)
+
+### Feat
+
+- 🔨 create soft link to extension in justfile
+- 🔧 add URN for eventual `zen-do` PDF upload
+- 🔨 include styler recipe in justfile, to format R in `.qmd`
+
+### Fix
+
+- 🐛 fix issues found during testing
+- ✏️ update path to release workflow
+
+### Refactor
+
+- ⬆️ update Quarto theme
+- 🎨 reformat files
+- 🔧 change format of slides if its for rostools or not
+- 🚚 move explanation of files into CONTRIBUTING
+- 📝 small improvements to text in CODEOWNERS
+- 🔧 `_publish.yaml` should only be added for Netlify projects
+- 👷 set auto-release files only for rostools templates
+- 💄 rostools extension only added for rostools projects
+- 🧑‍💻 set some vscode settings only for R workshops
+- 🔧 sync files to template
+- 🔧 sync extensions and snippets with template
+- 🧑‍💻 simplify VS Code settings
+- 👷 don't use reusable workflows, include full steps
+- 🔧 simplify the Copier questions asked, removing unnecessary ones
+- 🔧 simplify metadata values to match t-squared
+- 🎨 small formatting fixes to pre-workshop tasks files
+- ✏️ shorten recipe to `just install-deps`
+- ⬆️ update pre-commit versions
+- 🔨 sort contributors in tool script
+
 ## 0.8.2 (2026-04-07)
 
 ### Fix
