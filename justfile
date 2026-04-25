@@ -31,6 +31,7 @@ sync-template-files:
   cp tools/get-contributors.sh template/tools/
   cp .github/dependabot.yml .github/pull_request_template.md template/.github/
   cp -r _extensions/ template/
+  cp .vscode/json.code-snippets .vscode/extensions.json template/.vscode/
 
 # Check for spelling errors in files
 check-spelling:
