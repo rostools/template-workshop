@@ -8,7 +8,7 @@
 
 # Run all recipes
 {% if workshop_type == 'r' -%}
-run-all: install-dependencies _formats _checks _builds
+run-all: install-deps _formats _checks _builds
 {%- else -%}
 run-all: _formats _checks _builds
 {%- endif %}
@@ -31,8 +31,8 @@ install-precommit:
   uvx pre-commit autoupdate
 
 {% if workshop_type == "r" -%}
-# Install package dependencies
-install-dependencies:
+# Install workshop's package dependencies
+install-deps:
   #!/usr/bin/Rscript
   pak::pak(ask = FALSE)
 {%- endif %}
