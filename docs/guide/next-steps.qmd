@@ -40,9 +40,9 @@ a pull request whenever newer versions of the hooks are available.
 ::: callout-warning
 This step is only necessary if you are using this template for a
 repository that is part of rostools. If you are using this template for
-a different workshop, you can skip this step. If you have your own Quarto
-theme that you want to use, you can use this step as a general guide on
-how to add a Quarto theme to your workshop.
+a different workshop, you can skip this step. If you have your own
+Quarto theme that you want to use, you can use this step as a general
+guide on how to add a Quarto theme to your workshop.
 :::
 
 For rostools repositories, we have a custom Quarto extension that has
@@ -175,9 +175,9 @@ check out Zenodo's
 on it.
 
 ## Setting up GoatCounter
-s
-If you want to use GoatCounter for website visitor tracking, you need to
-create a GoatCounter account and set up a new site for your website.
+
+s If you want to use GoatCounter for website visitor tracking, you need
+to create a GoatCounter account and set up a new site for your website.
 Adding a new site is very easy. Go into the "Settings" after logging
 into your account. Under "Sites", click "Add new site" and fill in the
 form with your website's unique name. You can use the auto-filled name

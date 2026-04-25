@@ -7,18 +7,18 @@ order: 3
 ---
 
 One of the biggest strengths of Copier is that it allows you to easily
-update your workshop with any changes that have been made to the template
-since you first copied it. There are two ways to update (or sync) an
-existing workshop with the latest changes from the template: `update` and
-`recopy`.
+update your workshop with any changes that have been made to the
+template since you first copied it. There are two ways to update (or
+sync) an existing workshop with the latest changes from the template:
+`update` and `recopy`.
 
 - Use `update` to apply template updates to your workshop without
   overwriting local changes. `update` will compare the version of the
   template you used when you first copied the template with the current
   version of the template, and then apply the changes that are
   different. This also means it won't overwrite any changes you made to
-  files in your current workshop, for example, if you deleted a file that
-  was in the template, it won't be copied back.
+  files in your current workshop, for example, if you deleted a file
+  that was in the template, it won't be copied back.
 
 - Use `recopy` if you want to reapply the template from scratch, which
   will overwrite any changes you made to the files that were copied from
