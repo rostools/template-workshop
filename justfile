@@ -1,78 +1,73 @@
 @_default:
-    just --list --unsorted
-
-@_checks: check-spelling check-urls check-commits
-@_tests: (test "general") (test "r")
-@_builds: build-contributors build-readme build-website
-@_updates: update-quarto-theme update-template
+  just --list --unsorted
 
 # Run all build-related recipes in the justfile
-run-all: _updates _checks format-md _tests _builds
+run-all: update-quarto-theme sync-template-files check-all format-md test-all build-all
 
-# Install and update the pre-commit hooks
+# List all TODO items in the repository
+list-todos:
+  grep -R -n \
+  --exclude-dir=.quarto \
+  --exclude-dir=template/ \
+  --exclude=justfile \
+  --exclude=copier.yaml \
+  --exclude=_site \
+  "TODO" *
+
+# Install the pre-commit hooks
 install-precommit:
-  # Install pre-commit hooks
   uvx pre-commit install
-  # Run pre-commit hooks on all files
   uvx pre-commit run --all-files
-  # Update versions of pre-commit hooks
   uvx pre-commit autoupdate
 
-# Update the Quarto rostools-theme extension
+# Update (or add if not present) the Quarto seedcase-theme extension
 update-quarto-theme:
-  # Will also add if it isn't already installed.
-  quarto update rostools/rostools-theme --no-prompt
+  quarto update seedcase-project/seedcase-theme --no-prompt
 
-# Update files in the template from the copier parent folder
-update-template:
+# Update files in the template from the Copier parent folder
+sync-template-files:
   cp .pre-commit-config.yaml .gitignore .typos.toml .editorconfig CODE_OF_CONDUCT.md template/
   mkdir -p template/tools
   cp tools/get-contributors.sh template/tools/
   cp .github/dependabot.yml .github/pull_request_template.md template/.github/
   cp -r _extensions/ template/
 
-# Check the commit messages on the current branch that are not on the main branch
-check-commits:
-  #!/usr/bin/env bash
-  branch_name=$(git rev-parse --abbrev-ref HEAD)
-  number_of_commits=$(git rev-list --count HEAD ^main)
-  if [[ ${branch_name} != "main" && ${number_of_commits} -gt 0 ]]
-  then
-    # If there is an issue, run `uv tool update-shell`.
-    uvx --from commitizen cz check --rev-range main..HEAD
-  else
-    echo "On 'main' or current branch doesn't have any commits."
-  fi
-
 # Check for spelling errors in files
 check-spelling:
   uvx typos
 
-# Install lychee from https://lychee.cli.rs/guides/getting-started/
 # Check that URLs work
 check-urls:
   lychee . \
-    --verbose \
-    --extensions md,qmd,jinja \
-    --exclude-path "_badges.qmd"
+  --verbose \
+  --extensions md,qmd,jinja \
+  --exclude-path "_badges.qmd"
+
+# Run all check-related recipes
+check-all: check-spelling check-urls
 
 # Format Markdown files
 format-md:
   uvx rumdl fmt --silent
+  # includes option doesn't work with Jinja files, so do manually
+  uvx rumdl fmt --silent **/*.qmd.jinja **/*.md.jinja
 
-# Test that a workshop can be created from the template, with parameters for: `type` (r or general)
+# Test template creation with specific parameters: `type`
 test type="r":
   sh ./test-template.sh {{ type }}
 
-# Test the template through the manual, question-based approach
+# Test template creation through use of the question approach
 test-manual:
-  mkdir -p _temp/manual/
+  mkdir -p _temp/manual
   rm -rf _temp/manual/test-template
-  uvx copier copy --trust -r HEAD . _temp/manual/test-template
+  uvx copier copy -r HEAD . _temp/manual/test-template
 
-# Build the website using Quarto
-build-website:
-  uvx --from quarto quarto render
+# Run all test-related recipes
+test-all: (test "general") (test "r")
+
+# Clean up any leftover and temporary build files
+cleanup:
+  rm -rf _temp
 
 # Re-build the README file from the Quarto version
 build-readme:
@@ -82,6 +77,21 @@ build-readme:
 build-contributors:
   sh ./tools/get-contributors.sh rostools/template-workshop > docs/includes/_contributors.qmd
 
-# Clean up any leftover and temporary build files
-cleanup:
-  rm -rf _temp
+# Build the website using Quarto
+build-website:
+  uvx --from quarto quarto render
+
+# Preview the website with automatic reload on changes
+preview-website:
+  quarto preview
+
+# Run all build-related recipes
+build-all: build-contributors build-website build-readme
+
+# Check for and apply updates from the template
+update-from-template:
+  uvx copier update --defaults
+
+# Reset repo changes to match the template
+reset-from-template:
+  uvx copier recopy --defaults
