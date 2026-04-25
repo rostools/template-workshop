@@ -55,9 +55,9 @@ format-md:
   # includes option doesn't work with Jinja files, so do manually
   uvx rumdl fmt --silent **/*.qmd.jinja **/*.md.jinja
 
-# Test template creation with specific parameters: `type`
-test type="r":
-  sh ./test-template.sh {{ type }}
+# Test template creation with specific parameters: `for_rostools` and `type`
+test for_rostools="true" type="r":
+  sh ./test-template.sh {{ for_rostools }} {{ type }}
 
 # Test template creation through use of the question approach
 test-manual:
@@ -66,7 +66,7 @@ test-manual:
   uvx copier copy -r HEAD . _temp/manual/test-template
 
 # Run all test-related recipes
-test-all: (test "general") (test "r")
+test-all: (test "true" "general") (test "false" "general") (test "true" "r") (test "false" "r")
 
 # Clean up any leftover and temporary build files
 cleanup:
