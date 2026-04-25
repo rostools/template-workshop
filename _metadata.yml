@@ -2,6 +2,8 @@ gh:
   org: "rostools"
   repo: "template-workshop"
 
+tagline: "Template Workshop: An opinionated setup for making workshops as open educational resources"
+
 links:
   github: "https://github.com/rostools/template-workshop"
-  home: "https://template-workshop.rostools.org"
+  site: "https://template-workshop.rostools.org"
