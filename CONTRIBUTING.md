@@ -3,9 +3,9 @@
 ## :bug: Issues and bugs
 
 The easiest way to contribute is to report issues or bugs that you might
-find while using `template-workshop`. You can do this by creating a
-[new](https://github.com/rostools/template-workshop/issues/new/choose)
-issue on our GitHub repository.
+find while using the Template Workshop. You can do this by creating a
+[new](https://github.com/rostools/template-workshop/issues/new/) issue
+on our GitHub repository.
 
 ## :pencil2: Adding or modifying content
 
@@ -14,15 +14,17 @@ If you would like to contribute content, please check out our
 details on how we work and develop. It is a regularly evolving document,
 so is at various states of completion.
 
-To contribute to `template-workshop`, you first need to install
+To contribute to the Template Workshop, you first need to install
 [uv](https://docs.astral.sh/uv/) and
 [justfile](https://just.systems/man/en/packages.html). We use uv and
 justfile to manage our project, such as to run checks and test the
 template. Both the uv and justfile websites have a more detailed guide
 on using uv, but below are some simple instructions to get you started.
 
-It's easiest to [install uv](https://docs.astral.sh/uv/) first and then
-install justfile using uv. Then, to install justfile, run:
+It's easiest to first
+[install uv](https://docs.astral.sh/uv/getting-started/installation/)
+and then install justfile with uv. Once you've installed uv, install
+justfile by running:
 
 ``` bash
 uv tool install rust-just
@@ -44,10 +46,10 @@ a terminal so that the working directory is the root of this project
 just run-all
 ```
 
-When testing the template, copier can only use content kept in the Git
+When testing the template, Copier can only use content kept in the Git
 history. Meaning that if you make changes to the template and try to
 test it, it won't be able to test those changes. You have to commit the
-changes first in order for copier to use them.
+changes first in order for Copier to use them.
 
 When committing changes, please try to follow
 [Conventional Commits](https://decisions.seedcase-project.org/why-conventional-commits/)
@@ -58,3 +60,51 @@ If you don't use Conventional Commits when making a commit, we will
 revise the pull request title to follow that format, as we use squash
 merges when merging pull requests, so all other commits in the pull
 request will be squashed into one commit.
+
+## :file_folder: Explanation of files and folders
+
+This list describes the default files that are included in the template
+as well as explains a bit more about them and what they are used for.
+
+- `.copier-answers.yml`: Contains the answers you gave when copying the
+  project from the template.
+  **You should not modify this file directly.**
+- `.github/`: Contains GitHub-specific files, such as the workflow to
+  build the website from the Markdown files.
+- `_quarto.yml`: Quarto configuration file for the website, including
+  settings for the website, such as the theme, navigation, and other
+  options.
+- `.gitignore`: This ignore file tells Git which files to not track.
+  Unless you know what you are doing, it's best to not touch this file.
+- `.pre-commit-config.yaml`: [Pre-commit](https://pre-commit.com/)
+  configuration file for managing and running checks before each commit.
+- `.typos.toml`: [typos](https://github.com/crate-ci/typos) spell
+  checker configuration file.
+- `CITATION.cff`: Structured citation metadata for your project when
+  archived on [Zenodo](https://zenodo.org/) and used by GitHub to
+  display the citation information on the repository page. This is used
+  to add the metadata to Zenodo when a GitHub release has been uploaded
+  to Zenodo.
+- `justfile`: [`just`](https://just.systems/man/en/) configuration file
+  for scripting project tasks.
+- `.editorconfig`: Editor configuration file for
+  [EditorConfig](https://editorconfig.org/) to maintain consistent
+  coding styles across different editors and IDEs.
+- `CHANGELOG.md`: Changelog file for tracking changes in the project.
+- `CONTRIBUTING.md`: Guidelines for contributing to the project.
+- `.github/`: Contains GitHub-specific files, such as issue and pull
+  request templates, workflows,
+  [dependabot](https://docs.github.com/en/code-security/tutorials/secure-your-dependencies/dependabot-quickstart-guide)
+  configuration, pull request templates, and a
+  [CODEOWNERS](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners)
+  file.
+- `_metadata.yml`: Quarto metadata file for the website, including
+  information about the project, such as the titles and GitHub names.
+- `_quarto.yml`: Quarto configuration file for the website, including
+  settings for the website, such as the theme, navigation, and other
+  options.
+- `.rumdl.toml`: [rumdl](https://rumdl.dev) configuration file for
+  formatting Markdown files in the project.
+- `.cz.toml`:
+  [Commitizen](https://commitizen-tools.github.io/commitizen/)
+  configuration file for managing versions and changelogs.
