@@ -10,8 +10,9 @@ configurations in place, including for developing the workshop.
 ## Features
 
 There are four sets of features included in this template, those for
-general workshops, those for R workshops, and those for general or R workshops developed within rostools.
-These are the features for the general workshops:
+general workshops, those for R workshops, and those for general or R
+workshops developed within rostools. These are the features for the
+general workshops:
 
 - Uses [Quarto](https://quarto.org/) for the workshop content, allowing
   for easy integration of code, text, and figures.
