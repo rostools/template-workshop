@@ -9,42 +9,30 @@ configurations in place, including for developing the workshop.
 
 ## Features
 
+There are four sets of features included in this template, those for
+general workshops, those for R workshops, and those for general or R workshops developed within rostools.
+These are the features for the general workshops:
+
 - Uses [Quarto](https://quarto.org/) for the workshop content, allowing
   for easy integration of code, text, and figures.
 - Includes a [justfile](https://just.systems/man/en/) for managing
   common tasks like building the workshop and running checks.
 - Uses [typos](https://github.com/crate-ci/typos) to check for common
   spelling mistakes.
-- For R projects, uses [Air](https://posit-dev.github.io/air/) to format
-  and check R code.
-- Uses
-  [Commitizen](https://decisions.seedcase-project.org/why-changelog-with-commitizen/)
-  to
-  [check](https://decisions.seedcase-project.org/why-lint-with-commitizen/)
-  commit messages and automatically create the changelog.
-- Automated Git tagging and GitHub releases with
-  [commitizen](https://decisions.seedcase-project.org/why-semantic-release-with-commitizen/)
-  that are based on messages following
-  [Conventional Commits](https://decisions.seedcase-project.org/why-conventional-commits/).
 - Uses a [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)
   license for the workshop content.
 - Run checks with with [pre-commit](https://pre-commit.com/) hooks to
   ensure consistent formatting and style across the project. It includes
   checks for credentials, typos, and file formatting.
-- Uses the
-  [`rostools-theme`](https://github.com/rostools/rostools-theme) Quarto
-  extension for a standard appearance across workshops.
 - Includes [GitHub Actions](https://docs.github.com/en/actions) for
   continuous integration, testing, and delivery for running checks,
   formatting, releasing, and building the website.
 - Uses [Netlify](https://www.netlify.com/) for hosting the workshop
-  website.
+  website or GitHub Pages if you prefer to host it there.
 - Includes an [EditorConfig](https://editorconfig.org/) file to ensure
   consistent formatting across different editors.
 - High level, system and program management with
   [uv](https://decisions.seedcase-project.org/why-uv/).
-- GitHub workflows for automatically adding Pull Requests and Issues to
-  a project board.
 - Pull Request template for easy creation of new Pull Requests.
 - [VS Code](https://code.visualstudio.com/) settings commonly used by
   contributors working in VS Code.
@@ -62,6 +50,23 @@ configurations in place, including for developing the workshop.
 - Includes
   [Dependabot](https://docs.github.com/en/code-security/tutorials/secure-your-dependencies/dependabot-quickstart-guide)
   configuration for automatically keeping dependencies up to date.
+
+For R-specific workshops, the additional feature is:
+
+- For R projects, uses [Air](https://posit-dev.github.io/air/) to format
+  and check R code.
+
+These are additional features for workshops developed within rostools:
+
+- GitHub workflows for automatically adding Pull Requests and Issues to
+  a project board.
+- Uses the
+  [`rostools-theme`](https://github.com/rostools/rostools-theme) Quarto
+  extension for a standard appearance across workshops.
+- Automated Git tagging and GitHub releases with
+  [commitizen](https://decisions.seedcase-project.org/why-semantic-release-with-commitizen/)
+  that are based on messages following
+  [Conventional Commits](https://decisions.seedcase-project.org/why-conventional-commits/).
 
 ## Want to contribute?
 
