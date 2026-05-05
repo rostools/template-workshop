@@ -20,7 +20,7 @@ workshops.
 
 The template helps set up and maintain workshop repositories, which
 contain files to create a website for a workshop and that might also be
-used as an open educational resource (OER). Use this template to quickly
+used as an open educational resource (OVER). Use this template to quickly
 get started with a new workshop with all the necessary files and
 configurations in place for a smoother "developer experience" and to
 have
