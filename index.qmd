@@ -2,7 +2,7 @@
 title: "{{< meta gh.repo >}}: {{< meta tagline >}}"
 ---
 
-# Welcome
+## Welcome
 
 {{< include /docs/includes/_badges.qmd >}}
 
@@ -11,7 +11,7 @@ open educational resource (OVER). Use this template to quickly get started with
 a new workshop with all the necessary files and configurations in place,
 including for developing the workshop.
 
-## Features
+### Features
 
 There are four sets of features included in this template, those for general
 workshops, those for R workshops, and those for general or R workshops developed
@@ -72,16 +72,16 @@ These are additional features for workshops developed within rostools:
   - Automatically generating a changelog using
     [git-cliff](https://decisions.seedcase-project.org/why-changelog-with-git-cliff/)
 
-## Want to contribute?
+### Want to contribute?
 
 We would love your feedback or contributions! Head over to our [GitHub
 repository]({{< meta links.github >}}) to share your ideas or contribute code.
 Your input makes us better!
 
-### Contributors
+#### Contributors
 
 {{< include /docs/includes/_contributors.qmd >}}
 
-## Licensing
+### Licensing
 
 This project is licensed under the [MIT License](/LICENSE.md).
