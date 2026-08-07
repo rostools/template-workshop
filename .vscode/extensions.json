@@ -5,7 +5,6 @@
     "redhat.vscode-yaml",
     "donjayamanne.githistory",
     "felipecaputo.git-project-manager",
-    "Posit.air-vscode",
     "GitHub.vscode-pull-request-github",
     "quarto.quarto",
     "vivaxy.vscode-conventional-commits",
@@ -13,7 +12,8 @@
     "tekumara.typos-vscode",
     "EditorConfig.EditorConfig",
     "samuelcolvin.jinjahtml",
-    "rvben.rumdl"
+    "rvben.rumdl",
+    "jolars.panache"
   ],
   "unwantedRecommendations": []
 }

@@ -7,46 +7,43 @@ metadata-files:
   - _metadata.yml
 ---
 
-# {{< meta tagline >}}
+# {{< meta gh.repo >}}: {{< meta tagline >}}
 
 {{< include /docs/includes/_badges.qmd >}}
 
-This repository contains a
-[Copier](https://copier.readthedocs.io/en/stable/) template for setting
-up a new repository for a workshop. We made {{< meta gh.repo >}} because
-we manage and develop several workshops in rostools, and this template
-is designed to make it easier to create, develop, and maintain those
-workshops.
+This repository contains a [Copier](https://copier.readthedocs.io/en/stable/)
+template for setting up a new repository for a workshop. We made
+{{< meta gh.repo >}} because we manage and develop several workshops in
+rostools, and this template is designed to make it easier to create, develop,
+and maintain those workshops.
 
-The template helps set up and maintain workshop repositories, which
-contain files to create a website for a workshop and that might also be
-used as an open educational resource (OVER). Use this template to quickly
-get started with a new workshop with all the necessary files and
-configurations in place for a smoother "developer experience" and to
-have
-[continuous delivery/deployment](https://en.wikipedia.org/wiki/Continuous_delivery)
-of the workshop website and archival to Zenodo.
+The template helps set up and maintain workshop repositories, which contain
+files to create a website for a workshop and that might also be used as an open
+educational resource (OVER). Use this template to quickly get started with a new
+workshop with all the necessary files and configurations in place for a smoother
+"developer experience" and to have [continuous
+delivery/deployment](https://en.wikipedia.org/wiki/Continuous_delivery) of the
+workshop website and archival to Zenodo.
 
-Check out our [website]({{< meta links.site >}}) for more information,
-such as the features it provides and a
-[guide]({{< meta links.site >}}/docs/guide) to using the template. For a
-list of changes, see our [changelog](CHANGELOG.md) page.
+Check out our [website]({{< meta links.site >}}) for more information, such as
+the features it provides and a [guide]({{< meta links.site >}}/docs/guide) to
+using the template. For a list of changes, see our [changelog](CHANGELOG.md)
+page.
 
 ::: callout-tip
 This template repository was generated from the
-[t-squared](https://github.com/seedcase-project/t-squared) Seedcase
-template :tada:
+[t-squared](https://github.com/seedcase-project/t-squared) Seedcase template
+:tada:
 :::
 
 ## Contributing
 
-Check out our [contributing page](CONTRIBUTING.md) for information on
-how to contribute to the project, including how to set up your
-development environment.
+Check out our [contributing page](CONTRIBUTING.md) for information on how to
+contribute to the project, including how to set up your development environment.
 
-Please note that this project is released with a
-[Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in
-this project you agree to abide by its terms.
+Please note that this project is released with a [Contributor Code of
+Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to
+abide by its terms.
 
 ### Contributors
 
@@ -58,13 +55,14 @@ This project is licensed under the [MIT License](LICENSE.md).
 
 ## Citing
 
-This project is part of rostools, which is an organisation that hosts
-and runs workshops (also as open educational resources) that are related
-in some way to doing reproducible and open science. If you use this
-template in your work, please cite it as follows:
+This project is part of rostools, which is an organisation that hosts and runs
+workshops (also as open educational resources) that are related in some way to
+doing reproducible and open science. If you use this template in your work,
+please cite it as follows:
 
 ```{python}
 #| output: asis
+
 !uvx --quiet cffconvert --format apalike
 ```
 

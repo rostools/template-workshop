@@ -16,7 +16,7 @@
   ],
   "conventional-branch.format": "{Type}/{Branch}",
   "[quarto][qmd][md][jinja]": {
-    "editor.defaultFormatter": "rvben.rumdl"
+    "editor.defaultFormatter": "jolars.panache"
   },
   "files.associations": {
     "justfile.jinja": "plaintext",
@@ -26,6 +26,7 @@
     "*.qmd.jinja": "jinja-md"
   },
   "files.insertFinalNewline": true,
+  "typos.config": ".config/typos.toml",
   "conventionalCommits.emojiFormat": "emoji",
   "conventionalCommits.promptScopes": false
 }
