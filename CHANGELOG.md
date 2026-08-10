@@ -1,25 +1,23 @@
 # Changelog
 
-Since we follow
-[Conventional Commits](https://decisions.seedcase-project.org/why-conventional-commits/)
-we're able to automatically create formal "releases" of the workshop
-based on our commit messages. Releases in the context of workshops are
-simply snapshots in time of the workshop content. The releases are
-published to Zenodo for easier discovery, archival, and citation
-purposes. We use
+Since we follow [Conventional
+Commits](https://decisions.seedcase-project.org/why-conventional-commits/) we're
+able to automatically create formal "releases" of the workshop based on our
+commit messages. Releases in the context of workshops are simply snapshots in
+time of the workshop content. The releases are published to Zenodo for easier
+discovery, archival, and citation purposes. We use
 [Commitizen](https://decisions.seedcase-project.org/why-semantic-release-with-commitizen/)
-to automatically create these releases using
-[SemVer](https://semverdoc.org) as the version numbering scheme.
+to automatically create these releases using [SemVer](https://semverdoc.org) as
+the version numbering scheme.
 
-Because releases are created based on commit messages, a new release can
-be created quite often---sometimes several times in a day. This also
-means that any individual release will not have many changes within it.
-Below is a list of the releases we've made so far, along with what was
-changed within each release.
+Because releases are created based on commit messages, a new release can be
+created quite often---sometimes several times in a day. This also means that any
+individual release will not have many changes within it. Below is a list of the
+releases we've made so far, along with what was changed within each release.
 
-If you attended a workshop or used the workshop material as some point
-in time, you can always refer to this changelog page to find out what
-has been changed since you last used it.
+If you attended a workshop or used the workshop material as some point in time,
+you can always refer to this changelog page to find out what has been changed
+since you last used it.
 
 ## 0.11.0 (2026-06-04)
 
@@ -101,10 +99,8 @@ has been changed since you last used it.
 
 - :sparkles: add badges to landing page
 - :sparkles: standardize table widths of schedule
-- :see_no_evil: some `.vdoc.*` type files are created by Quarto, ignore
-  them
-- :sparkles: include hidden contributor list sections in README and
-  index
+- :see_no_evil: some `.vdoc.*` type files are created by Quarto, ignore them
+- :sparkles: include hidden contributor list sections in README and index
 
 ### Fix
 
@@ -119,8 +115,7 @@ has been changed since you last used it.
 - :hammer: rename `style` to `format-r` in justfile
 - :pencil2: use quotes around values in `_quarto.yml`
 - :recycle: include `@sec-` links to chapters along with a link
-- :technologist: simplify pull request template after Markdown formatter
-  added
+- :technologist: simplify pull request template after Markdown formatter added
 - :wrench: indent by 2 in Markdown files in `.editorconfig`
 - :recycle: install uv directly, rather than first pipx
 - :arrow_up: update pre-commit hook versions
@@ -182,8 +177,7 @@ has been changed since you last used it.
 
 ### Refactor
 
-- :recycle: output `get-contributors.sh` as text, send to file in
-  justfile
+- :recycle: output `get-contributors.sh` as text, send to file in justfile
 
 ## 0.4.12 (2025-09-03)
 
@@ -260,8 +254,8 @@ has been changed since you last used it.
 ### Refactor
 
 - :memo: simplify some text of the README
-- :recycle: replace ending of `_contributors.yml` with newline for
-  pre-commit styling
+- :recycle: replace ending of `_contributors.yml` with newline for pre-commit
+  styling
 - :hammer: exclude justfile when listing TODOs
 - :hammer: use `quarto update` to match recipe name
 - :arrow_up: update pre-commit hook versions
@@ -368,12 +362,10 @@ has been changed since you last used it.
 - :recycle: switch to using bash in `check-commits` justfile
 - :memo: fix link to instructor guide
 - :fire: don't need the update from template workflow
-- :recycle: switch to using `github_user` and `github_repo` for project
-  naming
+- :recycle: switch to using `github_user` and `github_repo` for project naming
 - :recycle: use lowercase for workshop type naming
 - :recycle: set Zenodo upload type to `lesson`
-- :recycle: moved version information for installing into
-  `_metadata.yml`
+- :recycle: moved version information for installing into `_metadata.yml`
 - :recycle: match syllabus structure to that done in GitHub Intro
 - :fire: session isn't always an R workshop, don't need code chunk
 
@@ -405,9 +397,7 @@ has been changed since you last used it.
 - :truck: converted includes into own pages in template
 - :recycle: remove social time from schedule
 - :recycle: include a starting URL for Quarto website in Netlify
-- :construction_worker: merge template website build workflow into one
-  file
+- :construction_worker: merge template website build workflow into one file
 - :recycle: expand on template's CONTRIBUTING doc
 - :truck: move code of conduct out of includes as own page
-- :recycle: use only one `.cz.toml`, but use internal 'if' statements
-  inside
+- :recycle: use only one `.cz.toml`, but use internal 'if' statements inside
