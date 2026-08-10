@@ -2,34 +2,33 @@
 
 {{< include /docs/includes/_badges.qmd >}}
 
-This is a template for creating a new workshop with the intent of making
-it an open educational resource (OVER). Use this template to quickly get
-started with a new workshop with all the necessary files and
-configurations in place, including for developing the workshop.
+This is a template for creating a new workshop with the intent of making it an
+open educational resource (OVER). Use this template to quickly get started with
+a new workshop with all the necessary files and configurations in place,
+including for developing the workshop.
 
 ## Features
 
-There are four sets of features included in this template, those for
-general workshops, those for R workshops, and those for general or R
-workshops developed within rostools. These are the features for the
-general workshops:
+There are four sets of features included in this template, those for general
+workshops, those for R workshops, and those for general or R workshops developed
+within rostools. These are the features for the general workshops:
 
-- Uses [Quarto](https://quarto.org/) for the workshop content, allowing
-  for easy integration of code, text, and figures.
-- Includes a [justfile](https://just.systems/man/en/) for managing
-  common tasks like building the workshop and running checks.
-- Uses [typos](https://github.com/crate-ci/typos) to check for common
-  spelling mistakes.
-- Uses a [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)
-  license for the workshop content.
-- Run checks with with [pre-commit](https://pre-commit.com/) hooks to
-  ensure consistent formatting and style across the project. It includes
-  checks for credentials, typos, and file formatting.
-- Includes [GitHub Actions](https://docs.github.com/en/actions) for
-  continuous integration, testing, and delivery for running checks,
-  formatting, releasing, and building the website.
-- Uses [Netlify](https://www.netlify.com/) for hosting the workshop
-  website or GitHub Pages if you prefer to host it there.
+- Uses [Quarto](https://quarto.org/) for the workshop content, allowing for easy
+  integration of code, text, and figures.
+- Includes a [justfile](https://just.systems/man/en/) for managing common tasks
+  like building the workshop and running checks.
+- Uses [typos](https://github.com/crate-ci/typos) to check for common spelling
+  mistakes.
+- Uses a [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) license for
+  the workshop content.
+- Run checks with with [pre-commit](https://pre-commit.com/) hooks to ensure
+  consistent formatting and style across the project. It includes checks for
+  credentials, typos, and file formatting.
+- Includes [GitHub Actions](https://docs.github.com/en/actions) for continuous
+  integration, testing, and delivery for running checks, formatting, releasing,
+  and building the website.
+- Uses [Netlify](https://www.netlify.com/) for hosting the workshop website or
+  GitHub Pages if you prefer to host it there.
 - Includes an [EditorConfig](https://editorconfig.org/) file to ensure
   consistent formatting across different editors.
 - High level, system and program management with
@@ -40,40 +39,40 @@ general workshops:
 - [`.zenodo.json`](https://help.zenodo.org/docs/github/describe-software/zenodo-json/)
   file for citation information, that provides Zenodo with the necessary
   metadata to create a DOI for the workshop.
-- Includes a [GoatCounter](https://www.goatcounter.com/) file for
-  website visitor tracking, which is privacy-friendly and does not use
-  cookies. That means it doesn't need a GDPR notice as no personal data
-  is collected.
-- Checks URLs with [Lychee](https://lychee.cli.rs) to ensure that URLs
-  are not broken.
-- Uses [rumdl](https://rumdl.dev/) to format Markdown files in a
-  consistent way.
+- Includes a [GoatCounter](https://www.goatcounter.com/) file for website
+  visitor tracking, which is privacy-friendly and does not use cookies. That
+  means it doesn't need a GDPR notice as no personal data is collected.
+- Checks URLs with [Lychee](https://lychee.cli.rs) to ensure that URLs are not
+  broken.
+- Uses [rumdl](https://rumdl.dev/) and [panache](https://panache.bz/) to format
+  Markdown files in a consistent way.
 - Includes
   [Dependabot](https://docs.github.com/en/code-security/tutorials/secure-your-dependencies/dependabot-quickstart-guide)
   configuration for automatically keeping dependencies up to date.
 
 For R-specific workshops, the additional feature is:
 
-- For R projects, uses [Air](https://posit-dev.github.io/air/) to format
-  and check R code.
+- For R projects, uses [Air](https://posit-dev.github.io/air/) to format and
+  check R code.
 
 These are additional features for workshops developed within rostools:
 
-- GitHub workflows for automatically adding Pull Requests and Issues to
-  a project board.
-- Uses the
-  [`rostools-theme`](https://github.com/rostools/rostools-theme) Quarto
+- GitHub workflows for automatically adding Pull Requests and Issues to a
+  project board.
+- Uses the [`rostools-theme`](https://github.com/rostools/rostools-theme) Quarto
   extension for a standard appearance across workshops.
 - Automated Git tagging and GitHub releases with
-  [commitizen](https://decisions.seedcase-project.org/why-semantic-release-with-commitizen/)
-  that are based on messages following
-  [Conventional Commits](https://decisions.seedcase-project.org/why-conventional-commits/).
+  [Cocogitto](https://decisions.seedcase-project.org/why-semantic-release-with-cocogitto/)
+  that are based on messages following [Conventional
+  Commits](https://decisions.seedcase-project.org/why-conventional-commits/).
+  - Automatically generating a changelog using
+    [git-cliff](https://decisions.seedcase-project.org/why-changelog-with-git-cliff/)
 
 ## Want to contribute?
 
-We would love your feedback or contributions! Head over to our
-[GitHub repository]({{< meta links.github >}}) to share your ideas or
-contribute code. Your input makes us better!
+We would love your feedback or contributions! Head over to our [GitHub
+repository]({{< meta links.github >}}) to share your ideas or contribute code.
+Your input makes us better!
 
 ### Contributors
 
