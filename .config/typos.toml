@@ -2,7 +2,11 @@
 extend-exclude = [
   "*.html",
   "*.css",
+  "*.json",
   ".quarto/*",
   "_site/*",
-  "*.svg"
+  "_book/*",
+  "_extensions/*",
+  "*.svg",
+  "*.bib",
 ]
