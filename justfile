@@ -37,23 +37,26 @@ sync-template-files:
 
 # Check for spelling errors in files
 check-spelling:
-  uvx typos
+  uvx typos --config .config/typos.toml
 
 # Check that URLs work
 check-urls:
   lychee . \
-  --verbose \
-  --extensions md,qmd,jinja \
-  --exclude-path "_badges.qmd"
-
-# Run all check-related recipes
-check-all: check-spelling check-urls
+    --verbose \
+    --extensions md,qmd,jinja \
+    --exclude "github\.com" \
+    --exclude-path "_badges.qmd"
 
 # Format Markdown files
 format-md:
+  # Use both rumdl and panache, for different purposes
   uvx rumdl fmt --silent
-  # includes option doesn't work with Jinja files, so do manually
+  # `includes` option doesn't work with Jinja files, so do manually
   uvx rumdl fmt --silent **/*.qmd.jinja **/*.md.jinja
+  uvx --from panache-cli panache format . --quiet
+
+# Run all check-related recipes
+check-all: check-spelling check-urls
 
 # Test template creation with specific parameters: `for_rostools` and `type`
 test for_rostools="true" type="r":
@@ -86,7 +89,7 @@ build-website:
 
 # Preview the website with automatic reload on changes
 preview-website:
-  quarto preview
+  uvx --from quarto quarto preview
 
 # Run all build-related recipes
 build-all: build-contributors build-website build-readme

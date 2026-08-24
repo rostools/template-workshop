@@ -41,3 +41,8 @@ github_repo_spec:
   type: str
   default: "{{ github_user }}/{{ github_repo }}"
   when: false
+
+copyright_year:
+  type: str
+  default: "{{ copyright_year | default('%Y' | strftime) }}"
+  when: false
