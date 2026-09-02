@@ -20,9 +20,9 @@ manage our project, such as to run checks and test the template. Both the uv and
 justfile websites have a more detailed guide on using uv, but below are some
 simple instructions to get you started.
 
-It's easiest to first
-[install uv](https://docs.astral.sh/uv/getting-started/installation/) and then
-install justfile with uv. Once you've installed uv, install justfile by running:
+It's easiest to first [install
+uv](https://docs.astral.sh/uv/getting-started/installation/) and then install
+justfile with uv. Once you've installed uv, install justfile by running:
 
 ```bash
 uv tool install rust-just
@@ -48,10 +48,10 @@ Meaning that if you make changes to the template and try to test it, it won't be
 able to test those changes. You have to commit the changes first in order for
 Copier to use them.
 
-When committing changes, please try to follow
-[Conventional Commits](https://decisions.seedcase-project.org/why-conventional-commits/)
-as Git messages. Using this convention allows us to be able to automatically
-create a release based on the commit message by using
+When committing changes, please try to follow [Conventional
+Commits](https://decisions.seedcase-project.org/why-conventional-commits/) as
+Git messages. Using this convention allows us to be able to automatically create
+a release based on the commit message by using
 [Cocogitto](https://decisions.seedcase-project.org/why-semantic-release-with-cocogitto/).
 If you don't use Conventional Commits when making a commit, we will revise the
 pull request title to follow that format. That's because we use squash merges

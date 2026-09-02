@@ -13,7 +13,7 @@ in the [schedule](/overview/schedule.qmd), which will be covered in order:
 
 The overall aim of this workshop is to enable you to:
 
-1.
+1. Aim one
 
 Broken down into specific objectives for each session, we've designed the
 workshop to enable you to do the following:
