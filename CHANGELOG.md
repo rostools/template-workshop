@@ -21,6 +21,62 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.14.0](https://github.com/rostools/template-workshop/compare/0.13.0..0.14.0) - 2026-09-03
+
+### ✨ Features
+
+- Add a `TODO.md` file to the template
+  [#150](https://github.com/rostools/template-workshop/pull/150) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([1a6fd6a](https://github.com/rostools/template-workshop/commit/1a6fd6ac554ec811b2dc933e23aa476b84876248))
+
+### 🐛 Fixes
+
+- Set path of typos config to new location in `.config/`
+  [#142](https://github.com/rostools/template-workshop/pull/142) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([08a0dca](https://github.com/rostools/template-workshop/commit/08a0dca2f6ff36f30ac76a059eeb67db69adcbc8))
+
+### ♻️ Refactor
+
+- Wrap rostools-specific content for easier non-rostools usage
+  [#141](https://github.com/rostools/template-workshop/pull/141) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([b283fa4](https://github.com/rostools/template-workshop/commit/b283fa4331d4f35bb08c8e3419e31b29d9e70f96))
+- Update config files from synching
+  [#149](https://github.com/rostools/template-workshop/pull/149) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([6bbb05c](https://github.com/rostools/template-workshop/commit/6bbb05c2c54f39406ee300ccb47d75567ef458a3))
+
+### 💄 Styling
+
+- Reformat template Markdown files
+  [#148](https://github.com/rostools/template-workshop/pull/148) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([d75dd32](https://github.com/rostools/template-workshop/commit/d75dd32ceaa02c443d2545ba2b44a6541c0995f5))
+
+### 👩‍💻 Miscellaneous
+
+- Ignore typos in `CHANGELOG.md`, as hashes are false positives
+  [#145](https://github.com/rostools/template-workshop/pull/145) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([2904410](https://github.com/rostools/template-workshop/commit/2904410054abcd7011a39211c84fb1d3c78a1b75))
+- Fixes and updates to justfile, matching t-squared
+  [#144](https://github.com/rostools/template-workshop/pull/144) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([ebf621b](https://github.com/rostools/template-workshop/commit/ebf621bb7cc2a191e3a2607ef643eb1eed7965df))
+- Ignore Jinja Markdown files when formatting Markdown
+  [#146](https://github.com/rostools/template-workshop/pull/146) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([613481e](https://github.com/rostools/template-workshop/commit/613481e34a21e52e80b024b077b7977d4e09ceb8))
+
+### ⏪ Revert
+
+- Fix false positive change from typos
+  [#147](https://github.com/rostools/template-workshop/pull/147) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([e83badf](https://github.com/rostools/template-workshop/commit/e83badf431f65ff113bf12aaeacc420af4040442))
+
 ## [0.13.0](https://github.com/rostools/template-workshop/compare/0.12.0..0.13.0) - 2026-09-03
 
 ### ✨ Features
