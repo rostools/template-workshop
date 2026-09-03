@@ -13,29 +13,44 @@ apply it to an existing workshop.
 
 You can use this template to create a new workshop with a standard set of files
 and folders, as well as all the features and configurations to make it easier to
-build your workshop smoothly and effectively. First, open a terminal and run the
-following command:
+build your workshop smoothly and effectively. First, open a terminal and change
+your working directory to a location you want to create the new workshop
+project, e.g. `Documents/`:
 
 ```bash {filename="Terminal"}
-uvx copier copy gh:rostools/template-workshop path/to/WORKSHOP-NAME
+cd Documents
 ```
 
-The `copy` command uses the template on GitHub (`gh:`) at the
-`rostools/template-workshop` location. The `path/to/` is the location where
-you'd like the new workshop to be created and `WORKSHOP-NAME` is the name you
+Next, copy and paste the following command, replacing the `WORKSHOP-NAME` with
+the name you want for your new workshop. The `WORKSHOP-NAME` is the name you
 want to give for the new workshop's directory and (ideally) the GitHub
 repository for the workshop. The name should be something short and meaningful,
 ideally lowercase, with `-` instead of spaces, and no special characters.
+
+```bash {filename="Terminal"}
+uvx copier copy gh:rostools/template-workshop WORKSHOP-NAME
+```
+
+The `copy` command uses the template on GitHub (`gh:`) at the
+`rostools/template-workshop` location.
 
 ## Applying to an existing workshop
 
 If you want to use this template on an existing workshop, you can use the `copy`
 command of `copier` just like above to apply the template to the existing
 workshop. This will add all the template's files and configurations to the
-existing workshop.
+existing workshop. First, open a terminal and move your working directory to the
+existing workshop's directory:
 
 ```bash {filename="Terminal"}
-uvx copier copy gh:rostools/template-workshop path/to/EXISTING-WORKSHOP
+cd Documents/EXISTING-WORKSHOP
+```
+
+Next, copy and paste the command below. The `.` means "use the template in the
+current directory":
+
+```bash {filename="Terminal"}
+uvx copier copy gh:rostools/template-workshop .
 ```
 
 See the comment above in the "Creating a new workshop" section about the naming
