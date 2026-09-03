@@ -34,6 +34,7 @@ install-deps:
 
 # Install development dependencies
 install-dev-deps:
+  uv tool install jarl-linter
   uv tool install air-formatter
 {%- endif %}
 
@@ -62,7 +63,7 @@ format-r:
 {%- endif %}
 
 # Run all check recipes
-check-all: check-spelling check-urls
+check-all: check-spelling check-urls {{ 'check-r' if workshop_type == 'r' }}
 
 # Check for spelling errors in files
 check-spelling:
@@ -76,6 +77,12 @@ check-urls:
     --extensions md,qmd \
     --exclude "github\.com" \
     --exclude-path "_badges.qmd"
+
+{% if workshop_type == "r" -%}
+# Lint R code for any potential issues
+check-r:
+  uvx --from jarl-linter jarl check .
+{%- endif %}
 
 # Run all build recipes
 build-all: build-contributors build-readme build-website
