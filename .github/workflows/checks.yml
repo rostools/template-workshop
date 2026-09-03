@@ -32,7 +32,6 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      # TODO: Confirm name of recipe to check template creation.
       - name: Check template creation
         run: just test-all
 
