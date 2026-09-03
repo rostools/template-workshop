@@ -20,6 +20,7 @@ book:
         - docs/guide/next-steps.qmd
   appendices:
     - CONTRIBUTING.md
+    - CODE_OF_CONDUCT.md
     - CHANGELOG.md
   tools:
     - icon: github
