@@ -36,6 +36,15 @@ github_repo:
     is stored? We strongly recommend using the default given.
   default: "{{ _folder_name }}"
 
+hosting_provider:
+  type: str
+  help: "What website hosting provider will you use for the workshop?"
+  choices:
+    - netlify
+    - gh-pages
+  default: >-
+    {{ "netlify" if for_seedcase else "gh-pages" }}
+
 # Configurations not asked
 github_repo_spec:
   type: str
