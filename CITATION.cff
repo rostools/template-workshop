@@ -1,14 +1,18 @@
 title: "Template Workshop: An opinionated setup for making workshops as open educational resources"
 abstract: "A template for making a Git repository that follows strongly opinionated practices for building and managing an open educational resource. See the website (https://template-workshop.rostools.org) for more details."
 authors:
-  - family-names: Johnston
-    given-names: Luke William
-    orcid: "https://orcid.org/0000-0003-4169-2616"
-    affiliation: "Steno Diabetes Center Aarhus"
   - family-names: Brødbæk
     given-names: Signe Kirk
     orcid: "https://orcid.org/0009-0000-2208-7088"
     affiliation: "Steno Diabetes Center Aarhus"
+  - family-names: Johnston
+    given-names: Luke William
+    orcid: "https://orcid.org/0000-0003-4169-2616"
+    affiliation: "Steno Diabetes Center Aarhus"
+  - family-names: Mazheri-Jensen
+    given-names: Daniel Skak
+    orcid: "https://orcid.org/0000-0003-1180-7734"
+    affiliation: "Aalborg University"
 cff-version: 1.2.0
 doi: "10.5281/zenodo.16979956"
 date-released: "2025-08-28"
