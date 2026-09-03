@@ -21,6 +21,25 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.13.0](https://github.com/rostools/template-workshop/compare/0.12.0..0.13.0) - 2026-09-03
+
+### ✨ Features
+
+- Add Jarl linter [#138](https://github.com/rostools/template-workshop/pull/138)
+  by [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([a4565eb](https://github.com/rostools/template-workshop/commit/a4565ebb05432b6c725a55ad9283cc3cbf5c410d))
+- Add Typst PDF output to `_quarto.yml`
+  [#140](https://github.com/rostools/template-workshop/pull/140) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([db6adab](https://github.com/rostools/template-workshop/commit/db6adab862d7dbc4c0e296fb4c68a16a32f267cf))
+
+### 🐛 Fixes
+
+- Add missing `hosting_provider` question
+  [#139](https://github.com/rostools/template-workshop/pull/139) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([c4af7e5](https://github.com/rostools/template-workshop/commit/c4af7e560312977aef52846d704768283ace4741))
+
 ## [0.12.0](https://github.com/rostools/template-workshop/compare/0.11.1..0.12.0) - 2026-09-03
 
 ### ✨ Features
