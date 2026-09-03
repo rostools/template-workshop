@@ -16,8 +16,8 @@ book:
       chapters:
         - docs/guide/installing.qmd
         - docs/guide/using.qmd
-        - docs/guide/updating.qmd
         - docs/guide/next-steps.qmd
+        - docs/guide/updating.qmd
   appendices:
     - CONTRIBUTING.md
     - CODE_OF_CONDUCT.md
