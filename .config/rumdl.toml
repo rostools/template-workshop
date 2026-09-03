@@ -10,6 +10,7 @@ exclude = [
   # `_badges.qmd` gets mangled by rumdl
   "**/_badges.qmd",
 ]
+include = ["*.qmd", "*.md", "*.md.jinja", "*.qmd.jinja"]
 
 # List style: `-`
 [MD004]
