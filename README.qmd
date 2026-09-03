@@ -26,9 +26,9 @@ delivery/deployment](https://en.wikipedia.org/wiki/Continuous_delivery) of the
 workshop website and archival to Zenodo.
 
 Check out our [website]({{< meta links.site >}}) for more information, such as
-the features it provides and a [guide]({{< meta links.site >}}/docs/guide) to
-using the template. For a list of changes, see our [changelog](CHANGELOG.md)
-page.
+the features it provides and a
+[guide]({{< meta links.site >}}/docs/guide/installing) to using the template.
+For a list of changes, see our [changelog](CHANGELOG.md) page.
 
 ::: callout-tip
 This template repository was generated from the

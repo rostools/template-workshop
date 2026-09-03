@@ -37,8 +37,9 @@ of the workshop website and archival to Zenodo.
 
 Check out our [website](https://template-workshop.rostools.org) for more
 information, such as the features it provides and a
-[guide](https://template-workshop.rostools.org/docs/guide) to using the
-template. For a list of changes, see our [changelog](CHANGELOG.md) page.
+[guide](https://template-workshop.rostools.org/docs/guide/installing) to
+using the template. For a list of changes, see our
+[changelog](CHANGELOG.md) page.
 
 > [!TIP]
 >
