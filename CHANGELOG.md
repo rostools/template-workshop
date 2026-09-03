@@ -21,6 +21,34 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.12.0](https://github.com/rostools/template-workshop/compare/0.11.1..0.12.0) - 2026-09-03
+
+### ✨ Features
+
+- Add Panache Markdown formatter
+  [#136](https://github.com/rostools/template-workshop/pull/136) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([5333848](https://github.com/rostools/template-workshop/commit/5333848c8bc218a45a6055303b2289a8e4c9fc97))
+
+### ♻️ Refactor
+
+- Move `rumdl.toml` and `typos.toml` into `.config/`
+  [#132](https://github.com/rostools/template-workshop/pull/132) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([fc8fb4b](https://github.com/rostools/template-workshop/commit/fc8fb4b7167335ba73916de5d199d14c8e5af8e9))
+- Move workflow checks into one workflow file
+  [#134](https://github.com/rostools/template-workshop/pull/134) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([7a27831](https://github.com/rostools/template-workshop/commit/7a27831c01b92b6c051627550cd880f22cde6113))
+- Switch to use Cocogitto and git-cliff for releases
+  [#135](https://github.com/rostools/template-workshop/pull/135) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([19eba88](https://github.com/rostools/template-workshop/commit/19eba885fefcf7de56d6ccd1a01af76dda50b134))
+- Simplify and update justfile based on t-squared
+  [#137](https://github.com/rostools/template-workshop/pull/137) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([d5be11b](https://github.com/rostools/template-workshop/commit/d5be11be4a7c548247f97a436bdfc2d312209d5a))
+
 ## [0.11.1](https://github.com/rostools/template-workshop/compare/0.11.0..0.11.1) - 2026-09-03
 
 ### 🐛 Fixes
