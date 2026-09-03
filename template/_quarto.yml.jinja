@@ -22,7 +22,9 @@ book:
   repo-url: "https://github.com/{{ github_repo_spec }}"
   # TODO: Fill in the URL
   site-url: ""
+  {% if for_rostools -%}
   body-header: {{ '"{{< text_snippet wip >}}"' }}
+  {%- endif %}
   downloads: [pdf]
   chapters:
     - index.qmd
@@ -51,12 +53,16 @@ book:
     - appendix/references.qmd
     {% if for_rostools -%}
     - CHANGELOG.md
-    {% endif %}
+    {%- endif %}
     - CONTRIBUTING.md
     - LICENSE.md
   page-footer:
     center:
+    {% if for_rostools -%}
       - text: "License: CC BY 4.0 {{ '{{< fa brands creative-commons >}}' }} {{ '{{< fa brands creative-commons-by >}}' }}"
+    {%- else -%}
+      - text: "License: CC BY 4.0"
+    {%- endif %}
         href: LICENSE.md
       - text: "Code of Conduct"
         href: "pre-workshop/code-of-conduct.qmd"
