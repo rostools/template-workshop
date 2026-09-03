@@ -11,10 +11,14 @@ list-todos:
   --exclude-dir=template \
   --exclude-dir=_temp \
   --exclude-dir=_book \
+  --exclude-dir=.git \
+  --exclude-dir=.rumdl_cache \
+  --exclude-dir=.vscode \
+  --exclude=CHANGELOG.md \
   --exclude=justfile \
   --exclude=copier.yaml \
   --exclude=_site \
-  "TODO" *
+  "TODO" .
 
 # Install the pre-commit hooks
 install-precommit:
@@ -28,7 +32,8 @@ update-quarto-theme:
 
 # Update files in the template from the Copier parent folder
 sync-template-files:
-  cp .pre-commit-config.yaml .gitignore .typos.toml .editorconfig CODE_OF_CONDUCT.md 404.qmd template/
+  cp .pre-commit-config.yaml .gitignore .editorconfig CODE_OF_CONDUCT.md 404.qmd template/
+  cp .config/typos.toml template/.config/
   mkdir -p template/tools
   cp tools/get-contributors.sh template/tools/
   cp .github/dependabot.yml .github/pull_request_template.md template/.github/
@@ -51,8 +56,6 @@ check-urls:
 format-md:
   # Use both rumdl and panache, for different purposes
   uvx rumdl fmt --silent
-  # `includes` option doesn't work with Jinja files, so do manually
-  uvx rumdl fmt --silent **/*.qmd.jinja **/*.md.jinja
   uvx --from panache-cli panache format . --quiet
 
 # Run all check-related recipes
