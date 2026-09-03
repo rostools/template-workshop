@@ -26,6 +26,10 @@ book:
     - icon: github
       href: "https://github.com/rostools/template-workshop"
       aria-label: "GitHub icon: Source code"
+  page-footer:
+    center:
+      - text: "License: CC BY 4.0 {{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}}"
+        href: LICENSE.md
 
 format:
   rostools-theme-html:
