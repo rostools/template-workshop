@@ -21,6 +21,97 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.14.1](https://github.com/rostools/template-workshop/compare/0.14.0..0.14.1) - 2026-10-03
+
+### 🐛 Fixes
+
+- Rename badge from "test" to "checks" by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([6fd93d6](https://github.com/rostools/template-workshop/commit/6fd93d69196a641efcc478c294c7bd500c9dfa44))
+- Correct URLs from check by [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([bc15848](https://github.com/rostools/template-workshop/commit/bc158480a7e2ec077734ec72a166d26dd3500047))
+
+### ♻️ Refactor
+
+- Split R specific tasks with general pre-workshop tasks by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([c6cbb7d](https://github.com/rostools/template-workshop/commit/c6cbb7d3aa07dd2cf0aa51c039b92ec531110ebf))
+- Clarify sentence, minor revision by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([1e507c8](https://github.com/rostools/template-workshop/commit/1e507c8bfad02948a3e158ad76730641a3792b38))
+- Remove max line lengths from EditorConfig, not needed by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([e6ca1d4](https://github.com/rostools/template-workshop/commit/e6ca1d485144d80aa0c8106539086e39901692fb))
+- Move Lychee config to own file by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([582676f](https://github.com/rostools/template-workshop/commit/582676f4edc1998610e24af9cb14ca1f68ac2b8a))
+- Remove use of `uvx` for running Quarto by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([df1b431](https://github.com/rostools/template-workshop/commit/df1b4316bc5436fbf67a5d7ed2ac68ba50ac1b29))
+- Update pre-commit hook versions in template by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([821256a](https://github.com/rostools/template-workshop/commit/821256a22d83acae7b7dd28d66b5aa0718464083))
+- Split reading website section into general and R-specific by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([0ffb676](https://github.com/rostools/template-workshop/commit/0ffb6769bb4f773d1eaefa251117a4d111ea6963))
+
+### 📝 Documentation
+
+- Rebuild README [#152](https://github.com/rostools/template-workshop/pull/152)
+  by [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([47161bf](https://github.com/rostools/template-workshop/commit/47161bf4bb381b93f0a12aa6732f0c4aa7e9c2a0))
+- Clarify and expand on installation guide
+  [#153](https://github.com/rostools/template-workshop/pull/153) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([3db4524](https://github.com/rostools/template-workshop/commit/3db4524c37970d138b6f2d46b124afcf9fa5dde5))
+- Clarify using and next steps guides for non-rostools uses
+  [#155](https://github.com/rostools/template-workshop/pull/155) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([fe99408](https://github.com/rostools/template-workshop/commit/fe994084aebb72b21575442cef4e69156b235501))
+- Minor fixes to landing page
+  [#156](https://github.com/rostools/template-workshop/pull/156) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([f5d6baf](https://github.com/rostools/template-workshop/commit/f5d6baf3dabae1570ff9ffe8f77fd4a49f5f8814))
+- Update next steps docs from t-squared by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([c7d8b89](https://github.com/rostools/template-workshop/commit/c7d8b8904b61fafce509571bed868bf55100645c))
+- Rebuild README by [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([a014299](https://github.com/rostools/template-workshop/commit/a01429916a093305efa04514eff423e2fac97ce5))
+
+### 💄 Styling
+
+- Minor formatting changes
+  [#157](https://github.com/rostools/template-workshop/pull/157) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([fb54ddf](https://github.com/rostools/template-workshop/commit/fb54ddf28bc4a14de53a6304e5d1ac16108522ba))
+- Reformat Markdown by [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([86b9821](https://github.com/rostools/template-workshop/commit/86b98211816285837b6ec81ea769f1369d1350bf))
+
+### 👷 CI/CD
+
+- Remove TODO item from workflow
+  [#154](https://github.com/rostools/template-workshop/pull/154) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([ff4672b](https://github.com/rostools/template-workshop/commit/ff4672b7a94318f3adca538b2cc8d805aaa24edd))
+
+### 👩‍💻 Miscellaneous
+
+- Add Jarl to extensions to match template
+  [#151](https://github.com/rostools/template-workshop/pull/151) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([d4ee338](https://github.com/rostools/template-workshop/commit/d4ee3384226c486b91f25b72fb4172291b648644))
+- Update justfile `list-todos` from t-squared by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([f0b3dd3](https://github.com/rostools/template-workshop/commit/f0b3dd37875f6d100f11f69c4c24cfb590a73bd6))
+- Ignore CHANGELOG with rumdl by [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([f0ce40d](https://github.com/rostools/template-workshop/commit/f0ce40de01679ae2fdb89c32af67064722ace91b))
+
+### ⏪ Revert
+
+- Need to use `uvx` when rendering README by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([bb45e18](https://github.com/rostools/template-workshop/commit/bb45e18d67041653c35ecf145eb0463e4f259480))
+
 ## [0.14.0](https://github.com/rostools/template-workshop/compare/0.13.0..0.14.0) - 2026-09-03
 
 ### ✨ Features
@@ -405,7 +496,7 @@ changelog.
   [`@lwjohnst86`](https://github.com/lwjohnst86)
   ([c198fca](https://github.com/rostools/template-workshop/commit/c198fcac3e3e4d0a30668af6fe95941164c904e6))
 
-## [0.6.0](https://github.com/rostools/template-workshop/compare/0.5.0..0.6.0) - 2026-03-26
+## [0.7.0](https://github.com/rostools/template-workshop/compare/0.6.0..0.7.0) - 2026-03-30
 
 ### ✨ Features
 
@@ -476,16 +567,10 @@ changelog.
   [`@lwjohnst86`](https://github.com/lwjohnst86)
   ([115a1e2](https://github.com/rostools/template-workshop/commit/115a1e2fdd743aceff484c38cbb1ec3d3e98d29f))
 
-## [0.5.0](https://github.com/rostools/template-workshop/compare/0.4.15..0.5.0) - 2026-02-07
+## [0.6.0](https://github.com/rostools/template-workshop/compare/0.5.0..0.6.0) - 2026-03-26
 
 ### ✨ Features
 
-- Exclude latex output files from typos by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([26248d4](https://github.com/rostools/template-workshop/commit/26248d4159461e0ad8f4a8c1caac51c5a84bfd77))
-- Add lychee URL checking to justfile by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([c857ddc](https://github.com/rostools/template-workshop/commit/c857ddc580814f3dabe7c2eb45e2c00db77e53d9))
 - Add rumdl Markdown formatter by [`@lwjohnst86`](https://github.com/lwjohnst86)
   ([d583cef](https://github.com/rostools/template-workshop/commit/d583cef08298d7c767de757bc650fd0226a10bd8))
 
@@ -500,9 +585,6 @@ changelog.
 
 ### ♻️ Refactor
 
-- Simplify code of conduct text by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([5cfed50](https://github.com/rostools/template-workshop/commit/5cfed50952ecdca408f0dcad7ea794ce6795632f))
 - Don't need to explicitly use `theme` in `_quarto.yml` by
   [`@lwjohnst86`](https://github.com/lwjohnst86)
   ([7d87879](https://github.com/rostools/template-workshop/commit/7d8787957a00a488dac735fb12e2c41e50e116cc))
@@ -521,14 +603,6 @@ changelog.
 
 ### 📝 Documentation
 
-- Match CHANGELOG intro with the template's text by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([0cf3beb](https://github.com/rostools/template-workshop/commit/0cf3bebb95426d408eb637da3d721c32ff87dabf))
-- Add lychee to feature list by [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([60e0da7](https://github.com/rostools/template-workshop/commit/60e0da7b702e857ae6e1bfcc81927d1dde29a75a))
-- Add callout block about post-creation setup by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([cfad7dc](https://github.com/rostools/template-workshop/commit/cfad7dccf37605e93516e4ec59649e8c5cb49664))
 - Clarify that `--trust` runs commands after copying by
   [`@lwjohnst86`](https://github.com/lwjohnst86)
   ([4fa281c](https://github.com/rostools/template-workshop/commit/4fa281c65ff85e7e9ff940f02ee2ae91f66a0602))
@@ -537,6 +611,34 @@ changelog.
 
 - Ran Markdown formatter by [`@lwjohnst86`](https://github.com/lwjohnst86)
   ([bcaa790](https://github.com/rostools/template-workshop/commit/bcaa790634366a635532de45d0fbe5b8b42750e0))
+
+## [0.5.0](https://github.com/rostools/template-workshop/compare/0.4.15..0.5.0) - 2026-02-07
+
+### ✨ Features
+
+- Exclude latex output files from typos by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([26248d4](https://github.com/rostools/template-workshop/commit/26248d4159461e0ad8f4a8c1caac51c5a84bfd77))
+- Add lychee URL checking to justfile by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([c857ddc](https://github.com/rostools/template-workshop/commit/c857ddc580814f3dabe7c2eb45e2c00db77e53d9))
+
+### ♻️ Refactor
+
+- Simplify code of conduct text by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([5cfed50](https://github.com/rostools/template-workshop/commit/5cfed50952ecdca408f0dcad7ea794ce6795632f))
+
+### 📝 Documentation
+
+- Match CHANGELOG intro with the template's text by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([0cf3beb](https://github.com/rostools/template-workshop/commit/0cf3bebb95426d408eb637da3d721c32ff87dabf))
+- Add lychee to feature list by [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([60e0da7](https://github.com/rostools/template-workshop/commit/60e0da7b702e857ae6e1bfcc81927d1dde29a75a))
+- Add callout block about post-creation setup by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([cfad7dc](https://github.com/rostools/template-workshop/commit/cfad7dccf37605e93516e4ec59649e8c5cb49664))
 
 ## [0.4.15](https://github.com/rostools/template-workshop/compare/0.4.14..0.4.15) - 2025-09-17
 
@@ -607,6 +709,11 @@ changelog.
   [`@lwjohnst86`](https://github.com/lwjohnst86)
   ([a9d78f9](https://github.com/rostools/template-workshop/commit/a9d78f9e793dbc4b10ef83d57dc2171d44acbb5e))
 
+### 📝 Documentation
+
+- Use `###` for contributors by [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([6b106a1](https://github.com/rostools/template-workshop/commit/6b106a1c34767bcf56a87654c2a1356a57767809))
+
 ### 💄 Styling
 
 - Ran pre-commit hooks by [`@lwjohnst86`](https://github.com/lwjohnst86)
@@ -629,8 +736,6 @@ changelog.
 - Add contributors section to README and index by
   [`@lwjohnst86`](https://github.com/lwjohnst86)
   ([68816cd](https://github.com/rostools/template-workshop/commit/68816cdb36c6a56f0931517f96061098889e3fd1))
-- Use `###` for contributors by [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([6b106a1](https://github.com/rostools/template-workshop/commit/6b106a1c34767bcf56a87654c2a1356a57767809))
 
 ### 👩‍💻 Miscellaneous
 
@@ -641,6 +746,20 @@ changelog.
 - Save `_contributors.yml` to `docs/includes/` by
   [`@lwjohnst86`](https://github.com/lwjohnst86)
   ([0b5cf16](https://github.com/rostools/template-workshop/commit/0b5cf1613f24ad821650415dfce3cf808058ef7d))
+
+## [0.4.8](https://github.com/rostools/template-workshop/compare/0.4.7..0.4.8) - 2025-09-03
+
+### 🐛 Fixes
+
+- Correctly strip empty jinja lines by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([93dd56b](https://github.com/rostools/template-workshop/commit/93dd56bba23052e2f9cf2aaa6ba86dbdc5b9875e))
+
+### ♻️ Refactor
+
+- Should be `isIdenticalTo` and `lesson` in `.zenodo.json` by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([1d85f07](https://github.com/rostools/template-workshop/commit/1d85f076f0ea414385a10b966f1949a2a1be86d9))
 
 ## [0.4.7](https://github.com/rostools/template-workshop/compare/0.4.6..0.4.7) - 2025-09-03
 
@@ -669,20 +788,6 @@ changelog.
 
 ### 🐛 Fixes
 
-- Correctly strip empty jinja lines by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([93dd56b](https://github.com/rostools/template-workshop/commit/93dd56bba23052e2f9cf2aaa6ba86dbdc5b9875e))
-
-### ♻️ Refactor
-
-- Should be `isIdenticalTo` and `lesson` in `.zenodo.json` by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([1d85f07](https://github.com/rostools/template-workshop/commit/1d85f076f0ea414385a10b966f1949a2a1be86d9))
-
-## [0.4.4](https://github.com/rostools/template-workshop/compare/0.4.3..0.4.4) - 2025-09-02
-
-### 🐛 Fixes
-
 - Need to check for existence of `github_repo` first by
   [`@lwjohnst86`](https://github.com/lwjohnst86)
   ([724b9ae](https://github.com/rostools/template-workshop/commit/724b9ae7e9da80f1093cb43120d082116d54327a))
@@ -693,7 +798,7 @@ changelog.
   [`@lwjohnst86`](https://github.com/lwjohnst86)
   ([c47b577](https://github.com/rostools/template-workshop/commit/c47b577d2f9b03c7f450a59bdda41cb2917a2c16))
 
-## [0.4.3](https://github.com/rostools/template-workshop/compare/0.4.2..0.4.3) - 2025-09-02
+## [0.4.4](https://github.com/rostools/template-workshop/compare/0.4.3..0.4.4) - 2025-09-02
 
 ### 🐛 Fixes
 
@@ -709,7 +814,7 @@ changelog.
   [`@lwjohnst86`](https://github.com/lwjohnst86)
   ([14e8586](https://github.com/rostools/template-workshop/commit/14e858608b04f1883703a397a6829e5a1af40b23))
 
-## [0.4.2](https://github.com/rostools/template-workshop/compare/0.4.1..0.4.2) - 2025-09-02
+## [0.4.3](https://github.com/rostools/template-workshop/compare/0.4.2..0.4.3) - 2025-09-02
 
 ### ♻️ Refactor
 
@@ -722,7 +827,7 @@ changelog.
   [`@lwjohnst86`](https://github.com/lwjohnst86)
   ([a4a891e](https://github.com/rostools/template-workshop/commit/a4a891e4ccfa80f5a2a14e5b49046acf1b29a1bd))
 
-## [0.4.1](https://github.com/rostools/template-workshop/compare/0.4.0..0.4.1) - 2025-08-29
+## [0.4.2](https://github.com/rostools/template-workshop/compare/0.4.1..0.4.2) - 2025-09-02
 
 ### 🐛 Fixes
 
@@ -758,7 +863,7 @@ changelog.
   [`@lwjohnst86`](https://github.com/lwjohnst86)
   ([3698f9a](https://github.com/rostools/template-workshop/commit/3698f9a2f4669d9e1276c3fd1e2bd883d197f892))
 
-## [0.4.0](https://github.com/rostools/template-workshop/compare/0.3.2..0.4.0) - 2025-08-29
+## [0.4.1](https://github.com/rostools/template-workshop/compare/0.4.0..0.4.1) - 2025-08-29
 
 ### 🐛 Fixes
 
@@ -781,7 +886,7 @@ changelog.
   [`@lwjohnst86`](https://github.com/lwjohnst86)
   ([519d704](https://github.com/rostools/template-workshop/commit/519d70463a20067f1b062b2b3e755d151e048ef1))
 
-## [0.3.2](https://github.com/rostools/template-workshop/compare/0.3.1..0.3.2) - 2025-08-29
+## [0.4.0](https://github.com/rostools/template-workshop/compare/0.3.2..0.4.0) - 2025-08-29
 
 ### ✨ Features
 
@@ -795,6 +900,14 @@ changelog.
   ([f338d73](https://github.com/rostools/template-workshop/commit/f338d73013dc6b36592c1f0503c211bd3012ff02))
 - Strip empty Jinja lines by [`@lwjohnst86`](https://github.com/lwjohnst86)
   ([a0fa2ec](https://github.com/rostools/template-workshop/commit/a0fa2ec5d587d4dbd1be6988f58269955fdc617b))
+
+## [0.3.2](https://github.com/rostools/template-workshop/compare/0.3.1..0.3.2) - 2025-08-29
+
+### ♻️ Refactor
+
+- Wrap text in README in a callout block for separation by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([8b889a8](https://github.com/rostools/template-workshop/commit/8b889a8bec8b336234a3c0f09ede0ca649136ca3))
 
 ## [0.3.1](https://github.com/rostools/template-workshop/compare/0.3.0..0.3.1) - 2025-08-28
 
@@ -815,9 +928,12 @@ changelog.
 - Abbrev `meta` isn't used anywhere by
   [`@lwjohnst86`](https://github.com/lwjohnst86)
   ([0ba3062](https://github.com/rostools/template-workshop/commit/0ba3062561165a3393d1a250962a49ebc509c9d0))
-- Wrap text in README in a callout block for separation by
+
+### 📝 Documentation
+
+- Add DOI of template in Zenodo by
   [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([8b889a8](https://github.com/rostools/template-workshop/commit/8b889a8bec8b336234a3c0f09ede0ca649136ca3))
+  ([be8953a](https://github.com/rostools/template-workshop/commit/be8953a584adcf28246bf512c8277c7bf9d48dbb))
 
 ### 🧪 Tests
 
@@ -873,15 +989,18 @@ changelog.
 - Fix links to internal docs in README by
   [`@lwjohnst86`](https://github.com/lwjohnst86)
   ([669f91f](https://github.com/rostools/template-workshop/commit/669f91fd4b0ed0f557bd80f9d4c08a57960d56f1))
-- Add DOI of template in Zenodo by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([be8953a](https://github.com/rostools/template-workshop/commit/be8953a584adcf28246bf512c8277c7bf9d48dbb))
 
 ### 🧪 Tests
 
 - Don't run `just run-all` when testing by
   [`@lwjohnst86`](https://github.com/lwjohnst86)
   ([c6c4414](https://github.com/rostools/template-workshop/commit/c6c4414dc771bb1707398e274f51f1394c7c78b6))
+
+### 👷 CI/CD
+
+- Install Quarto in test workflow by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([5f46db1](https://github.com/rostools/template-workshop/commit/5f46db1bca3b221b27f90451de5bf40d32ef9199))
 
 ### 👩‍💻 Miscellaneous
 
@@ -907,6 +1026,34 @@ changelog.
 
 ### ✨ Features
 
+- Add `.zenodo.json` to the template by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([d9e0331](https://github.com/rostools/template-workshop/commit/d9e03318061d18e4b87b3ebe86b962b29e8f8984))
+- Add justfile to template by [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([2b82882](https://github.com/rostools/template-workshop/commit/2b82882f2c905ac3baceccedf09da9d22cda5108))
+- Add includes for "follow us" block by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([ecc4238](https://github.com/rostools/template-workshop/commit/ecc423891e8f7208e00323bf8b130dcb6aab0ae2))
+- Standalone page for learning design by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([3926f70](https://github.com/rostools/template-workshop/commit/3926f701f284306680adbeafd91784f2e35ec778))
+- Set of default badges for template README and landing page by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([d8a5967](https://github.com/rostools/template-workshop/commit/d8a5967759c02fa625539e09b28a9d8ef4af8a28))
+- Update template's README by [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([0875301](https://github.com/rostools/template-workshop/commit/08753012de83f4e5e38ac9d3075a303ca7944c7b))
+- Justfile recipe to build readme in template by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([d5ecc90](https://github.com/rostools/template-workshop/commit/d5ecc90e5d86a2ff9ccdd5a7d8515faf05124efb))
+- Add `_metadata.yml` file to hold common text by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([bd482a4](https://github.com/rostools/template-workshop/commit/bd482a44616b1b0c8e3f74f0d6908e3b20641fc7))
+- Fill out templating in `_quarto.yml` file by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([a1a241a](https://github.com/rostools/template-workshop/commit/a1a241ad7927713eed253ce8da0a885af4867bc4))
+- Add initial, though empty, CHANGELOG file by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([cfab052](https://github.com/rostools/template-workshop/commit/cfab0526570d079b2fdc004a7636c34d75919305))
 - Add a post-copy message and tasks by
   [`@lwjohnst86`](https://github.com/lwjohnst86)
   ([197195f](https://github.com/rostools/template-workshop/commit/197195ff88e0a9032ef7032fa91d2aa65bc43598))
@@ -937,6 +1084,12 @@ changelog.
 
 ### 🐛 Fixes
 
+- Should be `{{ }}`, without the % by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([2e216e3](https://github.com/rostools/template-workshop/commit/2e216e375b64783aa2cf00d39900d668717a2c27))
+- Wrap `${{ }}` in `{{` to escape them by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([883e9ca](https://github.com/rostools/template-workshop/commit/883e9cac1396fa664a72bc7f07889a8728575a4c))
 - Can't have spaces between `%}` by
   [`@lwjohnst86`](https://github.com/lwjohnst86)
   ([4e0801e](https://github.com/rostools/template-workshop/commit/4e0801ecd1b9872b868761cab73528384aa91ee9))
@@ -964,6 +1117,36 @@ changelog.
 
 ### ♻️ Refactor
 
+- Use only one `.cz.toml`, but use internal 'if' statements inside by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([83edab0](https://github.com/rostools/template-workshop/commit/83edab041a0cbd41dcb81d8fee2c23888a7c1d67))
+- Move code of conduct out of includes as own page by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([5c75208](https://github.com/rostools/template-workshop/commit/5c75208a81e3bfc6df50210b561b705002249041))
+- Expand on template's CONTRIBUTING doc by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([185f3c1](https://github.com/rostools/template-workshop/commit/185f3c1d1854c778dbe40e9edfac56c404d75f01))
+- Merge template website build workflow into one file by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([f6f65c4](https://github.com/rostools/template-workshop/commit/f6f65c4b0b7b642d402fa3a16b5e5f3b06ce5482))
+- Include a starting URL for Quarto website in Netlify by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([741de3e](https://github.com/rostools/template-workshop/commit/741de3eb4589067ff09d5df7738e6586e14e7dd8))
+- Remove social time from schedule by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([880e630](https://github.com/rostools/template-workshop/commit/880e63073c8ac33219fba241e3347ec0285abfe6))
+- Converted includes into own pages in template by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([534ab56](https://github.com/rostools/template-workshop/commit/534ab5654083c097d57dc516b6e4d6ab386133ed))
+- Simplify includes to all be in `includes/` by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([fd5b296](https://github.com/rostools/template-workshop/commit/fd5b29677f1443ab7e13a4a81af09c13f00414c5))
+- Include "reading-website" into overview page by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([77dbea1](https://github.com/rostools/template-workshop/commit/77dbea15731c2a957a13021645ad0db81d4e602a))
+- No need for generic "installing-programs" doc by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([1b41da6](https://github.com/rostools/template-workshop/commit/1b41da68ba2c298388fd837128d59abf0b57cf43))
 - Session isn't always an R workshop, don't need code chunk by
   [`@lwjohnst86`](https://github.com/lwjohnst86)
   ([d7999f2](https://github.com/rostools/template-workshop/commit/d7999f2df96458ab6ef13f01653ce38111a468a7))
@@ -1022,6 +1205,27 @@ changelog.
 
 ### 📝 Documentation
 
+- Add contributor list by [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([d838710](https://github.com/rostools/template-workshop/commit/d8387108246d682988b116394fb0a17ac5604da9))
+- Add release page to website by [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([281d123](https://github.com/rostools/template-workshop/commit/281d123d2ee1d1a24ba322e1cf0dd1e75250ad77))
+- Generalise authors to "template-workshop" authors by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([947ef3d](https://github.com/rostools/template-workshop/commit/947ef3d651b4328d933519c344e587b096a08233))
+- Add explanation about releasing and commit messages by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([0a701ca](https://github.com/rostools/template-workshop/commit/0a701caa92052214cdc670723361fdf23d9a0890))
+- Add guide doc to website by [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([2d9f6df](https://github.com/rostools/template-workshop/commit/2d9f6df9750d2f78ec084058ad8213c527c2cb5b))
+- Add note about setting up Netlify by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([c72e566](https://github.com/rostools/template-workshop/commit/c72e566184efbeb8d84a25bf9ff9d07ed3ce2909))
+- Correct doc comment in contributing script by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([78eefe3](https://github.com/rostools/template-workshop/commit/78eefe30b144113eca84ffa40ec295d03922b87c))
+- Forgot to use correct meta shortcode by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([c0e9db3](https://github.com/rostools/template-workshop/commit/c0e9db302352ebc38db25ae9656630901fc8bd76))
 - Add auto-generated `contributors.qmd` file by
   [`@lwjohnst86`](https://github.com/lwjohnst86)
   ([e856105](https://github.com/rostools/template-workshop/commit/e856105bbbc85a2a654e22823174c38118344137))
@@ -1053,175 +1257,17 @@ changelog.
 
 ### 👷 CI/CD
 
+- Generalise test workflow by [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([3ffd2cc](https://github.com/rostools/template-workshop/commit/3ffd2ccdfc8c1e65640257583999817cef93ac64))
 - Don't need the env in the test workflow by
   [`@lwjohnst86`](https://github.com/lwjohnst86)
   ([1b42eb3](https://github.com/rostools/template-workshop/commit/1b42eb3fb11f212338e853c36a2ae83f5084903f))
 - Need to set Git user for test workflow to run by
   [`@lwjohnst86`](https://github.com/lwjohnst86)
   ([c130b5b](https://github.com/rostools/template-workshop/commit/c130b5bbdaffef444a929bfb5cd23578108d337a))
-- Install Quarto in test workflow by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([5f46db1](https://github.com/rostools/template-workshop/commit/5f46db1bca3b221b27f90451de5bf40d32ef9199))
 
 ### 👩‍💻 Miscellaneous
 
-- Add `CODEOWNERS`, with me and Signe by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([cfb3c70](https://github.com/rostools/template-workshop/commit/cfb3c7014a1d1224cdc74c8f7e43e304c4213af8))
-- Cleaned up the `.vscode` files a bit by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([9ee315d](https://github.com/rostools/template-workshop/commit/9ee315d1ec695f2cea9fd0f2fd103cfba19acd00))
-- Seemed to have deleted it, brought back by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([ba2067a](https://github.com/rostools/template-workshop/commit/ba2067a88193d1c2b0f9312393f9579a5f99d875))
-
-### ❤️ New contributors
-
-- `@github-actions[bot]` started making automated contributions
-
-## 0.1.0 - 2025-08-24
-
-### ✨ Features
-
-- Add `.zenodo.json` to the template by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([d9e0331](https://github.com/rostools/template-workshop/commit/d9e03318061d18e4b87b3ebe86b962b29e8f8984))
-- Add justfile to template by [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([2b82882](https://github.com/rostools/template-workshop/commit/2b82882f2c905ac3baceccedf09da9d22cda5108))
-- Add includes for "follow us" block by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([ecc4238](https://github.com/rostools/template-workshop/commit/ecc423891e8f7208e00323bf8b130dcb6aab0ae2))
-- Standalone page for learning design by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([3926f70](https://github.com/rostools/template-workshop/commit/3926f701f284306680adbeafd91784f2e35ec778))
-- Set of default badges for template README and landing page by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([d8a5967](https://github.com/rostools/template-workshop/commit/d8a5967759c02fa625539e09b28a9d8ef4af8a28))
-- Update template's README by [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([0875301](https://github.com/rostools/template-workshop/commit/08753012de83f4e5e38ac9d3075a303ca7944c7b))
-- Justfile recipe to build readme in template by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([d5ecc90](https://github.com/rostools/template-workshop/commit/d5ecc90e5d86a2ff9ccdd5a7d8515faf05124efb))
-- Add `_metadata.yml` file to hold common text by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([bd482a4](https://github.com/rostools/template-workshop/commit/bd482a44616b1b0c8e3f74f0d6908e3b20641fc7))
-- Fill out templating in `_quarto.yml` file by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([a1a241a](https://github.com/rostools/template-workshop/commit/a1a241ad7927713eed253ce8da0a885af4867bc4))
-- Add initial, though empty, CHANGELOG file by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([cfab052](https://github.com/rostools/template-workshop/commit/cfab0526570d079b2fdc004a7636c34d75919305))
-
-### 🐛 Fixes
-
-- Should be `{{ }}`, without the % by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([2e216e3](https://github.com/rostools/template-workshop/commit/2e216e375b64783aa2cf00d39900d668717a2c27))
-- Wrap `${{ }}` in `{{` to escape them by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([883e9ca](https://github.com/rostools/template-workshop/commit/883e9cac1396fa664a72bc7f07889a8728575a4c))
-
-### ♻️ Refactor
-
-- Use only one `.cz.toml`, but use internal 'if' statements inside by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([83edab0](https://github.com/rostools/template-workshop/commit/83edab041a0cbd41dcb81d8fee2c23888a7c1d67))
-- Move code of conduct out of includes as own page by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([5c75208](https://github.com/rostools/template-workshop/commit/5c75208a81e3bfc6df50210b561b705002249041))
-- Expand on template's CONTRIBUTING doc by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([185f3c1](https://github.com/rostools/template-workshop/commit/185f3c1d1854c778dbe40e9edfac56c404d75f01))
-- Merge template website build workflow into one file by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([f6f65c4](https://github.com/rostools/template-workshop/commit/f6f65c4b0b7b642d402fa3a16b5e5f3b06ce5482))
-- Include a starting URL for Quarto website in Netlify by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([741de3e](https://github.com/rostools/template-workshop/commit/741de3eb4589067ff09d5df7738e6586e14e7dd8))
-- Remove social time from schedule by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([880e630](https://github.com/rostools/template-workshop/commit/880e63073c8ac33219fba241e3347ec0285abfe6))
-- Converted includes into own pages in template by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([534ab56](https://github.com/rostools/template-workshop/commit/534ab5654083c097d57dc516b6e4d6ab386133ed))
-- Simplify includes to all be in `includes/` by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([fd5b296](https://github.com/rostools/template-workshop/commit/fd5b29677f1443ab7e13a4a81af09c13f00414c5))
-- Include "reading-website" into overview page by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([77dbea1](https://github.com/rostools/template-workshop/commit/77dbea15731c2a957a13021645ad0db81d4e602a))
-- No need for generic "installing-programs" doc by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([1b41da6](https://github.com/rostools/template-workshop/commit/1b41da68ba2c298388fd837128d59abf0b57cf43))
-
-### 📝 Documentation
-
-- Expand on CONTRIBUTING guide
-  [#2](https://github.com/rostools/template-workshop/pull/2) by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([45bb005](https://github.com/rostools/template-workshop/commit/45bb0057404ef44b77b43c6f150625c6033e7b6c))
-- Update CITATION file for this template
-  [#3](https://github.com/rostools/template-workshop/pull/3) by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([9865946](https://github.com/rostools/template-workshop/commit/98659463939d606abb090839dc341897871f11ce))
-- Match README style with Seedcase template style
-  [#7](https://github.com/rostools/template-workshop/pull/7) by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([621dae2](https://github.com/rostools/template-workshop/commit/621dae2db1149b07e4869c2866697b2ffe525e9d))
-- Landing page of website
-  [#8](https://github.com/rostools/template-workshop/pull/8) by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([3b61e52](https://github.com/rostools/template-workshop/commit/3b61e52bfaa8451ef92a36797149dd285f40b034))
-- Add contributor list by [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([d838710](https://github.com/rostools/template-workshop/commit/d8387108246d682988b116394fb0a17ac5604da9))
-- Add release page to website by [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([281d123](https://github.com/rostools/template-workshop/commit/281d123d2ee1d1a24ba322e1cf0dd1e75250ad77))
-- Generalise authors to "template-workshop" authors by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([947ef3d](https://github.com/rostools/template-workshop/commit/947ef3d651b4328d933519c344e587b096a08233))
-- Add explanation about releasing and commit messages by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([0a701ca](https://github.com/rostools/template-workshop/commit/0a701caa92052214cdc670723361fdf23d9a0890))
-- Add guide doc to website by [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([2d9f6df](https://github.com/rostools/template-workshop/commit/2d9f6df9750d2f78ec084058ad8213c527c2cb5b))
-- Add note about setting up Netlify by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([c72e566](https://github.com/rostools/template-workshop/commit/c72e566184efbeb8d84a25bf9ff9d07ed3ce2909))
-- Correct doc comment in contributing script by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([78eefe3](https://github.com/rostools/template-workshop/commit/78eefe30b144113eca84ffa40ec295d03922b87c))
-- Forgot to use correct meta shortcode by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([c0e9db3](https://github.com/rostools/template-workshop/commit/c0e9db302352ebc38db25ae9656630901fc8bd76))
-
-### 💄 Styling
-
-- Add rostools-theme Quarto extension
-  [#5](https://github.com/rostools/template-workshop/pull/5) by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([6eac546](https://github.com/rostools/template-workshop/commit/6eac5460cff2adbb688639e87bfc05942327e9ce))
-
-### 👷 CI/CD
-
-- Generalise test workflow by [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([3ffd2cc](https://github.com/rostools/template-workshop/commit/3ffd2ccdfc8c1e65640257583999817cef93ac64))
-
-### 👩‍💻 Miscellaneous
-
-- Start template repo by [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([c5123e4](https://github.com/rostools/template-workshop/commit/c5123e4f981de7b89b515cca4563658ef6858cad))
-- Improve some DevEx settings
-  [#4](https://github.com/rostools/template-workshop/pull/4) by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([f0d089b](https://github.com/rostools/template-workshop/commit/f0d089b9a9d5a8be7db0ee5fcd1013be6967c11b))
-- Do not skip workflows on version bump
-  [#6](https://github.com/rostools/template-workshop/pull/6) by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([172e4f1](https://github.com/rostools/template-workshop/commit/172e4f1f70f859061c1c01d820b3ace75749fe55))
-- Add all Quarto config and build files
-  [#9](https://github.com/rostools/template-workshop/pull/9) by
-  [`@lwjohnst86`](https://github.com/lwjohnst86)
-  ([18aac29](https://github.com/rostools/template-workshop/commit/18aac29b27c4a1796aa70915894360d6e91cdacb))
 - Move metadata into `_metadata.yml` by
   [`@lwjohnst86`](https://github.com/lwjohnst86)
   ([d7651d2](https://github.com/rostools/template-workshop/commit/d7651d2f72fc6ca04dd1276407cb6c7eee97e643))
@@ -1250,11 +1296,67 @@ changelog.
 - Don't need to run contributor script from justfile by
   [`@lwjohnst86`](https://github.com/lwjohnst86)
   ([15ee0c1](https://github.com/rostools/template-workshop/commit/15ee0c1b0a52a1b46cecaf5482d7636972630b86))
+- Add `CODEOWNERS`, with me and Signe by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([cfb3c70](https://github.com/rostools/template-workshop/commit/cfb3c7014a1d1224cdc74c8f7e43e304c4213af8))
+- Cleaned up the `.vscode` files a bit by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([9ee315d](https://github.com/rostools/template-workshop/commit/9ee315d1ec695f2cea9fd0f2fd103cfba19acd00))
+- Seemed to have deleted it, brought back by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([ba2067a](https://github.com/rostools/template-workshop/commit/ba2067a88193d1c2b0f9312393f9579a5f99d875))
+
+### ❤️ New contributors
+
+- `@github-actions[bot]` started making automated contributions
+
+## 0.1.0 - 2025-08-24
+
+### 📝 Documentation
+
+- Expand on CONTRIBUTING guide
+  [#2](https://github.com/rostools/template-workshop/pull/2) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([45bb005](https://github.com/rostools/template-workshop/commit/45bb0057404ef44b77b43c6f150625c6033e7b6c))
+- Update CITATION file for this template
+  [#3](https://github.com/rostools/template-workshop/pull/3) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([9865946](https://github.com/rostools/template-workshop/commit/98659463939d606abb090839dc341897871f11ce))
+- Match README style with Seedcase template style
+  [#7](https://github.com/rostools/template-workshop/pull/7) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([621dae2](https://github.com/rostools/template-workshop/commit/621dae2db1149b07e4869c2866697b2ffe525e9d))
+- Landing page of website
+  [#8](https://github.com/rostools/template-workshop/pull/8) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([3b61e52](https://github.com/rostools/template-workshop/commit/3b61e52bfaa8451ef92a36797149dd285f40b034))
+
+### 💄 Styling
+
+- Add rostools-theme Quarto extension
+  [#5](https://github.com/rostools/template-workshop/pull/5) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([6eac546](https://github.com/rostools/template-workshop/commit/6eac5460cff2adbb688639e87bfc05942327e9ce))
+
+### 👩‍💻 Miscellaneous
+
+- Start template repo by [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([c5123e4](https://github.com/rostools/template-workshop/commit/c5123e4f981de7b89b515cca4563658ef6858cad))
+- Improve some DevEx settings
+  [#4](https://github.com/rostools/template-workshop/pull/4) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([f0d089b](https://github.com/rostools/template-workshop/commit/f0d089b9a9d5a8be7db0ee5fcd1013be6967c11b))
+- Do not skip workflows on version bump
+  [#6](https://github.com/rostools/template-workshop/pull/6) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([172e4f1](https://github.com/rostools/template-workshop/commit/172e4f1f70f859061c1c01d820b3ace75749fe55))
+- Add all Quarto config and build files
+  [#9](https://github.com/rostools/template-workshop/pull/9) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([18aac29](https://github.com/rostools/template-workshop/commit/18aac29b27c4a1796aa70915894360d6e91cdacb))
 
 ### ❤️ New contributors
 
 - `@pre-commit-ci[bot]` started making automated contributions
-
-- [`@lwjohnst86`](https://github.com/lwjohnst86) made their first contribution
 
 - `@dependabot[bot]` started making automated contributions
