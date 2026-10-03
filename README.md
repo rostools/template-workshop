@@ -8,7 +8,7 @@
 License](https://img.shields.io/github/license/rostools/template-workshop.svg)](https://github.com/rostools/template-workshop/blob/main/LICENSE.md)
 [![GitHub
 Release](https://img.shields.io/github/v/release/rostools/template-workshop.svg)](https://github.com/rostools/template-workshop/releases/latest)
-[![Test](https://github.com/rostools/template-workshop/actions/workflows/test.yml/badge.svg)](https://github.com/rostools/template-workshop/actions/workflows/test.yml)
+[![Checks](https://github.com/rostools/template-workshop/actions/workflows/checks.yml/badge.svg)](https://github.com/rostools/template-workshop/actions/workflows/checks.yml)
 [![Build
 website](https://github.com/rostools/template-workshop/actions/workflows/build-website.yml/badge.svg)](https://github.com/rostools/template-workshop/actions/workflows/build-website.yml)
 [![CodeQL](https://github.com/rostools/template-workshop/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main)](https://github.com/rostools/template-workshop/actions/workflows/github-code-scanning/codeql)
