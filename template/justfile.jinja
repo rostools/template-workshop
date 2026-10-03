@@ -69,14 +69,9 @@ check-all: check-spelling check-urls {{ 'check-r' if workshop_type == 'r' }}
 check-spelling:
   uvx typos --config .config/typos.toml
 
-# Install lychee from https://lychee.cli.rs/guides/getting-started/
-# Check that URLs work with lychee
+# Check that URLs work
 check-urls:
-  lychee . \
-    --verbose \
-    --extensions md,qmd \
-    --exclude "github\.com" \
-    --exclude-path "_badges.qmd"
+    lychee . --config .config/lychee.toml
 
 {% if workshop_type == "r" -%}
 # Lint R code for any potential issues
