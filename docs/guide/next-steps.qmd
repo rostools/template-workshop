@@ -7,9 +7,10 @@ order: 3
 
 While most of the post-applying steps are listed in the created `TODO.md` file
 within the workshop, this documents some more details for these steps. Use this
-guide alongside the `TODO.md` to complete those tasks. For example, one of the
-first tasks is to start having Git track the workshop with `git init`. There are
-two sets of tasks: required and optional.
+guide alongside the `TODO.md` to complete those tasks. One of the first tasks to
+do (as listed in the `TODO.md` file) is to get Git to track the workshop with
+`git init` and adding files to the Git history. After that, there are two sets
+of tasks described in this document: required and optional.
 
 ## Required
 
