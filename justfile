@@ -76,7 +76,7 @@ cleanup:
 
 # Re-build the README file from the Quarto version
 build-readme:
-  uvx --from quarto quarto render README.qmd --to gfm
+    quarto render README.qmd --to gfm
 
 # Generate a Quarto include file with the contributors
 build-contributors:
@@ -84,11 +84,11 @@ build-contributors:
 
 # Build the website using Quarto
 build-website:
-  uvx --from quarto quarto render
+    quarto render
 
 # Preview the website with automatic reload on changes
 preview-website:
-  uvx --from quarto quarto preview
+    quarto preview
 
 # Run all build-related recipes
 build-all: build-contributors build-website build-readme
