@@ -79,7 +79,7 @@ cleanup:
 
 # Re-build the README file from the Quarto version
 build-readme:
-    quarto render README.qmd --to gfm
+    uvx --from quarto quarto render README.qmd --to gfm
 
 # Generate a Quarto include file with the contributors
 build-contributors:
