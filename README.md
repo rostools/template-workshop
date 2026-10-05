@@ -77,7 +77,7 @@ and runs workshops (also as open educational resources) that are related
 in some way to doing reproducible and open science. If you use this
 template in your work, please cite it as follows:
 
-Brødbæk S.K., Johnston L.W., Mazheri-Jensen D.S. (2025). Template
+Brødbæk S.K., Johnston L.W., Mazhari-Jensen D.S. (2025). Template
 Workshop: An opinionated setup for making workshops as open educational
 resources DOI: 10.5281/zenodo.16979956 URL:
 https://template-workshop.rostools.org
@@ -85,7 +85,7 @@ https://template-workshop.rostools.org
 Or as a BibTeX entry:
 
     @misc{YourReferenceHere,
-    author = {Brødbæk, Signe Kirk and Johnston, Luke William and Mazheri-Jensen, Daniel Skak},
+    author = {Brødbæk, Signe Kirk and Johnston, Luke William and Mazhari-Jensen, Daniel Skak},
     doi = {10.5281/zenodo.16979956},
     month = {8},
     title = {Template Workshop: An opinionated setup for making workshops as open educational resources},
