@@ -21,6 +21,15 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.14.2](https://github.com/rostools/template-workshop/compare/0.14.1..0.14.2) - 2026-10-05
+
+### 🐛 Fixes
+
+- Spelling of Daniel's last name
+  [#167](https://github.com/rostools/template-workshop/pull/167) by
+  [`@DanMazJen`](https://github.com/DanMazJen)
+  ([e0759a6](https://github.com/rostools/template-workshop/commit/e0759a628b40c586e76cae73a9fa74338a08e6fd))
+
 ## [0.14.1](https://github.com/rostools/template-workshop/compare/0.14.0..0.14.1) - 2026-10-03
 
 ### 🐛 Fixes
