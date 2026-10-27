@@ -1,6 +1,11 @@
 flavor = "quarto"
-exclude = [".git/", ".github/", "LICENSE.md", "README.md"]
-include = ["*.md", "*.qmd", "*.md.jinja", "*.qmd.jinja"]
+extend-exclude = [".github/", "README.md"]
+extend-include = [
+  "*.md\\{% endif %\\}.jinja",
+  "*.qmd\\{% endif %\\}.jinja",
+  "*.md.jinja",
+  "*.qmd.jinja",
+]
 
 [format]
 tab-width = 2
