@@ -21,6 +21,27 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.15.0](https://github.com/rostools/template-workshop/compare/0.14.3..0.15.0) - 2026-10-27
+
+### ✨ Features
+
+- Add section about confusion in learning design
+  ([d671b7e](https://github.com/rostools/template-workshop/commit/d671b7e86d8317d0988ef7639153c6f889f6c5ad))
+
+### ♻️ Refactor
+
+- Use `extend-include` and `-exclude` to also use Panache defaults
+  ([194d849](https://github.com/rostools/template-workshop/commit/194d849e2cdb5bccfe957184ebe7ae8b3f6856ca))
+- Reformat LICENSE and fix URL to Creative Commons
+  ([a73acf0](https://github.com/rostools/template-workshop/commit/a73acf0c8efc03b1e396f66ad3310ca73f233168))
+- Simplify and clarify language of program install
+  ([dda8299](https://github.com/rostools/template-workshop/commit/dda8299dec3d6625f8c626c4f333d3ae75b5dee3))
+
+### 💄 Styling
+
+- Reformat Markdown
+  ([f7b0c1b](https://github.com/rostools/template-workshop/commit/f7b0c1bf726ba18dd4b6f2ff228e029262f764d1))
+
 ## [0.14.3](https://github.com/rostools/template-workshop/compare/0.14.2..0.14.3) - 2026-10-16
 
 ### 🐛 Fixes
